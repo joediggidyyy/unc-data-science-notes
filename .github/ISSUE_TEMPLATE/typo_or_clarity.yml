@@ -1,0 +1,27 @@
+name: Typo / clarity fix
+description: Report a typo, confusing sentence, or formatting issue
+title: "[Typo/Clarity]: "
+labels: ["typo", "clarity"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page link / path
+      description: Paste the GitHub URL or file path
+      placeholder: notes/Spring_2026/DATA780/Week01/01-introduction.md
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What’s wrong?
+      description: What did you find confusing or incorrect?
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested fix (optional)
+      description: If you have wording you’d prefer, paste it here
+    validations:
+      required: false

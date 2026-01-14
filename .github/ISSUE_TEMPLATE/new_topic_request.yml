@@ -1,0 +1,26 @@
+name: New topic request
+description: Request a topic, example, or glossary entry
+title: "[Topic Request]: "
+labels: ["request"]
+body:
+  - type: input
+    id: course
+    attributes:
+      label: Course (if applicable)
+      placeholder: DATA780
+    validations:
+      required: false
+  - type: textarea
+    id: request
+    attributes:
+      label: What would you like added?
+      description: Describe the topic and what would make it click
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Helpful context (optional)
+      description: Links to official docs, course page, or keywords
+    validations:
+      required: false

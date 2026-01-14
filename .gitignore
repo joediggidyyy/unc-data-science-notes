@@ -1,0 +1,28 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Temporary
+*.tmp
+*.bak
+
+# Local-only working area (planning drafts, snapshots, staging)
+local_untracked/
+
+# Agent/session artifacts (never commit)
+.agent_session/
+codesentinel.log
+
+# Operational/runtime data (never commit)
+logs/
+
+# Reports are generated outputs (local-only; never publish)
+reports/

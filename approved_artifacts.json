@@ -1,0 +1,959 @@
+{
+  "approved": {
+    "notes/Spring_2026/DATA740/Week01/docx/generated_media/DATA740_week1_notes/media/image1.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "a407e379058b4e3b32b20f933fd63c3783a0f7ee502d61ac332c79c27a9a8961"
+    },
+    "notes/Spring_2026/DATA740/Week01/docx/generated_media/DATA740_week1_notes/media/image2.jpeg": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "4632784cbc7dc4c79383755e394b8ef7200f4324057b17c84dd2c055872d5ab3"
+    },
+    "notes/Spring_2026/DATA740/Week01/docx/generated_media/DATA740_week1_notes/media/image3.jpeg": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "0f1ef18a681b8abcf99fd7c561053c6648a7d25beeb6436c42a2828bd2779a1a"
+    },
+    "notes/Spring_2026/DATA740/Week01/docx/generated_media/DATA740_weel1_notes/media/image1.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "a407e379058b4e3b32b20f933fd63c3783a0f7ee502d61ac332c79c27a9a8961"
+    },
+    "notes/Spring_2026/DATA740/Week01/docx/generated_media/DATA740_weel1_notes/media/image2.jpeg": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "4632784cbc7dc4c79383755e394b8ef7200f4324057b17c84dd2c055872d5ab3"
+    },
+    "notes/Spring_2026/DATA740/Week01/docx/generated_media/DATA740_weel1_notes/media/image3.jpeg": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "0f1ef18a681b8abcf99fd7c561053c6648a7d25beeb6436c42a2828bd2779a1a"
+    },
+    "notes/Spring_2026/DATA740/Week01/generated_images/ChatGPT Image Jan 7, 2026, 08_34_03 PM.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "25ab0a422134d08a77f4c9eff7380ec725588c041c1808de5b9b3dbaba42970e"
+    },
+    "notes/Spring_2026/DATA740/Week01/generated_images/ChatGPT Image Jan 7, 2026, 09_52_51 PM.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "fee96428c2262c02088814e98bd442d6595679865fcb94dc3eddf0a65aae784d"
+    },
+    "notes/Spring_2026/DATA740/Week01/generated_images/ChatGPT Image Jan 7, 2026, 09_56_20 PM.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "e1a78675e3f208bd360d1d0aab22f66fa3b055b5c24bc10f94492be9bad0f518"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image1.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "69ab05717d82e6aa2bfd7232850d2d745b7dd0706e3aee285730c1ef044256a9"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image10.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "2cd4748883f194ef7b01365596cf8118d6a8a9c1abf1ab515f4797ab34992a33"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image11.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "ee10077bffd0635ec00eec8a2d3cd429a69d9b33ba0c43568ac6991ecc7fa34c"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image12.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "9b04ffebedb663506f8b9b3911998e876bded42f6522c2555482cc60e159712a"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image13.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "f53ec42dd117bfdaf99fad6794757fbfd92fdcdc59b40e5545ba7d5ec2c34947"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image14.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "33e11f41ad7ba8c72e35c4eed2fda115a4bdb0ddc9e34e69c77887f0d4630bc3"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image15.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "3d03d10f15f1fd95d9b83a4f91a90d8c51c42858542f5605aee219ff56deb551"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image16.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "6df7fb04d1c2cf2113ff387a963e22347cc7c97d5cbc5530c4cd390290fb8c37"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image17.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "0f4f149d871b612fc5a0d8edfe1e0e87a9a941b8dc2b32ca0ff71ab36b223ec1"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image18.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "d7c0a248bf479ddf51132c0ce431c592418a247d951d631fdfda2afe70e36e4d"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image19.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "eba9f1d7dabcdf280aefed637080fbb287d40bd24166e4155ee7dc80414da8de"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image2.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "a0be67530a6d4f7173bc36291e85f18e69176ef0dccb6dab38cbec819985123a"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image20.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "bdd5868ddf7879df4208cc83183daa1d47a64c354dc63d1ef21807f97c7920b3"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image21.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "a31c4361a7528b6753520a62ff53fbb1513542e3ff5284184dfcf70ae6e88b99"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image22.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "e83d7fab74e534d1990d98332c3db8a5dd6e36b112c902aeb1e583892a952816"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image23.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "be5953466b3f68aa5bf5802c0daf50f1c18db09742f940ddc3db213d11f9278f"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image24.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "c3c93ba8f996dee2fba7fe3aad5455883249d13bfd8a4b63da871f300964d361"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image25.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "7ca948a75886fbae35cd3f544fa337edfcae8704ef7ccf4f831625121142b72e"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image26.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "62faacc38043483308b34a5a7408801a538e761eda4fa1c21a16f16cd422bdf4"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image27.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "5586937df5f6de81916b353c8444e806768e502b20b8bd63308bca133e99f6c3"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image28.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "18821fe54c3a25075fd554892f6ab3e843e8d25af02ee8acac28977c4020c640"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image29.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "e3686acf91b01558eedb70e52beca8b425dc895914d55364cb099c6259cffe2a"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image3.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "7762cfccb580c3dcb1a139af1706354f041a60c62347546a84634d45bf701474"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image30.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "7935807a62a231683ef177ddd522ad4f26aaecd0fad3d5fddc6190839d1f4cee"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image31.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "efe370cc2d64082162b3842fca924c748d3fae454005cb242aca584dacef790e"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image32.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "507ebdb021a3f1a2297907d0b99b579defeac2547c676637f21fe909b83ba7e3"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image33.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "fae5bb9a9ae99cac8fdff0daf03773f18d9d91014c236155e802a712c4fff561"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image34.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "17a8a0532028c04f581e673bd1a20485980ad71b7ca4686a8a96c6f15e3b4592"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image35.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "3ca941e8d0ab748ab7f2be9d3737c9f127ed2c8b4bb8d795afa08460046ee8c9"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image36.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "9c12b20eb2889692a515b53a3a8ed7beb0ac538c5bf1b19c3c54a421c53dfe91"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image37.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "e976f6f62cf9c258a33aea3accd4f4ef41949ab58c74eec065789058bd0b40cd"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image38.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "fe350bcb7300d982895bb10209e43f96c7ed872acd1cfdaba22ea18c8a233e07"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image39.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "d236ee852599979bee718b70c4e17a17ebd5d0690a82f65bc854c32e3569a697"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image4.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "71ede4b7a1c66aeeba1c8f40285bbde8663f3e1b8ba8ba8854019ad957b98176"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image40.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "66ea3ad882f066fcbe14149e685b58c1765d840008947a4e7b0d30f9cfdc17d2"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image41.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "97e0869a0fb167f98b804e47ae2848532f8c8f50a6ab4aa3ec6171712ae4f31e"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image42.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "480d34454497922a8ee7c506c2eca560ec5dcce1153751da4281314cc59cb1e5"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image43.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "3cf1c7c6658e683c4770954209d0b5b737a348f0b22db6b32a19d9fb031a2fd6"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image44.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "18a11805fb1f4f78027a1395a02d95206c09c58a64c05cc3c9d9fda7261b9d85"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image45.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "ea512e2ac9b084ac85803fe757d2c5802e6d1497d251f70b652881a462f6e779"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image46.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "19b4fb11b41b6cd914a1942fad159d3de885006be26cfdfe88e1fc40183d2aba"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image47.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "f46a3fcde431fa9e5009603f4a03476ceb29966170893345f1a38bb2d89aa789"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image48.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "89f05ab92b6a546402263ff76164db870f1f9b6a993aa5834ddfc39c5819230b"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image49.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "4cd5560b59832f8bee2924ec3ad6996a9da048aa5782d8751b45e6a18bbc145e"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image5.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "1dd4e5e74c988d2631842af6de11b68819e8d593e784fd501397ebe5c799523a"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image50.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "89faf6102b425387016ce0406b3ffdec868bbef53128cc7b90c8b239694de9ce"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image51.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "fee70abf0dfdeedd06235ff71720716389b23b9887e83babe35325d91efdb537"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image52.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "cf59d4e9f6c82548a4b738c5d1ff44b66b48b5c215ec64fa57ab6ed76da4534d"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image53.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "abae82261c129ed5babf5b563e2f7f902ed060131373f017c6a9b9f279b87cd1"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image54.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "6d28c78b9ba16a40c8b69c3fde1c0fad11d887bf129fead0c67b1a8373550d97"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image55.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "930db087eedee75f5d2bf51078f68fc323d23484842a3531d1a40c6abbeef6fd"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image56.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "69b1ed1f4631e12c85c3b764f8be87b22f923f5694126ccec413152e82e90ec0"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image57.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "aa2602fd2c8665180fb91d3e278dc20e9272010f24f2bae87f0326232a819361"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image58.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "9a89da3165f8bf1568f9c068caf321d10a76b6a5144091369ab152ea18ae8074"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image59.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "9d8e5ef680987f85db880157106f0ca7adf7a58463cc6e8db00193c27de886e0"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image6.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "2a84e05c9852956fa7ee32932edf242d4d159d26e66c5a002a03ef9531c9b0d0"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image60.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "797e4f07c723416ce1b2927371e0563b593e6178700db8a0d422b5225f7496eb"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image61.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "d61d40f6888c5765a09f2b7abfbab1ee80b65f43d39d1d3a952066ea26b0e99b"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image62.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "789b422635ad81540a504fa10b24d5a9ce3af74d40894f0bd4197dd3690326f2"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image63.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "6b3d114d4f901f726270c29f1937c032866329d9c8e6aab2ef485a225b3faefc"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image64.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "b8151a0010978e38bd325956963bd78fdc070709f4137237c9e8c222e24525b0"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image65.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "042b04bbafd3a59c0a445f31a5b0b44a6766dcf78340e39ba83c767c6f97a055"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image66.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "dbe8919aa7e28b1823573d204ea93bff12e3bbdc3fd85856e7fd64209b859f61"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image67.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "1f16181242202f46e38dfc201e8700a93106fe1c3521e029a6394968afe76588"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image68.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "4981ab655b6750f23e2b517f69afed4a6ceb3fe8b3de683abb4fd60a6b716109"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image69.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "5e19e37821e0d681897c6a266dade2e5304caa27295b25d1e588dccc2cc87ed0"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image7.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "8a0319c1295bf73b8617143eda6d31cd0f5b21e560e66da424366e293e1bb5d3"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image70.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "31ea84fe5d30fe0d68634b454049ced850a8b29cd32036bc777ab39f800f0abb"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image71.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "913ee7ce1c3eec648f4e1c4d188bcc5957e0ea1dd2e69d4d136053863e320124"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image72.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "280432de6812ec86a89de6ad17dd5884e6c3fd05ef7470bf2f1daeefda1f5001"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image73.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "e0632121e0cff1da37e07ddecafe3e740a741fed5a266cc6e2f57c59478833f4"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image74.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "4ca7330ec7ae00b0945cb40c705860b559f73f49382ee07cd3f0763d64b3bc68"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image75.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "b7463567aa5b2f27fb93e640876a023f86fad722cae33358c5961a2d8d015288"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image76.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "815ecba7395c8f030eb7d45f3a72621d3fcc49a3943deaee1106cd517ea298db"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image77.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "569f75acb7cd1dabee7561fba351df5217509b463da677320ad7b53d9e828e00"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image78.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "6ad8ee7c3ba2c49c0f7b6580f06872a186135156b58f4032c0ea95c7ae82dabd"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image79.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "5c0a810f8f249a08bb9be80fc18530f61fdc7bf57a93980c6121e2d45517deef"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image8.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "757a2e57948ebdf33841350cf046ab00ef02196f886ebaad40e73b6883f6597b"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image80.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "3f90f4e623a3a70989dc9ec9c7215ec7e3d5032067771741a4e1efdd754718e5"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image81.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "fea04e55e5b2c53d1e41d7122cc44b457730f33bcc6897daf253ac5854672092"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image82.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "d56cb4874a957713b83fe40d15f54fa5d4086670d66643ba9be26ae4585b009e"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image83.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "18aab6403a68150a9662b3c940589a7c833ebf9935ec27cc102e3b6ceb36676e"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image84.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "c6c57bab06573cac3d0c4e7f6fdc05d64c7469055c87e05b7a57a98d9cd00933"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image85.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "167f8f7be14c48eb670b374fbfee817777bdd013780a73f3fc569a401638053b"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image86.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "7736b4649659c7eae5aa832cace9adc49d8d65f2fd381a97fec0c77700d29e9d"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image87.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "a00ebf74a85dc3c65bcb6ed334cfbba39307f4da21e9f15163b78e091e745f6c"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image88.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "753c328642766c7e76fd6e540538932370896523545a1aae7f26a60365f298c7"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image89.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "d1d6a160351e5bafe248d133d9b1409b11966ad2a4a8bb44bd4a918d449c77b7"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image9.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "335c7e60b03323830f5e9c0cee46ca88fd02b94b9f4c05c503c1530268aefdf3"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image90.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "84609b70aba688e7ca91cdfbdd010ead7b1ca3e9e379207781ba1692d81bc590"
+    },
+    "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image91.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "3cf84356ee7c7d37f4b848325f1a73deaf029906bdcab0f3e213e91da0f814f9"
+    },
+    "notes/Spring_2026/DATA780/Week01/docx/generated_media/DATA780_week1_notes/media/image1.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "ac35248486104649fc2d2e63c06abe1d7d9b4ee853516a691db338047837a868"
+    },
+    "notes/Spring_2026/DATA780/Week01/docx/generated_media/DATA780_week1_notes/media/image10.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "78985ba9763b4a54e3077d03cf9e73b4a199cb767505c335baf557924d5b1fa8"
+    },
+    "notes/Spring_2026/DATA780/Week01/docx/generated_media/DATA780_week1_notes/media/image11.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "62bb6bec3b0c8938a73871fd04bfc2d5cead164969f74279653289829b51af38"
+    },
+    "notes/Spring_2026/DATA780/Week01/docx/generated_media/DATA780_week1_notes/media/image12.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "7d9fde0847b985febba654deeddb1f0bc517e6a12329d73eaee413db9b856461"
+    },
+    "notes/Spring_2026/DATA780/Week01/docx/generated_media/DATA780_week1_notes/media/image13.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "15d8566dfebd385dc1a7b19468340f27386a41768e64fa2a2a084b84a3c69ce7"
+    },
+    "notes/Spring_2026/DATA780/Week01/docx/generated_media/DATA780_week1_notes/media/image14.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "94e245e5fc19bdfc1260ce05481f13e856baa53f06966f2e0fc391d119c29f34"
+    },
+    "notes/Spring_2026/DATA780/Week01/docx/generated_media/DATA780_week1_notes/media/image15.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "8ad6085ee407b68cca6474087cadde1705671234e5fdffe5dde8ad9aacaa3408"
+    },
+    "notes/Spring_2026/DATA780/Week01/docx/generated_media/DATA780_week1_notes/media/image16.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "ce9f2976872f146937c9e9418326ea6c056f50b52259b98af7b3598fc74612e1"
+    },
+    "notes/Spring_2026/DATA780/Week01/docx/generated_media/DATA780_week1_notes/media/image17.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "b34eeaaf9c8efd979a04fdbb5e4267a59a60aafc0ce54eb8f29ee7828ed1f17c"
+    },
+    "notes/Spring_2026/DATA780/Week01/docx/generated_media/DATA780_week1_notes/media/image18.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "b5b673ce6c4ecbf4ed3dedc31520386b33e5d7f5dc3a6b6cffe005572aa42587"
+    },
+    "notes/Spring_2026/DATA780/Week01/docx/generated_media/DATA780_week1_notes/media/image19.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "19aa6b71694769425a41f002c0ddbd36c04d556fa2a5f6197c2e85ca3e6349ae"
+    },
+    "notes/Spring_2026/DATA780/Week01/docx/generated_media/DATA780_week1_notes/media/image2.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "68aa6866620d36170b5c35d883d89565096d422fed53593a02b1862db240362c"
+    },
+    "notes/Spring_2026/DATA780/Week01/docx/generated_media/DATA780_week1_notes/media/image3.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "3cb17cd4c192963795ba86df86fe6760b5b86f3c71f2fc2356e4cd75fa2997d2"
+    },
+    "notes/Spring_2026/DATA780/Week01/docx/generated_media/DATA780_week1_notes/media/image4.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "0be318737dd7f039b5a15317d19f322a983bde7b948e3bc4b8c1e6a0de190397"
+    },
+    "notes/Spring_2026/DATA780/Week01/docx/generated_media/DATA780_week1_notes/media/image5.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "1fa011f5fb7519f9d623f4a523b1c38292fe8ada34c0503735140afe2a7b41dd"
+    },
+    "notes/Spring_2026/DATA780/Week01/docx/generated_media/DATA780_week1_notes/media/image6.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "657fd183d21f99befec4446f39fcff30f033bf164db7eda983528c3d0ee9d410"
+    },
+    "notes/Spring_2026/DATA780/Week01/docx/generated_media/DATA780_week1_notes/media/image7.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "ef259531244d879f25725ce5662b52f2cb00e2cafceddb9fb4ce8f7d208bdd4e"
+    },
+    "notes/Spring_2026/DATA780/Week01/docx/generated_media/DATA780_week1_notes/media/image8.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "36e36ed300458cf2c21a80e4ccca8260b36cee41fe16846d740b2f559df724bf"
+    },
+    "notes/Spring_2026/DATA780/Week01/docx/generated_media/DATA780_week1_notes/media/image9.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "ccbd57d76c6bc92f9aafbd9975748ccf6db2d383c6ca182665e604cb31dc3766"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image1.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "078301ece744df0a1fa1ed5b71ab4923b949715c296c29ccc84d5861c6b65c02"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image10.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "dbe3e9e7773204506ebcc91328fd2e46792f4cdccee5fa65f3ace173e7108bdf"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image11.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "c7fdbce6a511d019ae9492364fcbd5a68083564568bd0dbe14c63554cfda56aa"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image12.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "d87e765287423753f107e228134d39234c74aafdf3c0a8a6764ab51b0c74f056"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image13.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "43d3a617a71cf5290fcdcf19775c7a3ae145d779bc747b3dffc98dda7ecacbd1"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image14.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "924b0f1e307ae5bfa06fa13fce7cc3b7d1e998c63ad80aa885fc7e5b58e9bd1b"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image15.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "290e3c07195c33c8c7a4d53fa05bb1b7d063992877b405ac8d361f81c358d769"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image16.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "79f913b2121b24dd0352ee84115df1e0cbca24a9956b3184154d04b441b93f63"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image17.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "a48eb7fe4b459f8760664a2fc82ce7855239463130a389f62c4a3229409ea170"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image18.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "f254b5f8e950db110c8cd5e900f1e9e2f88afd0a01ace935064e2065ef9ae2fc"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image19.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "a164c525f25d0e0ff84d4352e57753959b2d769231578dc7ec6d7897e0d0e58b"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image2.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "15d6faf23b23b0c2a12a3353661ddbd97fc1ecf4c9060048f112b6d5c50abdfa"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image20.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "7f5e4445ae5d1dda885837cedfe06c69554ce87ce47927219fa1d56cb3bfb989"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image21.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "7d4d7ab386b3857f28aadf886faf31d635db621b4b62b4b031b1a627dba73a2c"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image22.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "5aaebdaf6491eeed4d962b56390903811694e08e7014c376da9772e7cdfb7d46"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image23.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "928e6b7673b897e8d563399eda65968e58a6a746f25853ae388e5e627d62bd8e"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image24.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "e5d4c24811dab34ec5ae7c9f996d80ec5eba61c5b2d26d37c98d7af9ffb604f2"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image25.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "9604c929395128c044bfac2eac4547ae6f5492e494408af9bf6dba5a46514fc3"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image26.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "78c2630e02c5782041a348bf6fd75b4eecbed1bac7021e3224e4f307bf137be6"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image27.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "baa9f06af7442a1def589786bdef3b04892a18b761a79714f23e4f7fcf5f2b05"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image28.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "60455c68932be3cb4cd898bbe232914d43d4b3b8246df95542d776a5f17d5a13"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image29.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "9ace2eb4873232e7f1755e958c2571b827e4cc7e2b924f939b87387a87e8adb3"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image3.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "32f1c336215b19553955bb259a49b422a5fc7af9c29309145b9ee9ed6dd668b3"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image30.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "0e961a10b5b9171f3d5860df8f8460f13afef6ad27ac8510566fa5f096e73dc7"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image31.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "1941f6df669f8772d2e5588512a3fb2c075c3de411c9ad1d76113fb4b377b0c3"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image32.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "b7c116542aeaf4d04e7434284fc453560e197dbdc8e026f81c931dd0fec41cd8"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image33.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "c782aa250c01b74e839b1f8a62af1b787688cf19d0a0283d0ba66230c684344c"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image34.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "b5116a936cb716bf92098b7729d426f79b881fd3ea5028e55189c6bebe2f00f7"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image35.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "004619c87fb19055384fdb6f1c79f2190a620ca5d0283fd02255bea2f2cbe22e"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image36.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "6d462276f9b060dfe83803ccbd92f5a629880d509891c39cd2e4892c133e1883"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image37.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "5d4e93ef46ce7d639a32b8c3371c4bcbe436fac9c86ec27e0d063271f8fd75a1"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image38.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "4f4f255d37d69d502f3fcdc1005a30434f0e7a6a8d8d5a12db009e1015a07bd6"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image39.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "935ede27e52ac12f235af6ba40d0cc0969bf241907ae684861ec438e3ebaae4f"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image4.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "5bd7b0dd2d20264efc4e56970c76cd9d4aef7c9abc963ddd9cf22fe97c12126a"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image40.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "4c20f2839bf1ef7350a4e34c0a4dc9aaa8099dd178c831fec45df1592b998a32"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image5.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "99cca597fe5bb17a0c58bcada1392f2c9143f07eef53512631d5e9400d3d1132"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image6.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "255b7ef2f3c8281bac44cac618d744627c6a866534f1e54458ea33bbee6589cc"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image7.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "2e86debc28e39209c7533bbafdf07c1f9aef4ee646b10db464072cd46ba5d247"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image8.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "0ce82971ea1f36e0b3cfd10eaa95abfe94e12dc8818be9b91c1b42f7e4a93c7e"
+    },
+    "notes/Spring_2026/DATA780/Week02/docx/generated_media/DATA780_week2_notes/media/image9.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "7080806d8575e9813e8924ca474060b4fcb046c51d13b1e972d84c478fa951ae"
+    }
+  },
+  "version": 1
+}

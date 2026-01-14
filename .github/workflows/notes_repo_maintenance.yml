@@ -1,0 +1,33 @@
+name: Notes Repo Maintenance
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      strict:
+        description: "Fail CI on WARN findings from the validator"
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  maintain:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run maintenance (docs + validation)
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.strict }}" = "true" ]; then
+            python maintain.py --strict --verbose
+          else
+            python maintain.py --verbose
+          fi

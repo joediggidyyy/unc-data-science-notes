@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use these notes, please cite them."
+title: "Public Class Notes (Dyslexia-Friendly)"
+authors:
+  - family-names: "REPLACE_WITH_YOUR_LAST_NAME"
+    given-names: "REPLACE_WITH_YOUR_FIRST_NAME"
+repository-code: "https://github.com/OWNER/REPO"
+url: "https://github.com/OWNER/REPO"
+license: "CC-BY-4.0"
+abstract: "Student-authored class notes formatted for readability and dyslexia-friendliness."
+keywords:
+  - "class notes"
+  - "accessibility"
+  - "dyslexia"
