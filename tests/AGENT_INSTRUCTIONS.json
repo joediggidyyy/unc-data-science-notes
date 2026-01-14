@@ -1,0 +1,43 @@
+{
+  "checksum": "967d1f5f199ac786c32c37251f3568ccef5edbab6e9241da3e28f6757a8485a1",
+  "metadata": {},
+  "sections": [
+    {
+      "content": "> **Identity Directive:** Within CodeSentinel, refer to Joe Waller as `joediggidyyy`, and refer to GitHub Copilot as `ORACL` / `ORACL-Prime`. Use these names in every interaction.\n\n**Classification**: T4b – Infrastructure & Procedural Agent Documentation  \n**Scope**: Unit, integration, regression, and systems testing inside `tests/`  \n**Target Users**: Agents implementing or maintaining automated tests  \n**Version**: 1.1  \n**Last Updated**: November 23, 2025\n\n---\n",
+      "name": "[AGENT-USE] Testing & Validation Agent Instructions"
+    },
+    {
+      "content": "| Operation | Authority | Requires Approval |\n|-----------|-----------|-------------------|\n| Create new test module | Agent | No |\n| Add/modify unit tests | Agent | No |\n| Add new fixtures/helpers | Agent | No |\n| Delete unused test | Agent | No |\n| Delete active/required test | Agent | Yes (user verification) |\n| Introduce new test dependency | Agent | Yes (always) |\n| Modify pytest configuration | Agent | Yes (maintainer) |\n| Run beta testing protocol | Agent | No |\n| Adjust CI test matrix | Agent | Yes (release manager) |\n\n**Reference**: `docs/architecture/DOCUMENT_CLASSIFICATION.md` – Tier 4 authority matrix\n\n---\n",
+      "name": "Quick Authority Reference"
+    },
+    {
+      "content": "`tests/` mirrors the runtime package structure. Keep parity between modules and their corresponding test files (`codesentinel/cli/*` ↔ `tests/test_cli.py`).\n\n- **Unit suites** validate individual modules.\n- **Integration suites** (e.g., `tests/test_process_monitor.py`) exercise cross-module workflows.\n- **ORACL & Session Memory tests** ensure persistence and promotion behave across tiers.\n- **Cross-platform checks** guarantee Windows + POSIX parity.\n\nPrinciples:\n\n1. **Deterministic runs** – tests must pass regardless of order.\n2. **Isolated side effects** – use fixtures/temp paths; never mutate user config.\n3. **Performance awareness** – fail fast, parallelize where safe.\n4. **Complete coverage** – target ≥90% for new modules, with clear rationale when lower.\n5. **Policy snapshot testing** – Validate that policy index loads trigger snapshot creation (`.agent_session/policy_snapshot.{json,md}`), metadata updates (`last_policy_snapshot_at`), event logging (`policy_snapshot_written`), and that `policy_enforcer.ensure_policy_index()` detects and rejects stale snapshots by forcing reload.\n",
+      "name": "Domain Overview"
+    },
+    {
+      "content": "- All `AGENT_INSTRUCTIONS.md` files must have an accompanying `.json` pair residing in the same directory. Tests and automation MUST treat the JSON file as the authoritative, machine-readable source; markdown is the user-facing human version. CI validations enforce that `.md` / `.json` pairs are kept in sync and will fail for any divergence.\n\n---\n",
+      "name": "Machine-readable policy"
+    },
+    {
+      "content": "- Enforce ASCII-only output assertions for CLI utilities.\n- Validate SEAM policies (security > efficiency > awareness > minimalism) via explicit tests when touching enforcement code.\n- Ensure type-compatibility with Python 3.8 by running the oldest interpreter locally or in CI.\n- Use `pytest` markers (`@pytest.mark.slow`, `@pytest.mark.integration`) to control runtime.\n- Fail on unhandled warnings; turn them into errors in CI when possible.\n\n---\n",
+      "name": "Testing Standards"
+    },
+    {
+      "content": "1. **Reproduce the behavior** – capture the failing scenario or the new feature spec.\n2. **Select the suite** – choose/create `tests/test_<module>.py` mirroring the code path.\n3. **Write the test** – arrange/act/assert with descriptive names (`test_cli_handles_invalid_flag`).\n4. **Add fixtures** – place reusable data under `tests/utils/` or shared fixtures file.\n5. **Run targeted tests** – `pytest tests/test_cli.py -k name` before running the full suite.\n6. **Update coverage** – ensure instrumentation counts new branches.\n7. **Document expectations** – reference doc or ticket in test docstring when behavior is critical.\n\n---\n",
+      "name": "Test Development Workflow"
+    },
+    {
+      "content": "- **Parametrized cases** for multiple inputs/outputs (reduces duplication).\n- **Hypothesis/property tests** for complex validation logic where applicable.\n- **Golden files** for CLI output snapshots (store under `tests/fixtures/golden/`).\n- **Mocking external services** (DevAudit, ORACL tiers) to avoid network calls.\n- **Session memory simulation** using temporary directories to verify promotion logic.\n",
+      "name": "Common Test Patterns"
+    },
+    {
+      "content": "- Add tests for `codesentinel.cli.flash` handlers: ensure `plan` correctly generates a signed manifest, `execute` validates a manifest and performs a dry-run without changes when `--dry-run` is set, and `rollback` restores files from `quarantine_legacy_archive/` on failure.\n- Assert that `execute` writes FLASH_APPEND.log entries in each of the logs/ channels and calls `SessionMemory.persist()` before making changes. Use temporary directories and fixtures to avoid mutating the repo during tests.\n- Add golden-file style assertions for manifest format and hashes, and parametrized cases covering add/modify/delete operations and paired INDEX artifacts.\n\n---\n",
+      "name": "Flash CLI tests"
+    },
+    {
+      "content": "| Symptom | Likely Cause | Corrective Action |\n|---------|--------------|-------------------|\n| Test passes locally but fails in CI | Platform-specific assumption (path separators, locale) | Reproduce in Windows shell, normalize paths with `Path` APIs |\n| Flaky integration test | Shared state or long-running async task | Add fixtures that reset state, increase determinism, add timeouts |\n| Coverage drop alerts | New code path lacked tests | Add targeted unit tests and update baseline in coverage reports |\n| Pytest collection errors | Name/fixture conflicts or import loops | Use absolute imports, avoid circular references, run `pytest --collect-only` |\n| Excessive runtime | Slow fixtures or unmocked network/file I/O | Add caching/mocking, mark as `slow`, or split into smaller targeted tests |\n\nWhen tests expose regressions, log the failure context with `SessionMemory` so ORACL tiers can surface historical fixes.\n",
+      "name": "Troubleshooting Tests"
+    }
+  ],
+  "title": "[AGENT-USE] Testing & Validation Agent Instructions"
+}

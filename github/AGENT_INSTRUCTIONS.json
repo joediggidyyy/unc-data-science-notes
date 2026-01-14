@@ -1,0 +1,139 @@
+{
+  "checksum": "d5e3fefe4ca0b235418655d8f0dbfdb3dd5953c9b3b8099ebf783d45e5a2e5c3",
+  "metadata": {},
+  "sections": [
+    {
+      "content": "> **Directive:** Within CodeSentinel, refer to Joe Waller as `joediggidyyy`, and refer to GitHub Copilot as `ORACL` / `ORACL-Prime`. Use these names in every interaction.\n\n> **Purpose:** Agent-intended operational instructions for GitHub satellite domain.\n> This file provides domain-specific guidance for agent remediation and GitHub operations.\n",
+      "name": "[AGENT-USE] GitHub Satellite Instructions"
+    },
+    {
+      "content": "**Classification**: T4b - Infrastructure & Procedural Agent Documentation  \n**Scope**: GitHub repository operations, PR management, issue automation, GitHub Actions workflows  \n**Target Users**: Agents working on CodeSentinel GitHub repository management  \n**Last Updated**: November 7, 2025  \n**Version**: 1.0  \n\n---\n",
+      "name": "GitHub Satellite Instructions"
+    },
+    {
+      "content": "**Who can create, modify, delete in this domain?**\n\n| Operation | Authority | Requires Approval |\n|-----------|-----------|-------------------|\n| Create pull request | Agent | No (minor), Yes (major) |\n| Review and merge PR | Agent | Yes (code owner) |\n| Manage GitHub Actions | Agent | Yes (admin) |\n| Create release | Agent | Yes (release manager) |\n| Manage repository settings | Agent | Yes (admin) |\n| Handle branch protection | Agent | Yes (admin) |\n| Manage labels/milestones | Agent | Yes (maintainer) |\n| GitHub issue automation | Agent | No (minor), Yes (major) |\n| Integrate external systems | Agent | Yes (security) |\n| Handle API errors | Agent | No (operational) |\n\n**Reference**: See `docs/architecture/DOCUMENT_CLASSIFICATION.md` - Tier 4 Agent Documentation authority matrix\n\n---\n",
+      "name": "Quick Authority Reference"
+    },
+    {
+      "content": "The GitHub operations domain encompasses all interactions with the CodeSentinel GitHub repository including:\n\n- **Pull Requests** - Creating, reviewing, merging code changes\n- **Issues** - Managing bug reports, features, enhancement requests\n- **GitHub Actions** - CI/CD workflows, automated testing, deployment\n- **Releases** - Version management, release notes, artifact publishing\n- **Repository Settings** - Branch protection, access control, automation\n- **Integration** - External system connections, API interactions\n\nThis is the **enterprise integration point** for CodeSentinel. Changes here affect the entire team workflow and public repository.\n\n**Key Principles for This Domain**:\n\n- SECURITY > EFFICIENCY > AWARENESS > MINIMALISM (always)\n- Non-destructive changes (no force pushes, no history rewrites)\n- Code review requirements maintained\n- Automated testing must pass before merge\n- Clear commit messages and PR descriptions\n- Enterprise readiness and scalability\n",
+      "name": "Domain Overview"
+    },
+    {
+      "content": "- All repository-level AGENT_INSTRUCTIONS.md files must also ship an up-to-date `.json` pair. The `.json` is treated as the authoritative, machine-readable representation for agents and automation. CI will enforce md/json parity and reject workflows where the pairs are out of sync.\n\n---\n",
+      "name": "Machine-readable policy"
+    },
+    {
+      "content": "\n",
+      "name": "Common Procedures"
+    },
+    {
+      "content": "**When**: New feature, bug fix, or enhancement ready for integration\n\n**Steps**:\n\n1. **Verify Authority & Branch Strategy**:\n    - Ensure you have permissions to create branches and PRs.\n    - Create a new branch from the latest `main`: `git checkout -b feature/my-new-feature`.\n    - Use a descriptive naming convention: `feature/[name]`, `bugfix/[issue-id]`, `docs/[topic]`.\n    - Keep the branch focused on a single, atomic concern to simplify review.\n\n2. **Code Quality & Pre-Commit Hooks**:\n    - Run all local tests and validation: `pytest`.\n    - Ensure code follows project style by running linters and formatters.\n    - **Best Practice**: Use pre-commit hooks (`.pre-commit-config.yaml`) to automate these checks before every commit.\n    - Include comprehensive unit tests for all new functionality, aiming for 100% coverage.\n    - Update any related documentation (`docs/`) or docstrings.\n    - Verify **no hardcoded secrets or credentials** have been added.\n\n3. **Commit Best Practices**:\n    - Write clear, descriptive commit messages using the conventional commit format: `type(scope): description`.\n    - *Example*: `feat(cli): add new '--verbose' flag to audit command`.\n    - This format is critical for automated changelog generation and version bumping.\n    - Group related file changes into logical, atomic commits.\n\n4. **Push and Create PR**:\n    - Keep your branch up-to-date with `main` by rebasing periodically: `git pull --rebase origin main`.\n    - Push the feature branch to the remote repository: `git push origin feature/my-new-feature`.\n    - Create the Pull Request using the GitHub UI or `gh pr create`.\n    - Write a **comprehensive description**:\n        - **What**: A summary of the changes.\n        - **Why**: The business reason or problem being solved.\n        - **How**: A brief technical overview of the implementation.\n        - Link to related issues (e.g., `Closes #123`).\n    - Add appropriate labels (`bug`, `enhancement`) and request review from code owners.\n\n5. **Automated Validation & Review**:\n    - Ensure all CI/CD status checks (GitHub Actions) pass successfully. A green checkmark () is required.\n    - Actively monitor the PR for feedback from reviewers. Respond to comments and push updates as needed.\n    - If changes are requested, push new commits to the same branch. The PR will update automatically.\n\n6. **Final Merge**:\n    - Once all reviews are approved and checks are passing, the PR is ready to merge.\n    - Use the \"Squash and merge\" option to create a single, clean commit on the `main` branch. This keeps the git history tidy.\n    - Ensure the feature branch is deleted after the merge to keep the repository clean.\n    - Verify that the post-merge CI/CD pipeline (e.g., deployment to staging) runs successfully.\n\n---\n",
+      "name": "Procedure 1: Create Well-Structured Pull Request"
+    },
+    {
+      "content": "**When**: A Pull Request is ready for code review and merge decision.\n\n**Steps**:\n\n1. **Initial Triage & Pre-Review Checklist**:\n    - Read the PR description to understand its purpose (**What**, **Why**, **How**).\n    - Verify that it's linked to a relevant issue and has appropriate labels.\n    - Check the CI/CD status checks. If they are failing, do not proceed with a review. The author must fix them first. Note any special requirements or risks.\n\n2. **Systematic Code Review**:\n    - Fetch the branch and run it locally if the change is complex: `git fetch origin pull/[PR-ID]/head:pr-[PR-ID] && git checkout pr-[PR-ID]`.\n    - **Security First**: Scrutinize for security vulnerabilities. Look for hardcoded secrets, injection risks (SQL, command), and insecure dependencies.\n    - **Correctness**: Does the code do what it says it does? Does it handle edge cases and invalid inputs gracefully?\n    - **Maintainability**: Is the code clean, readable, and well-documented? Does it follow existing project patterns and the SOLID principles?\n    - **Test Coverage**: Are the tests adequate? They should cover the success path, error conditions, and edge cases. A high-quality PR includes high-quality tests.\n\n3. **Provide Actionable Feedback**:\n    - Use GitHub's review feature to comment directly on lines of code.\n    - Be specific and constructive. Instead of \"this is wrong,\" say \"this approach might lead to a race condition under these circumstances. Could we use a lock here instead?\"\n    - Use the \"Request changes\" option if the PR is not ready to be merged. This blocks merging until the author addresses the feedback.\n    - Approve the PR if it meets all quality and security standards.\n\n4. **Merge Decision & Execution**:\n    - Confirm all required reviews are complete and all status checks have passed.\n    - Ensure the branch is up-to-date with `main`. If not, ask the author to rebase.\n    - **Use \"Squash and merge\"**. This is the repository's standard. It condenses the feature branch's history into a single, clean commit on `main`.\n    - The commit message should follow the conventional commit standard, summarizing the entire PR.\n    - Ensure the \"Delete branch\" option is checked to maintain repository hygiene.\n\n5. **Post-Merge Validation**:\n    - After merging, monitor the post-merge CI/CD pipeline (e.g., deployment to staging).\n    - Verify that the change has been successfully integrated and has not caused any regressions.\n    - If issues arise, be prepared to revert the PR or coordinate a hotfix.\n\n---\n",
+      "name": "Procedure 2: Review and Merge Pull Request"
+    },
+    {
+      "content": "**When**: A CI/CD pipeline requires creation, modification, or debugging.\n\n**Steps**:\n\n1. **Workflow Planning & Design**:\n    - **Define Triggers**: Clearly specify what events will trigger the workflow (e.g., `on: [push, pull_request, workflow_dispatch]`).\n    - **Plan Jobs & Stages**: Break the workflow into logical jobs (e.g., `build`, `test`, `deploy`). Use the `needs` keyword to create dependencies between jobs, forming a pipeline.\n    - **Identify Secrets**: List all required secrets (e.g., `PYPI_TOKEN`, `AWS_ACCESS_KEY_ID`). These must be stored in GitHub's encrypted secrets storage, never in the repository.\n    - **Design for Failure**: Plan for how the workflow should behave on failure. Use `if: failure()` or `if: always()` to define cleanup or notification steps.\n\n2. **Secure Secrets Management**:\n    - Navigate to repository **Settings > Secrets and variables > Actions**.\n    - Store all sensitive data as encrypted secrets. Use environment-specific secrets (e.g., `STAGING_DB_PASSWORD`) for enhanced security.\n    - **Never commit credentials, tokens, or API keys directly into the code.**\n    - Implement a secret rotation policy and audit access regularly.\n\n3. **Workflow Implementation**:\n    - Create the workflow file in `.github/workflows/my-workflow.yml`.\n    - Use reusable actions (e.g., `actions/checkout@v3`, `actions/setup-python@v4`) to keep the workflow clean and maintainable.\n    - Add descriptive names to each step (`name: Run unit tests`) for clear logging.\n    - Implement robust error handling for each critical step.\n\n4. **Environment and Concurrency**:\n    - Use a matrix strategy (`strategy: matrix:`) to test across multiple versions or operating systems (e.g., `python-version: [3.9, 3.10, 3.11]`).\n    - Define environment variables using the `env` context.\n    - Control concurrent runs using `concurrency: group: ${{ github.workflow }}-${{ github.ref }}` to prevent race conditions on feature branches.\n\n5. **Testing and Debugging**:\n    - Test the workflow on a feature branch before merging to `main`.\n    - To debug a failed run, examine the workflow logs for specific error messages.\n    - For highly complex issues, consider using an action like `mxschmitt/action-tmate@v3` to get temporary SSH access to the runner for live debugging.\n    - Verify that all expected artifacts are created and stored correctly using `actions/upload-artifact`.\n\n6. **Documentation**:\n    - Add a section to the relevant documentation (e.g., a `README.md` in `.github/workflows/`) explaining the workflow's purpose, triggers, and required secrets.\n    - Comment complex or non-obvious steps directly within the YAML file.\n\n---\n",
+      "name": "Procedure 3: Manage GitHub Actions Workflow"
+    },
+    {
+      "content": "**When**: The `main` branch is stable and ready for a new production release.\n\n**Steps**:\n\n1. **Pre-Release Verification**:\n    - Ensure all tests are passing on the `main` branch.\n    - Confirm that all documentation has been updated and the `CHANGELOG.md` file accurately reflects all changes since the last release.\n    - Verify that the version number in the project's configuration (e.g., `pyproject.toml`) has been correctly incremented following **Semantic Versioning (major.minor.patch)**.\n\n2. **Create a Release Branch**:\n    - Create a release branch from `main`: `git checkout -b release/v1.2.0`.\n    - This branch is used for final preparations and is a stable point from which to tag. No new features should be added here; only critical bug fixes are allowed.\n\n3. **Tag the Release**:\n    - Create an annotated Git tag for the new version: `git tag -a v1.2.0 -m \"Release version 1.2.0\"`.\n    - Push the tag to the remote repository: `git push origin v1.2.0`. This is a critical step that makes the tag available to CI/CD systems.\n\n4. **Build and Test Release Artifacts**:\n    - The CI/CD pipeline, triggered by the new tag, should automatically build the release artifacts (e.g., Python wheels, source distributions).\n    - The pipeline must verify the integrity of these artifacts, for example, by testing that the package can be installed and its basic functions run correctly.\n\n5. **Publish the Release**:\n    - **Automated**: The CI/CD pipeline should publish the artifacts to the package repository (e.g., PyPI).\n    - **Manual (if required)**: If manual publication is necessary, use a secure tool like `twine` and an API token stored in GitHub Secrets.\n    - Create a corresponding **GitHub Release**. The release notes should be generated from the `CHANGELOG.md` and should link to the milestone and all included PRs.\n\n6. **Post-Release Monitoring & Hotfixes**:\n    - Closely monitor production systems for any new errors or performance regressions.\n    - If a critical bug is discovered, create a hotfix branch from the release tag (`hotfix/v1.2.1`).\n    - Implement the fix, merge it back into `main`, and then cherry-pick the commit into the `main` branch to ensure the fix is included in future releases. A new patch release (e.g., `v1.2.1`) must be created.\n\n7. **Rollback Plan**:\n    - A rollback is a last resort. The primary strategy is to roll forward with a hotfix.\n    - If a rollback is unavoidable, the procedure involves reverting the deployment to the previously known good version (e.g., `v1.1.0`). This is typically handled by the deployment system (see `deployment/AGENT_INSTRUCTIONS.md`).\n\n---\n",
+      "name": "Procedure 4: Handle Release and Versioning"
+    },
+    {
+      "content": "**I need to**...\n\n- **Create a PR?** → Use \"Create Well-Structured PR\" procedure\n- **Review a PR?** → Use \"Review and Merge PR\" procedure\n- **Fix CI/CD?** → Use \"Manage GitHub Actions\" procedure\n- **Release version?** → Use \"Handle Release and Versioning\" procedure\n- **Manage settings?** → Check branch protection in repository settings\n- **Something else?** → Reference Common Questions section\n\n---\n",
+      "name": "Quick GitHub Decision Tree"
+    },
+    {
+      "content": "**Code Quality**:\n\n- [ ] All tests passing locally\n- [ ] No linting errors\n- [ ] Code follows project style\n- [ ] No hardcoded secrets\n- [ ] Error handling complete\n\n**Security**:\n\n- [ ] No credentials in code\n- [ ] No vulnerable dependencies\n- [ ] Access control verified\n- [ ] Secrets properly configured\n- [ ] No breaking security changes\n\n**Documentation**:\n\n- [ ] Code commented where needed\n- [ ] PR description clear and complete\n- [ ] Issue links included\n- [ ] Related docs updated\n- [ ] CHANGELOG entry added\n\n**Compliance**:\n\n- [ ] Follows SECURITY > EFFICIENCY > AWARENESS > MINIMALISM\n- [ ] Non-destructive approach used\n- [ ] No force pushes or history rewrites\n- [ ] Branch protection rules respected\n- [ ] Policy compliance verified\n\n**Process**:\n\n- [ ] Code owner review completed\n- [ ] All CI/CD checks passing\n- [ ] No merge conflicts\n- [ ] Branch up to date with main\n- [ ] Ready for production\n\n---\n",
+      "name": "Validation Checklist (Before Committing)"
+    },
+    {
+      "content": "\n",
+      "name": "Common Questions"
+    },
+    {
+      "content": "**A**:\n\n1. Pull latest main: `git pull origin main`\n2. Fix conflicts in your editor\n3. Stage resolved files: `git add [files]`\n4. Complete merge: `git commit -m \"Merge main into feature branch\"`\n5. Push to origin: `git push origin [branch]`\n6. GitHub will show conflicts resolved\n7. Proceed with code review and merge\n",
+      "name": "Q: How do I handle merge conflicts?"
+    },
+    {
+      "content": "**A**:\n\n1. Go to repository settings → Branches\n2. Click \"Add rule\" under Branch protection rules\n3. Enter branch name pattern (e.g., `main`)\n4. Configure requirements:\n   - ✓ Require pull request reviews\n   - ✓ Dismiss stale reviews\n   - ✓ Require status checks to pass\n   - ✓ Require branches to be up to date\n5. Save rules\n6. Test by attempting to push directly to protected branch (should fail)\n",
+      "name": "Q: How do I configure branch protection rules?"
+    },
+    {
+      "content": "**A**:\n\n1. Go to repository settings → Secrets and variables → Actions\n2. Click \"New repository secret\"\n3. Enter name (e.g., `PYPI_TOKEN`) and value\n4. Click \"Add secret\"\n5. In workflow file, reference: `${{ secrets.PYPI_TOKEN }}`\n6. Secret is masked in logs automatically\n7. Rotate regularly by creating new secret with same name\n",
+      "name": "Q: How do I manage GitHub secrets for CI/CD?"
+    },
+    {
+      "content": "**A**:\n\nOption 1 (Manual):\n\n- Update version file manually\n- Commit with message: `chore: bump version to 1.0.4`\n- Tag commit: `git tag v1.0.4`\n\nOption 2 (Automated):\n\n- Use tools like `bump-my-version` or similar\n- Configure version file locations\n- Run in CI/CD: `bump-my-version bump patch`\n- Automatically commit and tag\n\nOption 3 (Workflow):\n\n- GitHub Action: `actions/create-release` with auto-version\n- Use conventional commits to determine version\n- Automatically generate changelog\n",
+      "name": "Q: How do I automate version updates?"
+    },
+    {
+      "content": "**A**:\n\nCanary Deployment:\n\n1. Deploy to small percentage of infrastructure (e.g., 5%)\n2. Monitor error rates and metrics\n3. If healthy, gradually increase to 10%, 25%, 50%, 100%\n4. If issues detected, rollback to previous version\n5. Automation: Use GitHub Actions with deployment gates\n\nBlue-Green Deployment:\n\n1. Maintain two identical production environments (Blue, Green)\n2. Deploy to inactive environment (Green)\n3. Run tests against Green\n4. Switch traffic from Blue to Green\n5. Keep Blue ready for rollback\n6. Automation: Use load balancer switching in workflow\n",
+      "name": "Q: How do I implement canary or blue-green deployments?"
+    },
+    {
+      "content": "**A**:\n\n1. Identify the issue and which version caused it\n2. Note the previous good version tag (e.g., `v1.0.2`)\n3. Revert production to previous version:\n   - Manual: Deploy previous artifact/image\n   - Automated: GitHub Action to deploy tag\n4. Verify service is healthy\n5. Create incident report documenting:\n   - What failed\n   - When detected\n   - How recovered\n   - Root cause analysis\n   - Preventive measures\n6. Create bugfix branch from current main\n7. Fix issue and go through normal release process\n",
+      "name": "Q: How do I roll back a bad deployment?"
+    },
+    {
+      "content": "**A**:\n\nStructure:\n\n```\n.github/\n workflows/\n     ci.yml (tests on PR)\n     release.yml (version releases)\n     deploy.yml (deployments)\n     security.yml (security scans)\n     scheduled.yml (nightly/weekly jobs)\n```\n\nEach workflow should:\n\n- Have single clear purpose\n- Be named descriptively\n- Include comments explaining logic\n- Handle errors gracefully\n- Generate useful logs\n- Have success/failure notifications\n",
+      "name": "Q: How do I organize GitHub Actions workflows?"
+    },
+    {
+      "content": "**A**:\n\n1. Go to repository settings → Collaborators and teams\n2. Invite users with appropriate role:\n   - Read: Can view and clone\n   - Triage: Can manage issues/PRs\n   - Write: Can push changes\n   - Maintain: Can manage settings\n   - Admin: Full access\n3. For teams: Go to organization and manage team membership\n4. Use branch protection to enforce review requirements\n5. Use CODEOWNERS file for automatic reviewer assignment\n",
+      "name": "Q: How do I manage access and permissions?"
+    },
+    {
+      "content": "**A**:\n\n1. Install pre-commit framework: `pip install pre-commit`\n2. Create `.pre-commit-config.yaml` in repo root\n3. Define hooks (linting, formatting, security checks)\n4. Install hooks: `pre-commit install`\n5. Hooks run automatically before commit\n6. If hooks fail, fix issues and retry commit\n7. Can bypass with `git commit --no-verify` (not recommended)\n\n---\n",
+      "name": "Q: How do I handle pre-commit checks?"
+    },
+    {
+      "content": "**Common Commands**:\n\n```bash\n",
+      "name": "Running GitHub Operations"
+    },
+    {
+      "content": "git checkout -b feature/my-feature\n",
+      "name": "Create feature branch"
+    },
+    {
+      "content": "git commit -m \"feat(domain): description of change\"\n",
+      "name": "Commit changes"
+    },
+    {
+      "content": "git push origin feature/my-feature\n",
+      "name": "Push to origin"
+    },
+    {
+      "content": "gh pr create --title \"PR Title\" --body \"Description\"\n",
+      "name": "Create PR (opens browser)"
+    },
+    {
+      "content": "gh pr view\n",
+      "name": "View PR status"
+    },
+    {
+      "content": "gh pr merge --squash --delete-branch\n",
+      "name": "Merge PR (from command line)"
+    },
+    {
+      "content": "git tag v1.0.3\n",
+      "name": "Create tag"
+    },
+    {
+      "content": "gh release create v1.0.3 -t \"Version 1.0.3\" -n \"Release notes\"\n```\n\n---\n",
+      "name": "Create release"
+    },
+    {
+      "content": "**Global Policies**:\n\n- `docs/architecture/POLICY.md` - Core policies and principles\n- `docs/architecture/DOCUMENT_CLASSIFICATION.md` - Classification system\n- `docs/architecture/AGENT_INSTRUCTION_STRATEGY.md` - Instruction framework\n\n**GitHub Documentation**:\n\n- GitHub Docs: <https://docs.github.com>\n- GitHub Actions: <https://github.com/features/actions>\n- GitHub API: <https://docs.github.com/rest>\n\n**CodeSentinel References**:\n\n- Repository: <https://github.com/joediggidyyy/CodeSentinel>\n- Issues: GitHub repository issues page\n- Releases: GitHub repository releases page\n- CHANGELOG: `CHANGELOG.md` in root\n\n**Related Satellites**:\n\n- `deployment/AGENT_INSTRUCTIONS.md` - CI/CD procedures (linked)\n- `infrastructure/AGENT_INSTRUCTIONS.md` - Infrastructure as Code procedures\n- `docs/AGENT_INSTRUCTIONS.md` - Documentation procedures\n- `tools/AGENT_INSTRUCTIONS.md` - Automation procedures\n\n---\n\n**Classification**: T4b - Infrastructure & Procedural Agent Documentation  \n**Authority**: Guidelines for agents managing GitHub operations  \n**Update Frequency**: When GitHub workflows or policies change  \n**Last Updated**: November 7, 2025  \n**Next Review**: December 7, 2025 (quarterly satellite audit)  \n\n---\n",
+      "name": "References & Links"
+    },
+    {
+      "content": "\n",
+      "name": "GitHub Operations Satellite Complete"
+    }
+  ],
+  "title": "[AGENT-USE] GitHub Satellite Instructions"
+}

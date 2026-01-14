@@ -38,3 +38,9 @@ __pycache__/
 # Virtual environments
 .venv/
 .venv_*/
+.venv-*/
+
+# CodeSentinel (local-only; never publish)
+.codesentinel/
+codesentinel.log
+codesentinel/

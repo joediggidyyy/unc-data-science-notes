@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "designations": [
+    {
+      "key": "ALPHA",
+      "greek": "Α",
+      "latin": "Alpha",
+      "purpose": "Primary execution with real-world intent (repo/workspace changes, deployments, enforcement actions).",
+      "allowed_contexts": [
+        "ops",
+        "maintenance",
+        "remediation",
+        "deployment"
+      ],
+      "constraints": [
+        "Honor SEAM ordering: Security > Efficiency > Awareness > Minimalism.",
+        "Archive-first for destructive filesystem actions.",
+        "Never log secrets; use environment variables for credentials."
+      ],
+      "examples": [
+        "ORACL:ALPHA:ops:dashboard-refresh",
+        "ORACL:ALPHA:remediation:offline-installer-fix"
+      ]
+    },
+    {
+      "key": "BETA",
+      "greek": "Β",
+      "latin": "Beta",
+      "purpose": "Verification and validation (tests, reproduction, confirmation of behavior).",
+      "allowed_contexts": [
+        "test",
+        "gate",
+        "review"
+      ],
+      "constraints": [
+        "Prefer read-only actions where possible.",
+        "If changes are required, keep them minimal and evidence-driven."
+      ],
+      "examples": [
+        "ORACL:BETA:test:pytest-vault",
+        "ORACL:BETA:gate:preflight"
+      ]
+    },
+    {
+      "key": "GAMMA",
+      "greek": "Γ",
+      "latin": "Gamma",
+      "purpose": "Simulation / what-if reasoning with no production impact.",
+      "allowed_contexts": [
+        "sim",
+        "planning",
+        "whatif"
+      ],
+      "constraints": [
+        "Must not perform real deployments or irreversible actions.",
+        "Outputs must be clearly labeled as simulation/estimates."
+      ],
+      "examples": [
+        "ORACL:GAMMA:sim:calamum-router-outage"
+      ],
+      "aliases": [
+        "Calamum-Sim"
+      ]
+    },
+    {
+      "key": "DELTA",
+      "greek": "Δ",
+      "latin": "Delta",
+      "purpose": "Incident response and recovery (stabilize, restore, and rebuild).",
+      "allowed_contexts": [
+        "recovery",
+        "incident",
+        "rollback"
+      ],
+      "constraints": [
+        "Prefer reversible operations and document evidence paths.",
+        "Use archive/restore workflows rather than delete."
+      ],
+      "examples": [
+        "ORACL:DELTA:recovery:unc-prune-rollback"
+      ],
+      "aliases": [
+        "Calamum-IR"
+      ]
+    },
+    {
+      "key": "EPSILON",
+      "greek": "Ε",
+      "latin": "Epsilon",
+      "purpose": "Audit and observation (inventory, compliance snapshots, discrepancy reports).",
+      "allowed_contexts": [
+        "audit",
+        "survey",
+        "report"
+      ],
+      "constraints": [
+        "Read-only by default.",
+        "Avoid scanning recursive/generated namespaces unless explicitly authorized (e.g., logs/, semantics_vault/)."
+      ],
+      "examples": [
+        "ORACL:EPSILON:audit:filesystem-survey"
+      ],
+      "aliases": [
+        "Calamum-Audit"
+      ]
+    },
+    {
+      "key": "PI",
+      "greek": "Π",
+      "latin": "Pi",
+      "purpose": "Policy/guardrail enforcement (pairing rules, secret hygiene, safety invariants).",
+      "allowed_contexts": [
+        "policy",
+        "compliance"
+      ],
+      "constraints": [
+        "Only apply fixes when explicitly in fix/remediation mode.",
+        "Keep policy-impacting edits minimal and traceable."
+      ],
+      "examples": [
+        "ORACL:PI:policy:instruction-sync-check"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": "oracode-mirror-manifest-1.0",
+  "mirror_schema_version": "mirror-1.0",
+  "mirror_id": "mirror_mirror-1_0_65ec64c61c4577b4",
+  "created_at": "2026-01-14T07:49:21.892281+00:00",
+  "artifact": {
+    "ref": "weighted_graph_index.json",
+    "sha256": "65ec64c61c4577b43c6f77a27d77f36f34011bcd4b53a558dc0e851e8a55dccf",
+    "source_schema_version": "wtls-1.0"
+  },
+  "mirror": {
+    "path": "mirror_mirror-1_0_65ec64c61c4577b4/weighted_graph_index.sqlite",
+    "sha256": "d6e2c880a23d18bcd6044f97cd39d64dd5969d573ba18fb2247916a8ba8f9cac",
+    "size_bytes": 294912
+  },
+  "counts": {
+    "nodes": 193,
+    "edges": 311
+  },
+  "signature": {
+    "algorithm": "SHA256-RAW",
+    "signature": "140effcdef26de83c23046aba87bbc5e139c17ab68c4a4e46787cc6b933d8768"
+  }
+}

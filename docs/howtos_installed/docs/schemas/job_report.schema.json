@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://codesentinel.dev/schemas/job_report.schema.json",
+  "title": "CodeSentinel Job Report",
+  "description": "Canonical structure for logs/pre_report/* job report JSON artifacts.",
+  "type": "object",
+  "required": [
+    "session_id",
+    "phase_token",
+    "title",
+    "created_at",
+    "generated_by",
+    "status",
+    "queststack_id",
+    "objectives",
+    "progress_log"
+  ],
+  "properties": {
+    "session_id": {
+      "type": "string",
+      "pattern": "^[A-Z0-9_-]+$",
+      "description": "Unique identifier for the job session (e.g., BFS-2025-12-01-POLICY_INDEX_REBUILD)."
+    },
+    "phase_token": {
+      "type": "string",
+      "description": "Phase marker mapping to governance tokens (PHASE_*)."
+    },
+    "title": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "generated_by": {
+      "type": "string",
+      "enum": ["ORACL-Prime", "ORACL"],
+      "description": "Agent identity per identity directive."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "in-progress", "complete", "archived"]
+    },
+    "completion_timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "circulation_status": {
+      "type": "string",
+      "enum": ["draft", "in-review", "published"]
+    },
+    "queststack_id": {
+      "type": "string"
+    },
+    "current_focus": {
+      "type": "string"
+    },
+    "previous_job_reference": {
+      "type": "string",
+      "description": "Path to prior job report for continuity."
+    },
+    "objectives": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "progress_log": {
+      "type": "array",
+      "description": "Chronological log of quest progress entries.",
+      "items": {
+        "type": "object",
+        "required": ["timestamp", "phase", "summary"],
+        "properties": {
+          "timestamp": {"type": "string", "format": "date-time"},
+          "phase": {"type": "string"},
+          "summary": {"type": "string"},
+          "details": {
+            "type": "array",
+            "items": {"type": "string"}
+          }
+        }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "properties": {
+        "tests": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "artifacts": {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      }
+    },
+    "references": {
+      "type": "array",
+      "items": {"type": "string"}
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,68 @@
+{
+  "manifest_version": "1.0.0",
+  "codesentinel_version": "1.1.3.b1",
+  "generated_utc": "2025-11-15T00:30:00Z",
+  "description": "Whitelist of documentation assets that must accompany every CodeSentinel release (system operations + ORACL behavior).",
+  "files": [
+    {
+      "path": "docs/AI_AGENT_RULES.md",
+      "category": "agent-operations",
+      "summary": "Authoritative guardrails and escalation rules enforced by CodeSentinel agents."
+    },
+    {
+      "path": "docs/ORACL_MEMORY_ARCHITECTURE.md",
+      "category": "oracl-architecture",
+      "summary": "Defines Session, Context, and Intelligence tiers needed for ORACL parity."
+    },
+    {
+      "path": "docs/ORACL_MEMORY_ECOSYSTEM_PROPOSAL.md",
+      "category": "oracl-architecture",
+      "summary": "Lifecycle and governance expectations for ORACL memory replication."
+    },
+    {
+      "path": "docs/ROOT_CLEANUP_AUTOMATION.md",
+      "category": "system-operations",
+      "summary": "Root-policy enforcement workflow required for SEAM compliance."
+    },
+    {
+      "path": "docs/SCAN_CLEAN_WORKFLOW.md",
+      "category": "system-operations",
+      "summary": "Security and bloat scanning cadence plus remediation triggers."
+    },
+    {
+      "path": "docs/TOOL_MANAGEMENT_POLICY.md",
+      "category": "tooling-governance",
+      "summary": "Rules for onboarding, revoking, and auditing ORACL-integrated tools."
+    },
+    {
+      "path": "docs/ENTERPRISE_INTEGRATION_GUIDE.md",
+      "category": "integration",
+      "summary": "Instructions for embedding CodeSentinel inside enterprise pipelines."
+    },
+    {
+      "path": "docs/AGENT_INTEGRATION_STATUS_SYSTEM.md",
+      "category": "telemetry",
+      "summary": "Status telemetry contract ORACL relies on for agent readiness."
+    },
+    {
+      "path": "docs/AGENT_INSTRUCTIONS.md",
+      "category": "agent-operations",
+      "summary": "Full operational instructions consumed by agents and operators."
+    },
+    {
+      "path": "docs/AGENT_QUICK_REFERENCE.md",
+      "category": "agent-operations",
+      "summary": "Abbreviated reference sheet aligned with the formal instructions."
+    },
+    {
+      "path": "docs/SESSION_IMPLEMENTATION_ANALYSIS_20251107.md",
+      "category": "oracl-behavior",
+      "summary": "Session persistence and promotion details required for continuity."
+    },
+    {
+      "path": "docs/SESSION_COMPLETION_SUMMARY.md",
+      "category": "oracl-behavior",
+      "summary": "Defines completion and handoff semantics across ORACL tiers."
+    }
+  ]
+}

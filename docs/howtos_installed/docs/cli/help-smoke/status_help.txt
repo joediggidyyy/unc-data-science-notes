@@ -1,0 +1,52 @@
+Command: status
+
+--------------------------------------------------------------------------------
+[Help View: NON-AGENT] :: Non-Agent View (manual)
+Automation disabled. Commands emit manual guidance only.
+Agent Integration: NOT-APPLICABLE
+Mode source: manual. Set ORACL_MODE=manual to force manual execution.
+--------------------------------------------------------------------------------
+============================================================
+[Help View: HYBRID] :: Hybrid View (mode: auto)
+Auto mode defers to policy: manual by default, agent when cleared.
+Agent Integration: NOT-APPLICABLE
+Mode source: auto. Remove ORACL_MODE to fall back to policy-based switching.
+============================================================
+usage: python.exe -m codesentinel.cli status [-h]
+
+options:
+  -h, --help  show this help message and exit
+
+--------------------------------------------------------------------------------
+[Help View: AGENT] :: Agent View (agent)
+Automation forced on. Displays agent-first flags and reminders.
+Agent Integration: NOT-APPLICABLE
+Mode source: agent. Export ORACL_MODE=agent to enable automation.
+--------------------------------------------------------------------------------
+============================================================
+[Help View: HYBRID] :: Hybrid View (mode: auto)
+Auto mode defers to policy: manual by default, agent when cleared.
+Agent Integration: NOT-APPLICABLE
+Mode source: auto. Remove ORACL_MODE to fall back to policy-based switching.
+============================================================
+usage: python.exe -m codesentinel.cli status [-h]
+
+options:
+  -h, --help  show this help message and exit
+
+--------------------------------------------------------------------------------
+[Help View: HYBRID] :: Hybrid View (auto)
+Auto mode defers to policy: manual by default, agent when cleared.
+Agent Integration: NOT-APPLICABLE
+Mode source: auto. Remove ORACL_MODE to fall back to policy-based switching.
+--------------------------------------------------------------------------------
+============================================================
+[Help View: HYBRID] :: Hybrid View (mode: auto)
+Auto mode defers to policy: manual by default, agent when cleared.
+Agent Integration: NOT-APPLICABLE
+Mode source: auto. Remove ORACL_MODE to fall back to policy-based switching.
+============================================================
+usage: python.exe -m codesentinel.cli status [-h]
+
+options:
+  -h, --help  show this help message and exit

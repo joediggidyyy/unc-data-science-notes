@@ -1,0 +1,71 @@
+{
+  "checksum": "21d2d35353116344a5313f390f710b8c95d0d42f82a188d1cf182e49e1b5861d",
+  "metadata": {},
+  "sections": [
+    {
+      "content": "**Classification**: T4b - Infrastructure & Procedural Agent Documentation  \n**Domain**: Infrastructure Operations  \n**Version**: 1.0  \n**Status**: ACTIVE  \n**Effective Date**: 2025-11-25  \n**Next Review**: 2026-02-25  \n**Owner**: System Architect\n\n---\n",
+      "name": "Infrastructure Operations - Agent Instructions"
+    },
+    {
+      "content": "This instruction set contains the following sections:\n\n- Introduction\n- Authority Matrix\n- Procedures\n- Machine-Readable Policy\n\n---\n\n*This document is auto-generated from the canonical JSON source: `infrastructure/AGENT_INSTRUCTIONS.json`*  \n*Content Hash: -715700941109346319*\n    - Create a new directory for the module under `infrastructure/modules/` (e.g., `secure-s3-bucket`).\n    - Implement the core logic in `main.tf`.\n    - **Add a `README.md`**: This is mandatory. The README must contain:\n        - A description of what the module does.\n        - All input variables and their purpose.\n        - All outputs.\n        - A clear example of how to use the module.\n\n3. **Implement Versioning and Tagging**:\n    - Add a `versions.tf` file to pin the required Terraform and provider versions.\n    - Ensure all resources created by the module are tagged with the module's name and version for traceability.\n\n4. **Write Tests and Examples**:\n    - Create an `examples/` directory within the module folder.\n    - Provide at least one working example of how to instantiate the module.\n    - Use a simple test framework or a separate Terraform configuration to provision and destroy the module's resources to ensure it works as expected.\n\n5. **Submit for Review**:\n    - Open a Pull Request. An **L3 (Senior Dev)** must review the module for:\n        - **Correctness**: Does it provision the correct resources?\n        - **Security**: Does it follow the principle of least privilege? Are resources secure by default?\n        - **Reusability**: Is it generic enough to be used in different contexts?\n        - **Documentation**: Is the `README.md` clear and complete?\n",
+      "name": "Document Sections"
+    },
+    {
+      "content": "**When**: A high-risk operation is required that directly manipulates the Terraform state file, such as importing an existing resource or resolving state drift. These operations are dangerous and require architect-level approval.\n\n**Steps**:\n\n1. **Emergency and Approval**:\n    - State manipulation is an emergency-only procedure. It should never be part of a standard workflow.\n    - Obtain explicit approval from an **L4 (Architect)** before proceeding. The justification must be documented in a GitHub issue.\n\n2. **Backup the State**:\n    - Before any operation, manually create a backup of the remote state file. The remote backend (e.g., S3 bucket) should have versioning enabled, but a manual backup provides an extra layer of safety.\n\n3. **Use a Dedicated, Locked Workspace**:\n    - Perform the state operation on a clean, isolated machine or container.\n    - Ensure state locking is active to prevent anyone else from running `apply` while you are manipulating the state.\n\n4. **Execute the State Command**:\n    - Use the appropriate `terraform state` subcommand (e.g., `mv`, `rm`, `replace-provider`).\n    - **For `terraform import`**:\n        - Write the resource configuration block in your `.tf` code first.\n        - Run `terraform import <RESOURCE_ADDRESS> <RESOURCE_ID>`.\n        - Run `terraform plan` immediately after to verify that Terraform now sees the imported resource as being under its control and that there are no differences.\n\n5. **Verify and Document**:\n    - After the operation, run `terraform plan` to confirm the state file accurately reflects the desired reality and that no further changes are planned.\n    - Document the entire procedure, including the commands run and the reasons for the operation, in the corresponding GitHub issue.\n\n---\n",
+      "name": "Procedure 3: Manage Terraform State"
+    },
+    {
+      "content": "**When**: A security vulnerability is detected in the IaC code, either by the automated CI pipeline scanner or a manual audit.\n\n**Steps**:\n\n1. **Automated Scanning in CI**:\n    - The CI pipeline is configured to run a static analysis security scanner (e.g., `tfsec`, `checkov`) on every Pull Request that modifies `.tf` files.\n    - The pipeline will fail if any **CRITICAL** or **HIGH** severity vulnerabilities are detected.\n\n2. **Triage and Prioritize Findings**:\n    - Review the scanner's output in the failed CI job.\n    - **CRITICAL/HIGH**: These must be remediated immediately. The PR cannot be merged until they are fixed.\n    - **MEDIUM/LOW**: Create a GitHub issue to track the finding. These should be addressed in a timely manner but do not block the merge unless they violate a specific policy.\n\n3. **Remediate the Vulnerability**:\n    - Modify the IaC code to fix the issue. This often involves:\n        - Applying more restrictive IAM policies.\n        - Closing open ports in security groups.\n        - Enabling encryption or logging on resources.\n    - Push the fix to the PR branch. The CI pipeline will re-run, and the scan should now pass.\n\n4. **Handling False Positives**:\n    - If a finding is determined to be a false positive, you must explicitly ignore it.\n    - Add a comment directly above the resource in the `.tf` file (e.g., `#tfsec:ignore:aws-s3-enable-bucket-logging`).\n    - The comment must include a clear justification for why the finding is being ignored. This creates an auditable record.\n\n5. **Regular Audits**:\n    - In addition to PR scans, a full scan of the `main` branch is run on a weekly schedule.\n    - This process ensures that new vulnerability definitions from the scanner are applied to the existing codebase and helps catch anything that might have been missed. Any findings from this audit are tracked as new GitHub issues.\n\n---\n",
+      "name": "Procedure 4: Handle Infrastructure Security Scans"
+    },
+    {
+      "content": "Use this tree to determine the correct procedure for common tasks.\n\n- **Is the task a change to existing infrastructure?**\n  - **YES**: Go to **Procedure 1: Plan and Apply Infrastructure Changes**.\n- **Is the task creating a new, reusable component?**\n  - **YES**: Go to **Procedure 2: Create a Reusable IaC Module**.\n- **Does the task involve `terraform state` commands or importing resources?**\n  - **YES**: Go to **Procedure 3: Manage Terraform State**. This is a high-risk operation.\n- **Is the task related to checking for security vulnerabilities?**\n  - **YES**: Go to **Procedure 4: Handle Infrastructure Security Scans**.\n\n---\n",
+      "name": "4. Quick Decision Tree"
+    },
+    {
+      "content": "**Incident Reference:** `INC-CIDS-20251209-001` \u2014 A rogue agent stopped critical network services, causing full secured network outage.\n\nThe CIDS Edge Router (`203.0.113.10`) is a CRITICAL infrastructure component. The following operations are **PROHIBITED** without explicit joediggidyyy approval:\n",
+      "name": "5. CIDS Edge Node Protection (Critical)"
+    },
+    {
+      "content": "| Action | Risk Level | Consequence |\n|--------|------------|-------------|\n| `systemctl stop cids-killswitch` | **CRITICAL** | Full secured network outage |\n| `systemctl stop hostapd` | **CRITICAL** | AP goes down, all clients disconnected |\n| `systemctl stop dnsmasq` | **HIGH** | No DHCP, clients can't get IPs |\n| `ip route del ... table 200` | **CRITICAL** | VPN routing broken |\n| `ip route flush table 200` | **CRITICAL** | VPN routing broken |\n| `iptables -F` (flush rules) | **CRITICAL** | Firewall disabled, security breach |\n| Deleting files in `/etc/codesentinel/cids/` | **HIGH** | Configuration loss |\n| Modifying `/etc/hostapd/hostapd.conf` | **HIGH** | AP misconfiguration |\n| Stopping NordVPN or `nordlynx` interface | **CRITICAL** | VPN tunnel down |\n",
+      "name": "5.1 Prohibited Actions"
+    },
+    {
+      "content": "These operations are safe and agents may perform them:\n\n- `systemctl status <service>` \u2014 Check service status\n- `journalctl -u <service>` \u2014 View service logs\n- `ip route show table 200` \u2014 Inspect routing (read-only)\n- `iptables -L` \u2014 List firewall rules (read-only)\n- `hostapd_cli -i wlx289401b13bec all_sta` \u2014 List connected clients\n- `cat /var/lib/misc/dnsmasq.leases` \u2014 View DHCP leases\n- Deploying new CIDS dashboard code (with proper testing)\n- Updating whitelist files (with backup)\n",
+      "name": "5.2 Pre-Approved Safe Operations"
+    },
+    {
+      "content": "If an agent needs to restore network connectivity:\n\n```bash\n",
+      "name": "5.3 Emergency Recovery Commands"
+    },
+    {
+      "content": "sudo ip route add default dev nordlynx table 200\nsudo ip route flush cache\n",
+      "name": "1. Restore VPN routing (if table 200 is empty)"
+    },
+    {
+      "content": "sudo systemctl restart cids-killswitch\nsudo systemctl restart hostapd\nsudo systemctl restart dnsmasq\n",
+      "name": "2. Restart critical services"
+    },
+    {
+      "content": "ip route show table 200  # Should show: default dev nordlynx\nsystemctl is-active cids-killswitch  # Should show: active\n```\n",
+      "name": "3. Verify"
+    },
+    {
+      "content": "Use these pre-approved diagnostic scripts instead of ad-hoc commands:\n\n| Script | Purpose |\n|--------|---------|\n| `tools/codesentinel/ops/cids_network_block_diagnostics.py` | Full network diagnosis |\n| `tools/codesentinel/ops/cids_ap_diagnostics.py` | AP/WiFi diagnosis |\n| `tools/codesentinel/ops/edge_killswitch_manager.ps1` | Killswitch status check |\n\n---\n",
+      "name": "5.4 Diagnostic Scripts"
+    },
+    {
+      "content": "Before submitting any infrastructure-related Pull Request, ensure it meets these criteria.\n\n**Code Quality**:\n\n- [ ] `terraform fmt -recursive` has been run.\n- [ ] `terraform validate` passes.\n- [ ] Variables and outputs are well-documented.\n- [ ] No hardcoded secrets or sensitive values.\n- [ ] Code is modular and follows DRY principles.\n\n**Security**:\n\n- [ ] `tfsec` or equivalent scan passes with no CRITICAL/HIGH findings.\n- [ ] IAM policies follow the principle of least privilege.\n- [ ] Security groups are restrictive and expose no unnecessary ports.\n- [ ] Data is encrypted at rest and in transit.\n- [ ] Logging and monitoring are enabled for all resources.\n\n**Documentation**:\n\n- [ ] PR description clearly explains the \"what\" and \"why\" of the change.\n- [ ] `terraform plan` output is included in the PR.\n- [ ] Any new modules have a `README.md` with usage examples.\n- [ ] Complex logic is commented in the code.\n\n**Compliance**:\n\n- [ ] Changes adhere to global policies (e.g., `POLICY.md`).\n- [ ] Resources are tagged according to the organization's tagging policy.\n- [ ] The change does not violate any compliance frameworks (e.g., SOC2, GDPR).\n\n---\n",
+      "name": "6. Validation Checklist"
+    },
+    {
+      "content": "**Q: What should I do if `terraform plan` shows unexpected changes?**\n\n**A**: Do NOT apply the plan. Investigate the root cause. It could be due to a provider update, manual changes in the cloud console (state drift), or incorrect code. Re-run the plan until it shows only the intended changes.\n\n**Q: How do I manage secrets like API keys or database passwords?**\n\n**A**: Use a dedicated secrets management tool like HashiCorp Vault or AWS Secrets Manager. Terraform should reference these secrets, not store them in state or version control.\n\n**Q: Can I make a \"quick fix\" in the cloud console?**\n\n**A**: No. All changes must go through the IaC workflow. Manual changes create state drift, are not peer-reviewed, and are not auditable. If an emergency fix is required, it must be immediately followed by a PR to codify the change.\n\n**Q: What's the difference between a module and a resource?**\n\n**A**: A resource is a single infrastructure object (e.g., an AWS S3 bucket). A module is a collection of resources that are used together to create a reusable component (e.g., a module to create a secure S3 bucket with logging and encryption).\n\n**Q: How do we handle provider updates?**\n\n**A**: Provider updates should be handled cautiously in a separate PR. Run `terraform plan` after updating the provider version to check for any breaking changes. Apply to staging first and run a full suite of integration tests.\n\n---\n",
+      "name": "6. Q&A / Common Questions"
+    },
+    {
+      "content": "This satellite is the **single source of truth** for infrastructure operations.\n\n**Policy & Governance**:\n\n- Global Policy: `POLICY.md`\n- Document Classification: `DOCUMENT_CLASSIFICATION.md`\n- Agent Instruction Strategy: `AGENT_INSTRUCTION_STRATEGY.md`\n\n**Tools & Documentation**:\n\n- Terraform: <https://www.terraform.io/docs>\n- tfsec: <https://github.com/aquasecurity/tfsec>\n- Checkov: <https://www.checkov.io/>\n\n**CodeSentinel References**:\n\n- Repository: <https://github.com/joediggidyyy/CodeSentinel>\n- Deployment Satellite: `deployment/AGENT_INSTRUCTIONS.md`\n- GitHub Satellite: `github/AGENT_INSTRUCTIONS.md`\n",
+      "name": "7. References"
+    }
+  ],
+  "title": "Infrastructure Operations - Agent Instructions"
+}
