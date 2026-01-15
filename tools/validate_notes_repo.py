@@ -114,6 +114,7 @@ DEFAULT_EXCLUDES: Set[str] = {
     "__pycache__",
     ".ruff_cache",
     "logs",
+    "howtos_installed",
     "quarantine_legacy_archive",
     "archive",
     "temp",

@@ -1,14 +1,17 @@
 cff-version: 1.2.0
 message: "If you use these notes, please cite them."
-title: "Public Class Notes (Dyslexia-Friendly)"
+title: "UNC Data Science Notes"
 authors:
-  - family-names: "REPLACE_WITH_YOUR_LAST_NAME"
-    given-names: "REPLACE_WITH_YOUR_FIRST_NAME"
-repository-code: "https://github.com/OWNER/REPO"
-url: "https://github.com/OWNER/REPO"
+  - family-names: "Waller"
+    given-names: "Joe"
+repository-code: "https://github.com/joediggidyyy/unc-data-science-notes"
+url: "https://github.com/joediggidyyy/unc-data-science-notes"
 license: "CC-BY-4.0"
-abstract: "Student-authored class notes formatted for readability and dyslexia-friendliness."
+abstract: "Student-authored class notes formatted for readability and dyslexia-friendliness.This repository contains notes from various courses in the UNC Data Science curriculum, organized by term and course. The notes are intended to be a resource for students and practitioners of data science, with a focus on accessibility and clarity. The dyslexia-friendly formatting includes features such as larger fonts, increased spacing, and color-coding to enhance readability for individuals with dyslexia. These formatting choices are based on what works best for the author, and is not guarateen to be effective for all users."
 keywords:
   - "class notes"
+  - "data science"
+  - "education"
+  - "university of north carolina"
   - "accessibility"
   - "dyslexia"

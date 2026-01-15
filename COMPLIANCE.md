@@ -60,9 +60,7 @@ To list approved entries:
 
 - `python tools/approve_artifacts.py --list`
 
-## Recommended disclaimers
-
-Place these in the repo `README.md` (or top-level index):
+## Additional disclaimers
 
 - These are unofficial student-authored notes.
 - Do not use this repo to violate course/instructor policies.

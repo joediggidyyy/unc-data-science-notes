@@ -14,6 +14,12 @@ desktop.ini
 *.tmp
 *.bak
 
+# Local scratch / extracted bundles
+temp/
+
+# Accidental nested repo copies
+unc-data-science-notes/
+
 # Local-only working area (planning drafts, snapshots, staging)
 local_untracked/
 
@@ -26,6 +32,13 @@ logs/
 
 # Reports are generated outputs (local-only; never publish)
 reports/
+
+# Semantics Vault local caches (keep the stable index files tracked; ignore snapshots/mirror caches)
+semantics_vault/oracl_index/snapshots/
+semantics_vault/oracl_index/mirrors/mirror_*/
+
+# CLI-generated instruction backups (local provenance; do not publish by default)
+quarantine_legacy_archive/backups/AGENT_INSTRUCTIONS_*_cli-*.md
 
 # Python
 __pycache__/

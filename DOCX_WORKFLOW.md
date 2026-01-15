@@ -5,7 +5,7 @@ This repository supports authoring notes in Microsoft Word `.docx`.
 This repo intentionally allows storing original artifacts (PDF/DOCX) alongside the
 Markdown for convenient download and cross-checking.
 
-Recommended structure (example):
+Structure (example):
 
 - `notes/<Term>/<Course>/<WeekXX>/...` (Markdown + original artifacts)
 - `notes/<Term>/<Course>/<WeekXX>/docx/` (optional: source `.docx` files)

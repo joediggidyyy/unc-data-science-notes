@@ -2,17 +2,19 @@
 
 Index of `notes/` organized by term/course/week.
 
-Last updated (UTC): 2026-01-14T07:06:56+00:00
+Last updated (UTC): 2026-01-15T05:05:44+00:00
 
 ## Spring_2026
 
 ### DATA740
 
 - [Week01](Spring_2026/DATA740/Week01/)
+- [Week02](Spring_2026/DATA740/Week02/)
 
 ### DATA750
 
 - [Week01](Spring_2026/DATA750/Week01/)
+- [Week02](Spring_2026/DATA750/Week02/)
 
 ### DATA780
 
