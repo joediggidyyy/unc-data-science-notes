@@ -33,12 +33,13 @@ logs/
 # Reports are generated outputs (local-only; never publish)
 reports/
 
-# Semantics Vault local caches (keep the stable index files tracked; ignore snapshots/mirror caches)
-semantics_vault/oracl_index/snapshots/
-semantics_vault/oracl_index/mirrors/mirror_*/
-
-# CLI-generated instruction backups (local provenance; do not publish by default)
-quarantine_legacy_archive/backups/AGENT_INSTRUCTIONS_*_cli-*.md
+# Pruned from public repo (keep local only)
+quarantine_legacy_archive/
+semantics_vault/
+docs/
+deployment/
+infrastructure/
+github/
 
 # Python
 __pycache__/
