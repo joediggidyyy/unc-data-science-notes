@@ -40,25 +40,40 @@ triggering warnings.
 
 - Manifest: `approved_artifacts.json` (tracked)
 - Approval is **pinned by SHA256**.
-	- If the file changes, the SHA changes, and it must be re-approved.
-- The validator behavior:
-	- Unapproved images: `WARN` (manual privacy review required)
-	- Approved images (path + SHA256 match): `INFO` (no further scrutiny required)
+
+If the file changes, the SHA changes, and it must be re-approved.
+
+Validator behavior (summary):
+
+- Unapproved images: `WARN` (manual privacy review required)
+- Approved images (path + SHA256 match): `INFO` (no further scrutiny required)
 
 ### Approving an artifact
 
 After CodeSentinel review approves an image (or other high-risk binary), add it
 to the manifest:
 
-- `python tools/approve_artifacts.py --category image --path notes/.../image.png --note "Reviewed by CodeSentinel"`
+```text
+python tools/approve_artifacts.py --category image --path notes/.../image.png --note "Reviewed by CodeSentinel"
+```
 
-To remove an approval:
+Interactive review menu (new/unapproved images):
 
-- `python tools/approve_artifacts.py --remove --path notes/.../image.png`
+```text
+python tools/approve_artifacts.py --interactive
+```
 
-To list approved entries:
+Remove an approval:
 
-- `python tools/approve_artifacts.py --list`
+```text
+python tools/approve_artifacts.py --remove --path notes/.../image.png
+```
+
+List approved entries:
+
+```text
+python tools/approve_artifacts.py --list
+```
 
 ## Additional disclaimers
 

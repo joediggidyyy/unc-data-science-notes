@@ -4,7 +4,7 @@ Experimental conversion helper for this notes repository.
 
 Goal
 - Convert in-repo source documents (primarily .docx) into readable Markdown that
-  renders well on GitHub, while preserving formatting *as much as Markdown can*.
+    renders well on GitHub, while preserving formatting *as much as Markdown can*.
 
 Reality check (important)
 - Markdown cannot represent every Word layout feature (precise spacing,
@@ -60,6 +60,9 @@ def _iter_files(root: Path, *, suffixes: Sequence[str]) -> Iterable[Path]:
     sufset = {s.lower() for s in suffixes}
     for p in root.rglob("*"):
         if not p.is_file():
+            continue
+        # Skip Word lock/temp files (e.g., "~$lecture.docx"). These are not real documents.
+        if p.name.startswith("~$"):
             continue
         if p.suffix.lower() in sufset:
             yield p
@@ -307,21 +310,6 @@ def _default_media_dir_for_src(src: Path, *, media_dir_name: str) -> Path:
     return src.parent / media_dir_name / src.stem
 
 
-def _make_pdf_stub_md(pdf: Path, dst: Path, pdf_rel: str) -> str:
-    # GitHub generally renders PDFs in the browser when clicked, so a link is the
-    # most portable approach.
-    lines: List[str] = []
-    lines.append(f"# {pdf.stem}")
-    lines.append("")
-    lines.append("This page links to the PDF version of these notes.")
-    lines.append("")
-    lines.append(f"- PDF: [{pdf.name}]({pdf_rel})")
-    lines.append("")
-    lines.append("> The PDF is the best reference for layout and formatting.")
-    lines.append("")
-    return "\n".join(lines) + "\n"
-
-
 def _find_related_asset(
     *,
     src: Path,
@@ -390,7 +378,7 @@ def _render_reference_header(*, dst: Path, pdf: Optional[Path], docx: Optional[P
 
 def _parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
     p = argparse.ArgumentParser(
-        description="Convert DOCX/PDF assets under notes/ into Markdown for GitHub rendering (best-effort)."
+        description="Convert DOCX assets under notes/ into Markdown for GitHub rendering (best-effort)."
     )
     p.add_argument(
         "--repo-root",
@@ -421,7 +409,6 @@ def _parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
             "Overrides PATH lookup. You can also set PANDOC_PATH env var."
         ),
     )
-    p.add_argument("--include-pdf-stubs", action="store_true", help="Create Markdown stub pages for PDFs")
     p.add_argument("--front-matter", action="store_true", help="Prepend minimal YAML front-matter to generated Markdown")
     p.add_argument("--redact-emails", action="store_true", help="Redact email addresses from generated Markdown")
     p.add_argument("--force", action="store_true", help="Overwrite existing output .md files")
@@ -450,12 +437,11 @@ def main(argv: Optional[List[str]] = None) -> int:
         return 0
 
     docx_files = sorted(_iter_files(notes_root, suffixes=[".docx"]))
-    pdf_files = sorted(_iter_files(notes_root, suffixes=[".pdf"]))
 
     if ns.preflight:
         # Preflight should be safe/no-write and focused on actionable prerequisites.
         if ns.verbose:
-            print(f"[convert] preflight: docx_count={len(docx_files)} pdf_count={len(pdf_files)}")
+            print(f"[convert] preflight: docx_count={len(docx_files)}")
 
         if docx_files:
             pandoc = _detect_pandoc(ns.pandoc_path)
@@ -465,13 +451,12 @@ def main(argv: Optional[List[str]] = None) -> int:
             if ns.verbose:
                 print(f"[convert] preflight OK: pandoc={pandoc}")
 
-        # PDFs do not require an external tool for stub generation.
         return 0
 
     if ns.verbose:
         print(f"[convert] repo_root={repo_root}")
         print(f"[convert] notes_root={notes_root}")
-        print(f"[convert] docx_count={len(docx_files)} pdf_count={len(pdf_files)}")
+        print(f"[convert] docx_count={len(docx_files)}")
         print(f"[convert] output_mode={ns.output_mode} dry_run={ns.dry_run} force={ns.force}")
 
     # DOCX -> MD
@@ -534,36 +519,6 @@ def main(argv: Optional[List[str]] = None) -> int:
         conversions_ok += 1
         if ns.verbose:
             print(f"[convert] OK: {_safe_relpath(src, repo_root)} -> {_safe_relpath(dst, repo_root)}")
-
-    # PDF stub pages (optional)
-    if ns.include_pdf_stubs:
-        for pdf in pdf_files:
-            dst = _default_dst_for_src(pdf, mode=ns.output_mode)
-            if dst.exists() and not ns.force:
-                if ns.verbose:
-                    print(f"[convert] skip existing: {_safe_relpath(dst, repo_root)}")
-                continue
-
-            # Link relative to the stub location.
-            try:
-                pdf_rel = os.path.relpath(str(pdf), start=str(dst.parent)).replace("\\", "/")
-            except Exception:
-                pdf_rel = pdf.name
-
-            if ns.dry_run:
-                print(f"[convert] would create PDF stub: {_safe_relpath(dst, repo_root)} -> link {pdf_rel}")
-                continue
-
-            related_docx = _find_related_asset(src=pdf, notes_root=notes_root, target_suffix=".docx")
-            header = _render_reference_header(dst=dst, pdf=pdf, docx=related_docx)
-            content = header + _make_pdf_stub_md(pdf, dst, pdf_rel)
-            if ns.front_matter:
-                src_rel = _safe_relpath(pdf, repo_root)
-                content = _render_front_matter(src_rel, engine="pdf-stub") + content
-            content = _normalize_md(content)
-            if ns.redact_emails:
-                content = _redact_emails(content)
-            _write_text(dst, content, dry_run=False)
 
     if ns.verbose:
         print(f"[convert] attempted={conversions_attempted} ok={conversions_ok}")

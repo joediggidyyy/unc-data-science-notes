@@ -15,11 +15,24 @@ Thanks for helping improve these notes.
 - Follow `ACCESSIBILITY.md` and `STYLE_GUIDE.md`.
 - Keep changes focused and easy to review.
 
-If your change adds images or other flagged binaries:
+## Images and other flagged files
+
+If your change adds images (or other flagged binaries):
 
 - Expect the validator to warn until CodeSentinel review approves the file.
-- After approval, add the artifact to `approved_artifacts.json` using:
-	- `python tools/approve_artifacts.py --category image --path notes/.../image.png --note "Reviewed by CodeSentinel"`
+- After approval, add the artifact to `approved_artifacts.json`.
+
+Approve a specific file:
+
+```text
+python tools/approve_artifacts.py --category image --path notes/.../image.png --note "Reviewed by CodeSentinel"
+```
+
+Interactive review menu (new/unapproved images):
+
+```text
+python tools/approve_artifacts.py --interactive
+```
 
 ## Content rules
 
@@ -31,11 +44,15 @@ If your change adds images or other flagged binaries:
 
 Before requesting review, please run:
 
-- `python maintain.py`
+```text
+python maintain.py
+```
 
 For publish-readiness checks (may fail until approvals are recorded):
 
-- `python maintain.py --strict`
+```text
+python maintain.py --strict
+```
 
 Note: `reports/` is generated locally and is not committed.
 

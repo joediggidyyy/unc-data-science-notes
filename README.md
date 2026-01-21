@@ -21,6 +21,14 @@ Example:
 
 `notes/Spring_2026/DATA780/Week02/`
 
+Week folders are intentionally kept simple:
+
+- `notes/<Term>/<Course>/<WeekXX>/` contains **PDFs** (and other viewable artifacts).
+- `notes/<Term>/<Course>/<WeekXX>/docx/` contains Word source files and any generated Markdown/media.
+
+We do **not** generate PDF-to-Markdown "stub" pages. GitHub renders PDFs well enough, and keeping
+Week roots free of extra `.md` files makes the tree easier to scan.
+
 ## Public-sharing expectations
 
 - These notes are original and written in my own words.
@@ -35,16 +43,64 @@ file changes.
 
 ## Maintenance
 
-This repository includes a small maintenance script that refreshes navigation files and runs a conservative privacy/integrity check:
+The maintenance wrapper refreshes navigation files and runs a conservative privacy/integrity check.
 
-- `python maintain.py`
+It can also auto-generate missing Markdown siblings for `.docx` files under `notes/`
+(Pandoc required).
 
-Before publishing major updates, strict mode is recommended:
+### Run maintenance
 
-- `python maintain.py --strict`
+```text
+python maintain.py
+```
 
-Generated reports are written to `reports/` and are **not published** (the folder
-is ignored by git).
+### Publish-readiness (strict)
+
+Strict mode treats validator warnings as failures.
+
+```text
+python maintain.py --strict
+```
+
+### Image approvals
+
+Images are treated as **high-risk** for public sharing.
+
+If unapproved images are detected, `maintain.py` can show a review menu in an
+interactive terminal.
+
+No images are approved automatically.
+Approvals only happen when you choose an approve action.
+
+Approvals are pinned (by SHA256) in `approved_artifacts.json`.
+If a file changes, it must be re-approved.
+
+#### During maintenance
+
+- Interactive terminal: show a menu (approve all / list / review one-by-one / skip).
+- CI or non-interactive sessions: print a list (no prompting).
+
+#### Maintenance flags
+
+```text
+python maintain.py --image-approval off
+python maintain.py --list-new-images
+python maintain.py --approve-all-new-images
+```
+
+#### Standalone approvals (without running maintenance)
+
+```text
+python tools/approve_artifacts.py --interactive
+python tools/approve_artifacts.py --path notes/.../image.png --note "Reviewed"
+python tools/approve_artifacts.py --all-images --under notes --note "Reviewed"   # unsafe
+python tools/approve_artifacts.py --list
+```
+
+### Reports (local-only)
+
+Generated reports are written to `reports/` and are **not published**.
+The `reports/` folder is ignored by git.
 
 <!-- AUTO-GENERATED:START (repo-docs) -->
 ## Notes navigation
@@ -53,3 +109,11 @@ is ignored by git).
 
 (Navigation links are maintained automatically.)
 <!-- AUTO-GENERATED:END (repo-docs) -->
+
+## Alpha/Beta testing (volunteers)
+
+We’re seeking volunteers to test early changes for CodeSentinel, ORACL, and CIDS.
+
+- Start a GitHub Discussion titled `Alpha/Beta Testing Interest`.
+- Do not post PII, secrets, private logs, private network data, or prohibited materials.
+- Early-stage; no funding/compensation at this time.

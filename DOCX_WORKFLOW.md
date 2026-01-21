@@ -57,15 +57,26 @@ Run the validator before publishing:
 Notes:
 
 - Images are flagged for manual privacy review until approved.
-  - After CodeSentinel review approves an image, add it to `approved_artifacts.json`
-    (pinned by SHA256) using `tools/approve_artifacts.py`.
+
+Approve a specific image:
+
+```text
+python tools/approve_artifacts.py --category image --path notes/.../image.png --note "Reviewed"
+```
+
+Interactive review menu (new/unapproved images):
+
+```text
+python tools/approve_artifacts.py --interactive
+```
+
 - Reports are written to `reports/` but are local-only (ignored by git).
 
 ## One-command workflow (optional conversion)
 
 If you want conversion to be part of your routine pre-publish workflow, the maintenance wrapper supports an opt-in conversion step:
 
-- `python maintain.py --convert-assets --include-pdf-stubs --front-matter`
+- `python maintain.py --convert-assets --front-matter`
 
 This remains **OFF by default** so you can control when generated Markdown gets written.
 
@@ -74,7 +85,6 @@ This remains **OFF by default** so you can control when generated Markdown gets 
 The repo includes a stdlib-only test suite that performs:
 
 - a no-write dry-run check
-- a live PDF stub write test
 - a live DOCX -> MD conversion test (auto-skips if Pandoc cannot be found)
 
 Run from the repo root:

@@ -115,38 +115,14 @@ class TestConvertAssetsToMarkdown(unittest.TestCase):
             _write_minimal_pdf(pdf)
 
             out_docx_md = docx.with_suffix(".md")
-            out_pdf_stub_md = pdf.with_suffix(".md")
 
             cp = _run_converter(
                 repo_root=root,
-                args=["--dry-run", "--verbose", "--include-pdf-stubs", "--front-matter"],
+                args=["--dry-run", "--verbose", "--front-matter"],
             )
             self.assertEqual(cp.returncode, 0, msg=cp.stderr or cp.stdout)
 
             self.assertFalse(out_docx_md.exists(), "dry-run must not create DOCX markdown")
-            self.assertFalse(out_pdf_stub_md.exists(), "dry-run must not create PDF stub markdown")
-
-    def test_pdf_stub_written_with_front_matter(self) -> None:
-        with tempfile.TemporaryDirectory() as td:
-            root = Path(td)
-            notes = root / "notes" / "Semester" / "COURSE" / "Week01"
-            pdf = notes / "lecture.pdf"
-            _write_minimal_pdf(pdf)
-
-            out_stub = pdf.with_suffix(".md")
-
-            cp = _run_converter(
-                repo_root=root,
-                args=["--verbose", "--include-pdf-stubs", "--front-matter"],
-            )
-            self.assertEqual(cp.returncode, 0, msg=cp.stderr or cp.stdout)
-            self.assertTrue(out_stub.exists(), "expected PDF stub markdown to be created")
-
-            text = out_stub.read_text(encoding="utf-8")
-            self.assertIn("---", text, "expected YAML front matter")
-            self.assertIn("engine: pdf-stub", text)
-            self.assertIn("Open the PDF", text)
-            self.assertIn("lecture.pdf", text)
 
     def test_preflight_requires_pandoc_when_docx_exists(self) -> None:
         with tempfile.TemporaryDirectory() as td:

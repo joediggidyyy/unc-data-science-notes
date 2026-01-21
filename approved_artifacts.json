@@ -1,5 +1,23 @@
 {
   "approved": {
+    "notes/Spring_2026/DATA740/Week01/docx/generated_images/ChatGPT Image Jan 7, 2026, 08_34_03 PM.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "25ab0a422134d08a77f4c9eff7380ec725588c041c1808de5b9b3dbaba42970e"
+    },
+    "notes/Spring_2026/DATA740/Week01/docx/generated_images/ChatGPT Image Jan 7, 2026, 09_52_51 PM.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "fee96428c2262c02088814e98bd442d6595679865fcb94dc3eddf0a65aae784d"
+    },
+    "notes/Spring_2026/DATA740/Week01/docx/generated_images/ChatGPT Image Jan 7, 2026, 09_56_20 PM.png": {
+      "approved_utc": "2026-01-14T06:09:22Z",
+      "category": "image",
+      "notes": "Approved for publication (CodeSentinel review)",
+      "sha256": "e1a78675e3f208bd360d1d0aab22f66fa3b055b5c24bc10f94492be9bad0f518"
+    },
     "notes/Spring_2026/DATA740/Week01/docx/generated_media/DATA740_week1_notes/media/image1.png": {
       "approved_utc": "2026-01-14T06:09:22Z",
       "category": "image",
@@ -36,23 +54,59 @@
       "notes": "Approved for publication (CodeSentinel review)",
       "sha256": "0f1ef18a681b8abcf99fd7c561053c6648a7d25beeb6436c42a2828bd2779a1a"
     },
-    "notes/Spring_2026/DATA740/Week01/generated_images/ChatGPT Image Jan 7, 2026, 08_34_03 PM.png": {
-      "approved_utc": "2026-01-14T06:09:22Z",
+    "notes/Spring_2026/DATA740/Week02/docx/generated_media/DATA740_week2_notes/media/image1.png": {
+      "approved_utc": "2026-01-20T19:01:45Z",
       "category": "image",
-      "notes": "Approved for publication (CodeSentinel review)",
-      "sha256": "25ab0a422134d08a77f4c9eff7380ec725588c041c1808de5b9b3dbaba42970e"
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "614838b701cb28eeb38e50fa52f5cc52d4976dce11c79770de84b2d62459dcf1"
     },
-    "notes/Spring_2026/DATA740/Week01/generated_images/ChatGPT Image Jan 7, 2026, 09_52_51 PM.png": {
-      "approved_utc": "2026-01-14T06:09:22Z",
+    "notes/Spring_2026/DATA740/Week02/docx/generated_media/DATA740_week2_notes/media/image2.png": {
+      "approved_utc": "2026-01-20T19:01:45Z",
       "category": "image",
-      "notes": "Approved for publication (CodeSentinel review)",
-      "sha256": "fee96428c2262c02088814e98bd442d6595679865fcb94dc3eddf0a65aae784d"
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "2a11d5a1797ac8f9e33b164062a98e89b8b5f61549bcb8a1c02fd7ea83829b03"
     },
-    "notes/Spring_2026/DATA740/Week01/generated_images/ChatGPT Image Jan 7, 2026, 09_56_20 PM.png": {
-      "approved_utc": "2026-01-14T06:09:22Z",
+    "notes/Spring_2026/DATA740/Week02/docx/generated_media/DATA740_week2_notes/media/image3.png": {
+      "approved_utc": "2026-01-20T19:01:45Z",
       "category": "image",
-      "notes": "Approved for publication (CodeSentinel review)",
-      "sha256": "e1a78675e3f208bd360d1d0aab22f66fa3b055b5c24bc10f94492be9bad0f518"
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "7de9a7f1c1057a18d72a05dde89bd10bc4129d4b38f8c76f2d089950ea078601"
+    },
+    "notes/Spring_2026/DATA740/Week02/docx/generated_media/DATA740_week2_notes/media/image4.png": {
+      "approved_utc": "2026-01-20T19:01:45Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "7d62519b64a1f6ad82d4b2be3aa64712f8d6155bb59aeaea986523aa83d91221"
+    },
+    "notes/Spring_2026/DATA740/Week02/docx/generated_media/DATA740_week2_notes/media/image5.png": {
+      "approved_utc": "2026-01-20T19:01:45Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "7adcf6854355050262ce3fb2800cdc6dd85d0b9cca61afda942e30b0f7f2fbb8"
+    },
+    "notes/Spring_2026/DATA740/Week02/docx/generated_media/DATA740_week2_notes/media/image6.png": {
+      "approved_utc": "2026-01-20T19:01:45Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "a2ffedf0b0bfef3c8f4adef06e3a1cbae72e6f4c3aead04967577904a5c27292"
+    },
+    "notes/Spring_2026/DATA740/Week02/docx/generated_media/DATA740_week2_notes/media/image7.png": {
+      "approved_utc": "2026-01-20T19:01:45Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "1b111e41c36932f5e2e80dc10f72d1c606722a1f9170550bafdd3fa3ff088c85"
+    },
+    "notes/Spring_2026/DATA740/Week02/docx/generated_media/DATA740_week2_notes/media/image8.png": {
+      "approved_utc": "2026-01-20T19:01:45Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "fbaa32ef654682b90a4b244f98c61cfa265052dcfd87889421fc74c7e0865b43"
+    },
+    "notes/Spring_2026/DATA740/Week02/docx/generated_media/DATA740_week2_notes/media/image9.png": {
+      "approved_utc": "2026-01-20T19:01:45Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "b40023433776059bd07d6e078a81044e8b19b245e3cbd679b77e5f45192015cc"
     },
     "notes/Spring_2026/DATA750/Week01/docx/generated_media/DATA750_week1_notes/media/image1.png": {
       "approved_utc": "2026-01-14T06:09:22Z",
@@ -599,6 +653,144 @@
       "category": "image",
       "notes": "Approved for publication (CodeSentinel review)",
       "sha256": "3cf84356ee7c7d37f4b848325f1a73deaf029906bdcab0f3e213e91da0f814f9"
+    },
+    "notes/Spring_2026/DATA750/Week02/docx/generated_media/DATA750_week2_notes/media/image1.png": {
+      "approved_utc": "2026-01-20T19:01:45Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "abee80f1b052d9e1dc199a0be4bbab0ee4f58af3d5fe012c496eca922418388a"
+    },
+    "notes/Spring_2026/DATA750/Week02/docx/generated_media/DATA750_week2_notes/media/image10.png": {
+      "approved_utc": "2026-01-20T19:01:45Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "651be38bef0c4e65357c0397148577fc355e82b534861949761020036eb1592f"
+    },
+    "notes/Spring_2026/DATA750/Week02/docx/generated_media/DATA750_week2_notes/media/image11.png": {
+      "approved_utc": "2026-01-20T19:01:45Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "830fa1794b4423813c0fe1ba04d8e98c83dab62d3b34feca8b7981c6e914a3d8"
+    },
+    "notes/Spring_2026/DATA750/Week02/docx/generated_media/DATA750_week2_notes/media/image12.png": {
+      "approved_utc": "2026-01-20T19:01:45Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "0aa7f1c9c3198b400f5cfd1ae226f4661612a7d810af851a5e06e0d0bab30ae7"
+    },
+    "notes/Spring_2026/DATA750/Week02/docx/generated_media/DATA750_week2_notes/media/image13.png": {
+      "approved_utc": "2026-01-20T19:01:45Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "e81aced235031cec7601321f92743a76f14c66876859cefed0678b8a75981c73"
+    },
+    "notes/Spring_2026/DATA750/Week02/docx/generated_media/DATA750_week2_notes/media/image14.gif": {
+      "approved_utc": "2026-01-20T19:01:45Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "b1442e85b03bdcaf66dc58c7abb98745dd2687d86350be9a298a1d9382ac849b"
+    },
+    "notes/Spring_2026/DATA750/Week02/docx/generated_media/DATA750_week2_notes/media/image2.png": {
+      "approved_utc": "2026-01-20T19:01:45Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "3d1c00adc4eba4fe7a45c9f1e765ed273da6324722efc3562108f8ba15d21400"
+    },
+    "notes/Spring_2026/DATA750/Week02/docx/generated_media/DATA750_week2_notes/media/image3.png": {
+      "approved_utc": "2026-01-20T19:01:45Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "487cac43b8999149ff442e912c854588decf9b6b898a2287239189a46c48c901"
+    },
+    "notes/Spring_2026/DATA750/Week02/docx/generated_media/DATA750_week2_notes/media/image4.png": {
+      "approved_utc": "2026-01-20T19:01:45Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "eeaad2f6822ab5fc5ed3de9a605263a53f025a0419c3fef534dab745d968576e"
+    },
+    "notes/Spring_2026/DATA750/Week02/docx/generated_media/DATA750_week2_notes/media/image5.png": {
+      "approved_utc": "2026-01-20T19:01:45Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "35b10e4bb15b40f2108125c49d8e7759d8a8b4588fa0c15cda740953ae1fd24a"
+    },
+    "notes/Spring_2026/DATA750/Week02/docx/generated_media/DATA750_week2_notes/media/image6.png": {
+      "approved_utc": "2026-01-20T19:01:45Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "4b56499c9fd6e9076d3bbe2926a0db13e3d20671028a002426c36589846e9b96"
+    },
+    "notes/Spring_2026/DATA750/Week02/docx/generated_media/DATA750_week2_notes/media/image7.png": {
+      "approved_utc": "2026-01-20T19:01:45Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "658a28b6c76f6f4624c7e01fb0a09de5c37b2b3cb6e8bd5c0f7c09be4fd1d8a9"
+    },
+    "notes/Spring_2026/DATA750/Week02/docx/generated_media/DATA750_week2_notes/media/image8.png": {
+      "approved_utc": "2026-01-20T19:01:45Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "6420dc85e6c635e3fb86ef1dfeb169eb27809bae74be741510c8aeffb683fec6"
+    },
+    "notes/Spring_2026/DATA750/Week02/docx/generated_media/DATA750_week2_notes/media/image9.png": {
+      "approved_utc": "2026-01-20T19:01:45Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "54e2070289c61860a7bc1357a8c5b5ec01067d9f0eeab7ada18373c8e628bc24"
+    },
+    "notes/Spring_2026/DATA750/Week03/docx/generated_media/DATA750_week3_notes/media/image1.png": {
+      "approved_utc": "2026-01-21T22:15:29Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "cb094b4996f1c9146a2e6f89092fed8ce3a930f0e4ea246b68a43ac6da449f2d"
+    },
+    "notes/Spring_2026/DATA750/Week03/docx/generated_media/DATA750_week3_notes/media/image2.png": {
+      "approved_utc": "2026-01-21T22:15:29Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "c3eb1623e54e120144c60cbd2fb09441040fc267c63896622af987c095e9ace2"
+    },
+    "notes/Spring_2026/DATA750/Week03/docx/generated_media/DATA750_week3_notes/media/image3.png": {
+      "approved_utc": "2026-01-21T22:15:29Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "7ec4a0da9d118387f35de261f4d83b07a800366e545a854ed532c2b1edfa91a9"
+    },
+    "notes/Spring_2026/DATA750/Week03/docx/generated_media/DATA750_week3_notes/media/image4.png": {
+      "approved_utc": "2026-01-21T22:15:29Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "1805209cb0bb1f4c63ca539117501c78666b9421ba258ba3e3a4956d3d678f31"
+    },
+    "notes/Spring_2026/DATA780/Week01/docx/generated_media/DATA780_homework1_instructions/media/image1.png": {
+      "approved_utc": "2026-01-20T19:01:45Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "78cd536430b688b24980f0c0746b20a6596e20241b596cd11bc7b7a7d58c7abd"
+    },
+    "notes/Spring_2026/DATA780/Week01/docx/generated_media/DATA780_homework1_instructions/media/image2.png": {
+      "approved_utc": "2026-01-20T19:01:45Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "12640bd0abca73f058e9b23ac2f5b25b1b84ea06bd888825ee610707c0931d7b"
+    },
+    "notes/Spring_2026/DATA780/Week01/docx/generated_media/DATA780_homework1_instructions/media/image3.png": {
+      "approved_utc": "2026-01-20T19:01:45Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "2340a32a3aebf9ba1b4a4372d15ab00aa34866f5cbe1ea1aeb3753cf07db3039"
+    },
+    "notes/Spring_2026/DATA780/Week01/docx/generated_media/DATA780_homework1_instructions/media/image4.png": {
+      "approved_utc": "2026-01-20T19:01:45Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "7625be2c85e2ceeff2673f7b87fc6f3baefae42e562bb878a4d79ea3c6453487"
+    },
+    "notes/Spring_2026/DATA780/Week01/docx/generated_media/DATA780_homework1_instructions/media/image5.png": {
+      "approved_utc": "2026-01-20T19:01:45Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "b09fe1292b6cb1ffa458f2b79b6513a4322303a58d0c75905b5550d6ccbd2443"
     },
     "notes/Spring_2026/DATA780/Week01/docx/generated_media/DATA780_week1_notes/media/image1.png": {
       "approved_utc": "2026-01-14T06:09:22Z",
