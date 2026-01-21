@@ -210,6 +210,26 @@ def _iter_week_dirs(notes_root: Path) -> Iterable[Tuple[str, str, str, Path]]:
                 yield term, course, week, week_dir
 
 
+def _notes_week_dir_signature(repo_root: Path, notes_root: Path) -> List[str]:
+    """Return a stable signature of the notes week directory layout.
+
+    Why this exists:
+    - The repo-docs change detector is file-based.
+    - Creating a new week folder with *no files yet* (a common workflow) does not
+      register as a file change, so `notes/INDEX.md` would not be regenerated.
+
+    We track just the directory paths for notes/<Term>/<Course>/<WeekXX>/.
+    """
+
+    if not notes_root.exists():
+        return []
+
+    week_dirs: List[str] = []
+    for _term, _course, _week, week_dir in _iter_week_dirs(notes_root):
+        week_dirs.append(_safe_relpath(week_dir, repo_root))
+    return sorted(set(week_dirs))
+
+
 def _render_week_readme_md(term: str, course: str, week: str) -> str:
     lines: List[str] = []
     lines.append(f"# {course} - {week} ({term})")
@@ -498,6 +518,15 @@ def run(repo_root: Path, *, dry_run: bool, verbose: bool, scaffold_week_readmes:
 
     any_changes = bool(diff_pre["added"] or diff_pre["removed"] or diff_pre["modified"]) or (prev_generated_at is None)
 
+    # Directory-only changes under notes/ (e.g., new empty week folders) won't
+    # appear in the file manifest. Track them separately.
+    curr_week_dirs = _notes_week_dir_signature(repo_root, notes_root)
+    prev_week_dirs = prev_state.get("notes_week_dirs")
+    if not isinstance(prev_week_dirs, list):
+        prev_week_dirs = []
+    if prev_week_dirs != curr_week_dirs:
+        any_changes = True
+
     if verbose:
         # Avoid printing absolute local paths (helps prevent accidental leaks if
         # output is shared/screenshotted).
@@ -506,6 +535,8 @@ def run(repo_root: Path, *, dry_run: bool, verbose: bool, scaffold_week_readmes:
         prev_state_display = _safe_relpath(state_path, repo_root) if state_path.exists() else "(none)"
         print(f"[repo-docs] previous_state={prev_state_display}")
         print(f"[repo-docs] changes: +{len(diff_pre['added'])} ~{len(diff_pre['modified'])} -{len(diff_pre['removed'])}")
+        if prev_week_dirs != curr_week_dirs:
+            print(f"[repo-docs] notes week dirs changed: {len(prev_week_dirs)} -> {len(curr_week_dirs)}")
 
     if not any_changes and not scaffold_week_readmes:
         if verbose:
@@ -540,6 +571,7 @@ def run(repo_root: Path, *, dry_run: bool, verbose: bool, scaffold_week_readmes:
     # Persist state last so a partial run doesn't hide failures.
     curr_state_post = _compute_manifest(repo_root, exclude_dirs=exclude_dirs, exclude_files=exclude_files)
     diff_post = _diff_manifests(prev_state, curr_state_post)
+    curr_state_post["notes_week_dirs"] = curr_week_dirs
     _save_state(state_path, curr_state_post, dry_run=dry_run)
 
     # Reports: inventory + change report
