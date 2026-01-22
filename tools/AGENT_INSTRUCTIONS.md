@@ -7,8 +7,6 @@ Last Updated: 2026-01-14
 
 This repo is a public class-notes repository. The `tools/` directory contains **standard-library-only** scripts that support maintenance and validation.
 
-This file is **public and sanitized**. Do not add secrets, private/internal links, non-public procedures, or any personal information.
-
 ## Quick authority reference
 
 | Operation | Agent can do it? |

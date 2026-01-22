@@ -22,6 +22,8 @@ If someone is being a menace:
 
 The maintainer may remove content or restrict participation to keep the space safe and productive.
 
+(If you prefer a formal, widely-used policy, you can adopt the Contributor Covenant and link it here.)
+
 ## Student Code of Conduct
 
 For students in the UNC Data Science curriculum, this repository is a shared learning space. Please follow all guidelines outlined in the UNC Code of Conduct. For further information regarding steps taken to ensure compliance, see `COMPLIANCE.md` and [http://studentconduct.unc.edu](http://studentconduct.unc.edu).`

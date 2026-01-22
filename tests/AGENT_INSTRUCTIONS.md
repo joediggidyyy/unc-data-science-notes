@@ -7,8 +7,6 @@ Last Updated: 2026-01-14
 
 This repository's tests validate the maintenance and safety tooling (docs generation, validation scanning, asset conversion).
 
-This file is **public and sanitized**. Do not add secrets, private/internal links, non-public procedures, or any personal information.
-
 ## What matters most
 
 - The validator must be conservative: missing a PII/integrity issue is worse than flagging too much.
