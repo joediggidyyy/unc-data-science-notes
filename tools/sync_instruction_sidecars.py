@@ -34,36 +34,6 @@ from typing import Any, Dict, List, Optional, Tuple
 _HEADING_RE = re.compile(r"^(#{1,6})\s+(.*?)(?:\s+#+\s*)?$", re.MULTILINE)
 
 
-# Default: sync only public/tracked instruction files.
-# Local/private working areas (e.g., local_untracked/) are intentionally excluded unless explicitly requested.
-_DEFAULT_EXCLUDED_ROOTS = {
-    ".git",
-    ".agent_session",
-    ".venv",
-    ".venv_313",
-    ".venv_314",
-    ".venv-core",
-    "__pycache__",
-    "node_modules",
-    "temp",
-    "logs",
-    "reports",
-    "local_untracked",
-    "quarantine_legacy_archive",
-    "semantics_vault",
-}
-
-
-def _is_under_excluded_root(repo_root: Path, path: Path, excluded_roots: set[str]) -> bool:
-    try:
-        rel = path.resolve().relative_to(repo_root.resolve())
-    except Exception:
-        return True
-    if not rel.parts:
-        return False
-    return rel.parts[0] in excluded_roots
-
-
 def _normalize_md_text(text: str) -> str:
     # Normalize CRLF/CR -> LF for hashing + section extraction.
     return text.replace("\r\n", "\n").replace("\r", "\n")
@@ -140,21 +110,14 @@ def _write_json(path: Path, payload: Dict[str, Any], dry_run: bool) -> None:
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
 
 
-def _discover_all(repo_root: Path, *, include_local: bool) -> List[Path]:
+def _discover_all(repo_root: Path) -> List[Path]:
     paths: List[Path] = []
 
     copilot_md = repo_root / ".github" / "copilot-instructions.md"
     if copilot_md.exists():
         paths.append(copilot_md)
 
-    excluded_roots = set(_DEFAULT_EXCLUDED_ROOTS)
-    if include_local:
-        excluded_roots.discard("local_untracked")
-
-    for p in sorted(repo_root.rglob("AGENT_INSTRUCTIONS.md")):
-        if _is_under_excluded_root(repo_root, p, excluded_roots):
-            continue
-        paths.append(p)
+    paths.extend(sorted(repo_root.rglob("AGENT_INSTRUCTIONS.md")))
 
     # Keep only unique paths.
     uniq: List[Path] = []
@@ -172,11 +135,6 @@ def _parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Sync instruction Markdown/JSON sidecars")
     p.add_argument("--repo-root", default=None, help="Repo root (default: auto-detect)")
     p.add_argument("--all", action="store_true", help="Sync all instruction pairs in the repo")
-    p.add_argument(
-        "--include-local",
-        action="store_true",
-        help="Include local/private instruction files under ignored areas (e.g., local_untracked/) when using --all",
-    )
     p.add_argument("--paths", nargs="*", default=None, help="Specific Markdown files to sync")
     p.add_argument("--dry-run", action="store_true", help="Compute but do not write")
     return p.parse_args(argv)
@@ -196,7 +154,7 @@ def main(argv: Optional[List[str]] = None) -> int:
         return 2
 
     if ns.all:
-        md_paths = _discover_all(repo_root, include_local=bool(ns.include_local))
+        md_paths = _discover_all(repo_root)
     else:
         assert ns.paths is not None
         md_paths = [Path(p).expanduser().resolve() if not Path(p).is_absolute() else Path(p) for p in ns.paths]

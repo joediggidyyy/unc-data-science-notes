@@ -30,8 +30,3 @@ This file is **public and sanitized**. Do not add secrets, private/internal link
 
 - This file has a sibling `tests/AGENT_INSTRUCTIONS.json` that must remain in sync.
 - `checksum` in the JSON is SHA-256 of this Markdown (CRLF normalized to LF).
-
-## Local/private extensions
-
-- Keep any private/local operational notes under `local_untracked/` (untracked by git).
-- Do not add private procedures, private links, or secrets to tracked instruction files.

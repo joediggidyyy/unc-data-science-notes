@@ -1,5 +1,5 @@
 {
-  "checksum": "9f3b8498925b39a2765992b4b8984070b205908c5215803e4c15ee3efbcdd645",
+  "checksum": "61edc8959563e6dd00626f9560cbb4a6c886c36f907085c0016795ede0dcab60",
   "metadata": {},
   "sections": [
     {
@@ -20,11 +20,7 @@
     },
     {
       "name": "Machine-readable sidecar policy (.md + .json)",
-      "content": "\n- This file has a sibling `tools/AGENT_INSTRUCTIONS.json` that must remain in sync.\n- `checksum` in the JSON is SHA-256 of this Markdown (CRLF normalized to LF).\n\n"
-    },
-    {
-      "name": "Local/private extensions",
-      "content": "\n- Keep any private/local operational notes under `local_untracked/` (untracked by git).\n- Do not add private procedures, private links, or secrets to tracked instruction files.\n"
+      "content": "\n- This file has a sibling `tools/AGENT_INSTRUCTIONS.json` that must remain in sync.\n- `checksum` in the JSON is SHA-256 of this Markdown (CRLF normalized to LF).\n"
     }
   ],
   "title": "[AGENT-USE] Repo Tooling Instructions"

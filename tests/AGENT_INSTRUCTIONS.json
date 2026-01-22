@@ -1,5 +1,5 @@
 {
-  "checksum": "0338e28c321d5af3dc752d56084b68ea2b25fce818b17f9cbc37cb121b266567",
+  "checksum": "b5f05acdbfcb88f48c80a67a1d07fe6a0893221207377801ffbc1d9bc6a3cee2",
   "metadata": {},
   "sections": [
     {
@@ -20,11 +20,7 @@
     },
     {
       "name": "Machine-readable sidecar policy (.md + .json)",
-      "content": "\n- This file has a sibling `tests/AGENT_INSTRUCTIONS.json` that must remain in sync.\n- `checksum` in the JSON is SHA-256 of this Markdown (CRLF normalized to LF).\n\n"
-    },
-    {
-      "name": "Local/private extensions",
-      "content": "\n- Keep any private/local operational notes under `local_untracked/` (untracked by git).\n- Do not add private procedures, private links, or secrets to tracked instruction files.\n"
+      "content": "\n- This file has a sibling `tests/AGENT_INSTRUCTIONS.json` that must remain in sync.\n- `checksum` in the JSON is SHA-256 of this Markdown (CRLF normalized to LF).\n"
     }
   ],
   "title": "[AGENT-USE] Testing Instructions (UNC Notes Repo)"
