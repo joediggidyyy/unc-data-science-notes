@@ -25,3 +25,11 @@ The maintainer may remove content or restrict participation to keep the space sa
 ## Student Code of Conduct
 
 For students in the UNC Data Science curriculum, this repository is a shared learning space. Please follow all guidelines outlined in the UNC Code of Conduct. For further information regarding steps taken to ensure compliance, see `COMPLIANCE.md` and [http://studentconduct.unc.edu](http://studentconduct.unc.edu).`
+
+## Alpha/Beta testing (volunteers)
+
+We’re seeking volunteers to test early changes for CodeSentinel, ORACL, and CIDS.
+
+- Start a GitHub Discussion titled `Alpha/Beta Testing Interest`.
+- Do not post PII, secrets, private logs, private network data, or prohibited materials.
+- Early-stage; no funding/compensation at this time.

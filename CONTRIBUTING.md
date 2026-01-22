@@ -61,3 +61,11 @@ Note: `reports/` is generated locally and is not committed.
 - What changed?
 - Why is it better?
 - Where should reviewers look first?
+
+## Alpha/Beta testing (volunteers)
+
+We’re seeking volunteers to test early changes for CodeSentinel, ORACL, and CIDS.
+
+- Start a GitHub Discussion titled `Alpha/Beta Testing Interest`.
+- Do not post PII, secrets, private logs, private network data, or prohibited materials.
+- Early-stage; no funding/compensation at this time.

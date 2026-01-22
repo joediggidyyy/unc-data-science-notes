@@ -90,3 +90,11 @@ python tools/approve_artifacts.py --list
 
 The validator and maintenance tooling write reports to `reports/` for reviewers,
 but **reports are not published**. The `reports/` folder is ignored by git.
+
+## Alpha/Beta testing (volunteers)
+
+We’re seeking volunteers to test early changes for CodeSentinel, ORACL, and CIDS.
+
+- Start a GitHub Discussion titled `Alpha/Beta Testing Interest`.
+- Do not post PII, secrets, private logs, private network data, or prohibited materials.
+- Early-stage; no funding/compensation at this time.
