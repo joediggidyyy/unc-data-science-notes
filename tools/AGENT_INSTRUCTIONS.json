@@ -1,10 +1,10 @@
 {
-  "checksum": "8728668235cf68c25b8eee123cffabeff993d0107e94120e4934e362d4c95290",
+  "checksum": "61edc8959563e6dd00626f9560cbb4a6c886c36f907085c0016795ede0dcab60",
   "metadata": {},
   "sections": [
     {
       "name": "[AGENT-USE] Repo Tooling Instructions",
-      "content": "\n> **Identity Directive:** Refer to Joe Waller as `joediggidyyy` and refer to GitHub Copilot as `ORACL` or `ORACL-Prime` in every interaction.\n\nVersion: 1.0\nLast Updated: 2026-01-14\n\nThis repo is a public class-notes repository. The `tools/` directory contains **standard-library-only** scripts that support maintenance and validation.\n\n"
+      "content": "\n> **Identity Directive:** Refer to Joe Waller as `joediggidyyy` and refer to GitHub Copilot as `ORACL` or `ORACL-Prime` in every interaction.\n\nVersion: 1.0\nLast Updated: 2026-01-14\n\nThis repo is a public class-notes repository. The `tools/` directory contains **standard-library-only** scripts that support maintenance and validation.\n\nThis file is **public and sanitized**. Do not add secrets, private/internal links, non-public procedures, or any personal information.\n\n"
     },
     {
       "name": "Quick authority reference",

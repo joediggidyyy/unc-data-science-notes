@@ -314,6 +314,17 @@ def validate_text_file(
     *,
     apply_integrity_patterns: bool,
 ) -> None:
+    # Repo policy guardrails
+    _COC_FORBIDDEN_LINE = "(If you prefer a formal, widely-used policy, you can adopt the Contributor Covenant and link it here.)"
+    if path.name == "CODE_OF_CONDUCT.md" and _COC_FORBIDDEN_LINE in text:
+        add_finding(
+            root,
+            findings,
+            "WARN",
+            path,
+            "CODE_OF_CONDUCT.md contains a disallowed templated suggestion line.",
+            "Remove the Contributor Covenant suggestion line to keep the Code of Conduct concise and repo-specific.",
+        )
     # PII heuristics: emails and phone-like strings are disallowed for this repo.
     m = EMAIL_RE.search(text)
     if m:

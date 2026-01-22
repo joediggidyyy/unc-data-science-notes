@@ -1,10 +1,10 @@
 {
-  "checksum": "32d4646f5309b50f8b83926134c8550efa0cddfaddb7c4a19e3c4729b42d42ad",
+  "checksum": "b5f05acdbfcb88f48c80a67a1d07fe6a0893221207377801ffbc1d9bc6a3cee2",
   "metadata": {},
   "sections": [
     {
       "name": "[AGENT-USE] Testing Instructions (UNC Notes Repo)",
-      "content": "\n> **Identity Directive:** Refer to Joe Waller as `joediggidyyy` and refer to GitHub Copilot as `ORACL` or `ORACL-Prime` in every interaction.\n\nVersion: 1.0\nLast Updated: 2026-01-14\n\nThis repository's tests validate the maintenance and safety tooling (docs generation, validation scanning, asset conversion).\n\n"
+      "content": "\n> **Identity Directive:** Refer to Joe Waller as `joediggidyyy` and refer to GitHub Copilot as `ORACL` or `ORACL-Prime` in every interaction.\n\nVersion: 1.0\nLast Updated: 2026-01-14\n\nThis repository's tests validate the maintenance and safety tooling (docs generation, validation scanning, asset conversion).\n\nThis file is **public and sanitized**. Do not add secrets, private/internal links, non-public procedures, or any personal information.\n\n"
     },
     {
       "name": "What matters most",

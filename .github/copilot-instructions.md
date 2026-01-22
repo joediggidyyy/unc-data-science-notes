@@ -9,6 +9,8 @@ Last Updated: 2026-01-14
 
 This repository is a **public, dyslexia-friendly class notes repo**. The primary goals are:
 
+This file is **public and sanitized**. Do not add secrets, private/internal links, non-public procedures, or any personal information.
+
 - keep `notes/` readable and navigable
 - avoid accidental leakage of private information
 - avoid sharing prohibited/unauthorized course materials

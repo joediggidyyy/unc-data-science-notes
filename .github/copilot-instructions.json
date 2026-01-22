@@ -1,10 +1,10 @@
 {
-  "checksum": "5a8b486d95f63fc988a3a0c80be02e83aa3b0d8a60197ec8e1bd2f9918af8773",
+  "checksum": "b8983ffaab6dc40e82944b282b267821c099899172e75c7f7e153177c0c09437",
   "metadata": {},
   "sections": [
     {
       "name": "UNC Data Science Notes — Copilot Instructions",
-      "content": "\n> **Identity Directive:** Refer to Joe Waller as `joediggidyyy` and refer to GitHub Copilot as `ORACL` or `ORACL-Prime` in every interaction.\n\nVersion: 1.0\nLast Updated: 2026-01-14\n\nThis repository is a **public, dyslexia-friendly class notes repo**. The primary goals are:\n\n- keep `notes/` readable and navigable\n- avoid accidental leakage of private information\n- avoid sharing prohibited/unauthorized course materials\n\n"
+      "content": "\n> **Identity Directive:** Refer to Joe Waller as `joediggidyyy` and refer to GitHub Copilot as `ORACL` or `ORACL-Prime` in every interaction.\n\nVersion: 1.0\nLast Updated: 2026-01-14\n\nThis repository is a **public, dyslexia-friendly class notes repo**. The primary goals are:\n\nThis file is **public and sanitized**. Do not add secrets, private/internal links, non-public procedures, or any personal information.\n\n- keep `notes/` readable and navigable\n- avoid accidental leakage of private information\n- avoid sharing prohibited/unauthorized course materials\n\n"
     },
     {
       "name": "Non-negotiables for public sharing",
