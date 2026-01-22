@@ -50,6 +50,12 @@ If an approved file changes, it must be re-approved.
 - Avoid adding new dependencies unless a maintainer explicitly requests it.
 - Avoid printing or storing absolute local paths in generated reports (use repo-relative paths).
 
+## Local-only instructions (private)
+
+- The instruction files committed to this repository are **public** and must remain sanitized.
+- If you need local/private notes for your own workflow, store them under `local_untracked/`.
+- Do not commit any local/private instruction notes.
+
 ## Instruction file pairing (Markdown + JSON)
 
 - This file has a sibling `.github/copilot-instructions.json` that must remain in sync.

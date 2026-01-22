@@ -1,5 +1,5 @@
 {
-  "checksum": "b8983ffaab6dc40e82944b282b267821c099899172e75c7f7e153177c0c09437",
+  "checksum": "8cc7d771d7958c4ca1af775d9af8b851948dea8d92a35a63d4263888fafa56f6",
   "metadata": {},
   "sections": [
     {
@@ -21,6 +21,10 @@
     {
       "name": "Editing guidance",
       "content": "\n- Prefer **small diffs** and keep changes focused.\n- Avoid adding new dependencies unless a maintainer explicitly requests it.\n- Avoid printing or storing absolute local paths in generated reports (use repo-relative paths).\n\n"
+    },
+    {
+      "name": "Local-only instructions (private)",
+      "content": "\n- The instruction files committed to this repository are **public** and must remain sanitized.\n- If you need local/private notes for your own workflow, store them under `local_untracked/`.\n- Do not commit any local/private instruction notes.\n\n"
     },
     {
       "name": "Instruction file pairing (Markdown + JSON)",
