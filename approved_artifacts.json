@@ -762,6 +762,18 @@
       "notes": "Reviewed (maintain.py)",
       "sha256": "1805209cb0bb1f4c63ca539117501c78666b9421ba258ba3e3a4956d3d678f31"
     },
+    "notes/Spring_2026/DATA750/Week04/docx/generated_media/DATA750_week04_notes/media/image1.gif": {
+      "approved_utc": "2026-02-03T07:34:38Z",
+      "category": "image",
+      "notes": "CodeSentinel approved",
+      "sha256": "b1442e85b03bdcaf66dc58c7abb98745dd2687d86350be9a298a1d9382ac849b"
+    },
+    "notes/Spring_2026/DATA750/Week04/docx/generated_media/DATA750_week04_notes/media/image3.png": {
+      "approved_utc": "2026-02-03T07:34:38Z",
+      "category": "image",
+      "notes": "CodeSentinel approved",
+      "sha256": "e213f78c8991ed98beb6d023a2bb6616577d6c184261761351952b87f177aa8e"
+    },
     "notes/Spring_2026/DATA780/Week01/docx/generated_media/DATA780_homework1_instructions/media/image1.png": {
       "approved_utc": "2026-01-20T19:01:45Z",
       "category": "image",
