@@ -2,7 +2,7 @@
 
 Index of `notes/` organized by term/course/week.
 
-Last updated (UTC): 2026-02-03T07:27:58+00:00
+Last updated (UTC): 2026-02-03T07:44:13+00:00
 
 ## Spring_2026
 

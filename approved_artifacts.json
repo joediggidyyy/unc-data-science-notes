@@ -1157,6 +1157,18 @@
       "category": "image",
       "notes": "Approved for publication (CodeSentinel review)",
       "sha256": "7080806d8575e9813e8924ca474060b4fcb046c51d13b1e972d84c478fa951ae"
+    },
+    "notes/Spring_2026/DATA780/Week03/docx/generated_media/DATA780_week03_notes/media/image1.png": {
+      "approved_utc": "2026-02-03T07:44:37Z",
+      "category": "image",
+      "notes": "CodeSentinel reviewed",
+      "sha256": "cc532443ede8d8094b2634935f15cc7ab6c471cc9ad7cb5c0520837388045e5c"
+    },
+    "notes/Spring_2026/DATA780/Week03/docx/generated_media/DATA780_week03_notes/media/image2.png": {
+      "approved_utc": "2026-02-03T07:44:37Z",
+      "category": "image",
+      "notes": "CodeSentinel reviewed",
+      "sha256": "070e06850cd6993d232639bfff3b37dfe20643dd20f6a44b9da5e5c832bcae85"
     }
   },
   "version": 1
