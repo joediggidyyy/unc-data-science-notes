@@ -44,12 +44,16 @@ DEFAULT_EXCLUDE_DIRS: Set[str] = {
     ".mypy_cache",
     ".ruff_cache",
     ".venv",
+    ".venv-core",
     "venv",
     # Local-only / archival areas (never publish; never drive change detection).
     "local_untracked",
     "quarantine_legacy_archive",
     "archive",
     "temp",
+    # Internal telemetry/caches (can be huge; never drive change detection).
+    "logs",
+    "semantics_vault",
     # Generated artifacts should not drive change detection.
     "reports",
 }
@@ -77,16 +81,45 @@ def _safe_relpath(path: Path, repo_root: Path) -> str:
 
 
 def _iter_files(repo_root: Path, exclude_dirs: Set[str], exclude_files: Set[str]) -> Iterable[Path]:
-    for p in repo_root.rglob("*"):
-        if p.is_dir():
+    """Yield files under repo_root while pruning excluded directories.
+
+    Important: Using Path.rglob() will still *traverse* excluded directories and only
+    filter after the fact, which can be extremely slow for large trees (e.g., logs/
+    or local indexes). We use os.walk(topdown=True) so we can prune early.
+    """
+
+    repo_root = repo_root.resolve()
+
+    def _is_excluded_path_parts(rel_parts: Tuple[str, ...]) -> bool:
+        return any(part in exclude_dirs for part in rel_parts)
+
+    for root, dirs, files in os.walk(repo_root, topdown=True):
+        root_path = Path(root)
+        try:
+            rel_parts = root_path.relative_to(repo_root).parts
+        except Exception:
+            # Should not happen, but be defensive.
             continue
-        rel_parts = p.relative_to(repo_root).parts
-        if any(part in exclude_dirs for part in rel_parts):
+
+        # If we're already under an excluded path, stop descending.
+        if rel_parts and _is_excluded_path_parts(rel_parts):
+            dirs[:] = []
             continue
-        rel = "/".join(rel_parts).replace("\\", "/")
-        if p.name in exclude_files or rel in exclude_files:
-            continue
-        yield p
+
+        # Prune excluded directories before walking into them.
+        if dirs:
+            dirs[:] = [d for d in dirs if d not in exclude_dirs]
+
+        for name in files:
+            # Exclude by filename early when possible.
+            if name in exclude_files:
+                continue
+
+            p = root_path / name
+            rel = "/".join((*rel_parts, name)).replace("\\", "/")
+            if rel in exclude_files:
+                continue
+            yield p
 
 
 def _hash_file(path: Path, *, chunk_size: int = 1024 * 1024) -> str:
@@ -107,13 +140,21 @@ def _file_fingerprint(path: Path, *, full_hash_threshold_bytes: int = 5 * 1024 *
     For larger files, store size + mtime_ns to avoid huge CPU cost.
     """
 
-    st = path.stat()
-    size = int(st.st_size)
-    mtime_ns = int(st.st_mtime_ns)
+    try:
+        st = path.stat()
+        size = int(st.st_size)
+        mtime_ns = int(st.st_mtime_ns)
+    except OSError as e:
+        # Do not let one unreadable file block the entire repo-docs run.
+        return {"size": None, "mtime_ns": None, "sha256": None, "error": f"stat:{type(e).__name__}"}
 
     fp: Dict[str, Any] = {"size": size, "mtime_ns": mtime_ns}
     if size <= full_hash_threshold_bytes:
-        fp["sha256"] = _hash_file(path)
+        try:
+            fp["sha256"] = _hash_file(path)
+        except OSError as e:
+            fp["sha256"] = None
+            fp["error"] = f"hash:{type(e).__name__}"
     else:
         fp["sha256"] = None
     return fp
