@@ -1,5 +1,5 @@
 ---
-generated_at_utc: 2026-02-11T10:55:27+00:00
+generated_at_utc: 2026-02-12T00:05:03+00:00
 generated_from: notes/Spring_2026/DATA740/Week06/docx/DATA740_week06_notes.docx
 generator: tools/convert_assets_to_markdown.py
 engine: pandoc
@@ -343,6 +343,154 @@ engine: pandoc
 • Do false negatives/positives harm or benefit one stakeholder over another?</td>
 <td colspan="2" style="text-align: right;"><img src="generated_media\DATA740_week06_notes\media\image5.png" style="width:1.16458in;height:1.27015in" /><strong>fraud reduction and time to aid reduction</strong></td>
 <td style="text-align: right;"><img src="generated_media\DATA740_week06_notes\media\image6.png" style="width:1.26875in;height:1.30116in" /><strong>false negatives lead to loss of needed benefit</strong></td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2">ADSA Data Science Ethos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Lenses</td>
+<td><ul>
+<li><p>Conceptual lenses offer structured ways of <strong>thinking about the social and ethical contexts</strong> relevant to each stage of the data science research process</p></li>
+<li><p>Each lens represents <strong>a theoretical stance connected to specific ethical problems</strong></p></li>
+<li><p><strong>Four Lenses</strong></p>
+<ul>
+<li><p><strong>Positionality</strong></p></li>
+<li><p><strong>Sociotechnical Systems</strong></p></li>
+<li><p><strong>Power</strong></p></li>
+<li><p><strong>Narratives</strong></p></li>
+</ul></li>
+</ul></td>
+</tr>
+<tr>
+<td>The Stages</td>
+<td><ul>
+<li><p>question</p></li>
+<li><p>discovery</p></li>
+<li><p>analysis</p></li>
+<li><p>modeling</p></li>
+<li><p>interpreting</p></li>
+<li><p>sharing</p></li>
+</ul></td>
+</tr>
+<tr>
+<td>Case Studies</td>
+<td><ul>
+<li><p>estimating population with phone records</p></li>
+<li><p>unfair tax practices in major U.S. cities</p></li>
+<li><p>Crowd The Tap: protecting tap water</p></li>
+</ul></td>
+</tr>
+<tr>
+<td colspan="2">Estimating Population with Phone Records</td>
+</tr>
+<tr>
+<td>Summary</td>
+<td><ul>
+<li><p>enumerations of populations and their economic status are collected for many essential purposes</p>
+<ul>
+<li><p>determining electoral representation</p></li>
+<li><p>allocating tax dollars</p></li>
+<li><p>deploying public health interventions</p></li>
+</ul></li>
+<li><p>census are performed to collect this data, but they are expensive, time consuming, and infrequent</p></li>
+<li></li>
+</ul></td>
+</tr>
+<tr>
+<td>Positionality</td>
+<td><ul>
+<li><p>use lens of positionality to examine the Data Discovery stage of a project using mobile phone records to estimate population size and economic status</p></li>
+<li><p>when researchers work with sensitive data (ex: phone records) the data is obfuscated to protect individual identities</p></li>
+<li><p>what culturally derived assumptions are being made?</p>
+<ul>
+<li><p>for a culture that prized individual liberties over collective well-being, the priority data protection effort would logically be assumed to be the protection of identities while overlooking the harm that can be done to segments of the population if their locations are revealed <em>WHAT?</em></p></li>
+</ul></li>
+</ul></td>
+</tr>
+<tr>
+<td>Power</td>
+<td><ul>
+<li><p>in the case of using mobile phone records to estimate population size, location, and economic status, it is essential to remember during the Data Discovery stage that for-profit businesses have the power to decide what data they will share, with whom, and under what condition</p></li>
+<li><p>if a company makes their phone records freely available to researchers, what it their motivation? altruism? pride? financial or political gain?</p></li>
+<li><p>can the data be trusted?</p></li>
+</ul></td>
+</tr>
+<tr>
+<td>Sociotechnical Systems</td>
+<td><ul>
+<li><p>how are the systems that generated the data intertwined with the lives of real people</p></li>
+<li><p>in some regions a phone number uniquely identifies a single person while other regions a single phone can be shared by a whole family or village</p></li>
+</ul></td>
+</tr>
+<tr>
+<td>Narrative</td>
+<td><ul>
+<li><p>a project to study populations using mobile phone data is likely animated by a narrative that celebrates the ability and innovations of using readily available data in place of the painstaking process of data collection involved in conducting a census</p></li>
+</ul></td>
+</tr>
+<tr>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2">I chose the case study involving collecting census data using mobile phone data. I chose this case study because it seemed to present some interesting challenges both logistically and ethically. Logistically, there would have to be a lot of assumptions made specifically concerning active mobile phone accounts per capita in a particular region. How would one even obtain such data? If you had a mechanism in place to determine such data, why could that mechanism not be used to collect the needed data? This would fall under the lens of Sociotechnical Systems along with other factors that make assumptions on how the systems producing the data are related to and “intertwined” with the people represented in the data.</td>
+</tr>
+</tbody>
+</table>
+
+<table style="width:100%;">
+<colgroup>
+<col style="width: 54%" />
+<col style="width: 22%" />
+<col style="width: 22%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;">Ethical Matrix: BMI + AI Tax</th>
+<th style="text-align: center;">Government</th>
+<th style="text-align: center;">Individuals Who Lost Job To AI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>• How will each stakeholder benefit?<br />
+• How might they each be harmed?<br />
+• Are there less risky alternatives that could provide the same outcome?</td>
+<td><ul>
+<li><p><img src="generated_media\DATA740_week06_notes\media\image1.png" style="width:1.5in;height:1.63542in" /><strong>Increased tax on businesses</strong></p></li>
+<li><p><strong>Increased burden on social service infra.</strong></p></li>
+<li><p><strong>Strict AI-employment legislation</strong></p></li>
+</ul></td>
+<td><ul>
+<li><p><img src="generated_media\DATA740_week06_notes\media\image2.png" style="width:1.37431in;height:1.63542in" /><strong>Compensated for lost work</strong></p></li>
+<li><p><strong>Lack of drive/opportunity</strong></p></li>
+<li><p><strong>Retrain in AI-related field</strong></p></li>
+</ul></td>
+</tr>
+<tr>
+<td>• Will each stakeholder have a choice to use or be subject of the use?<br />
+• Will they be able to determine how it is used with respect to their interests?<br />
+• What will informed consent look like?</td>
+<td><ul>
+<li><p><img src="generated_media\DATA740_week06_notes\media\image3.png" style="width:1.44722in;height:1.66667in" /><strong>The government will have a choice to not compensate workers</strong></p></li>
+<li><p><strong>TBD</strong></p></li>
+<li><p><strong>People will be begging for help</strong></p></li>
+</ul></td>
+<td><ul>
+<li><p><img src="generated_media\DATA740_week06_notes\media\image4.png" style="width:1.44792in;height:1.59722in" /><strong>They could choose to retrain</strong></p></li>
+<li><p><strong>Not really</strong></p></li>
+<li><p><strong>TBD</strong></p></li>
+</ul></td>
 </tr>
 </tbody>
 </table>
