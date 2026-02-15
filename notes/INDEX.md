@@ -2,13 +2,13 @@
 
 Index of `notes/` organized by term/course/week.
 
-Last updated (UTC): 2026-02-15T09:37:58+00:00
+Last updated (UTC): 2026-02-15T10:03:02+00:00
 
 ## QuickReferences
 
 ### Markdown
 
-- [docx](QuickReferences/Markdown/docx/)
+- [PlutoJL_Markdown_Guide](QuickReferences/Markdown/PlutoJL_Markdown_Guide/)
 
 ## Spring_2026
 
