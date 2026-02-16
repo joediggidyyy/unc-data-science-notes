@@ -2,9 +2,17 @@
 
 Index of `notes/` organized by term/course/week.
 
-Last updated (UTC): 2026-02-15T10:03:02+00:00
+Last updated (UTC): 2026-02-16T11:54:30+00:00
 
 ## QuickReferences
+
+### Julia
+
+- [Julia_Programming_Guide](QuickReferences/Julia/Julia_Programming_Guide/)
+
+### Latex
+
+- [generated_media](QuickReferences/Latex/generated_media/)
 
 ### Markdown
 
