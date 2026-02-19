@@ -190,6 +190,9 @@
 <blockquote>
 <p><strong>data = rand(100)::Vector{Float64}</strong></p>
 <p><strong>let</strong></p>
+</blockquote>
+<p><strong>A let block creates a local scope, allowing you to use mutable operations like plot! and !hline to modify an existing plot to build a single complex object.</strong></p>
+<blockquote>
 <p><strong>plot(data)</strong></p>
 <p><strong># use the ! exclamation mark to modify the previous plot</strong></p>
 <p><strong>scatter!(data)</strong></p>
@@ -252,52 +255,33 @@
 <p><strong>displayed text</strong></p>
 <p><strong>link name</strong></p></td>
 </tr>
+</tbody>
+</table>
+
+*
+*
+
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
 <tr>
-<td style="text-align: left;"><strong>[item 3]</strong></td>
-<td colspan="2"><strong>[Diagram 3]</strong></td>
+<th colspan="2"></th>
 </tr>
-<tr>
-<td style="text-align: left;"></td>
-<td colspan="2"></td>
-</tr>
-<tr>
-<td style="text-align: left;"></td>
-<td colspan="2"></td>
-</tr>
-<tr>
-<td style="text-align: left;"></td>
-<td colspan="2"></td>
-</tr>
-<tr>
-<td colspan="3" style="text-align: left;"><strong>[Textbook Title]</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>(authors)</strong></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td colspan="3" style="text-align: left;"><strong>[Section/Chapter]</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>[concept/term 1]</strong></td>
-<td colspan="2"><strong>[definition 1]</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>[concept/term 2]</strong></td>
-<td colspan="2"><strong>[definition 2]</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>[concept/term 3]</strong></td>
-<td colspan="2"><strong>[definition 3]</strong></td>
-</tr>
+</thead>
+<tbody>
 <tr>
 <td><strong>References</strong></td>
-<td colspan="2"><p><strong>Julia. (n.d.) Tutorials Point <a href="https://www.tutorialspoint.com/julia/julia_tutorial.pdf">https://www.tutorialspoint.com/julia/julia_tutorial.pdf</a></strong></p>
+<td><p><strong>Julia. (n.d.) Tutorials Point <a href="https://www.tutorialspoint.com/julia/julia_tutorial.pdf">https://www.tutorialspoint.com/julia/julia_tutorial.pdf</a></strong></p>
 <p><strong><em>Julia Documentation · The Julia Language</em>. (n.d.). <a href="https://docs.julialang.org/en/v1/">https://docs.julialang.org/en/v1/</a></strong></p>
 <p><strong><em>Linking</em>. (n.d.). <a href="https://plutojl.org/en/docs/linking/">https://plutojl.org/en/docs/linking/</a></strong></p>
 <p><strong><em>Markdown</em>. (n.d.). <a href="https://plutojl.org/en/docs/markdown/">https://plutojl.org/en/docs/markdown/</a></strong></p>
 <p><strong>Wikipedia contributors. (2026, February 11). <em>Julia (programming language)</em>. Wikipedia. <a href="https://en.wikipedia.org/wiki/Julia_(programming_language)">https://en.wikipedia.org/wiki/Julia_(programming_language)</a></strong></p></td>
+</tr>
+<tr>
+<td colspan="2"></td>
 </tr>
 </tbody>
 </table>

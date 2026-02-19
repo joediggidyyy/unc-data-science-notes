@@ -2,7 +2,7 @@
 
 Index of `notes/` organized by term/course/week.
 
-Last updated (UTC): 2026-02-16T11:54:30+00:00
+Last updated (UTC): 2026-02-19T02:01:40+00:00
 
 ## QuickReferences
 
@@ -12,7 +12,7 @@ Last updated (UTC): 2026-02-16T11:54:30+00:00
 
 ### Latex
 
-- [generated_media](QuickReferences/Latex/generated_media/)
+- [PLANNED-Latex_Math_Guide](QuickReferences/Latex/PLANNED-Latex_Math_Guide/)
 
 ### Markdown
 
