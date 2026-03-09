@@ -1458,6 +1458,18 @@
       "notes": "CodeSentinel reviewed",
       "sha256": "f97978d93910fb1f954e42e3516f3673525bb767f7916159935f1aed4349da84"
     },
+    "notes/Spring_2026/DATA780/Week07/docx/generated_media/DATA780_week07_notes/media/image1.png": {
+      "approved_utc": "2026-03-09T05:35:38Z",
+      "category": "image",
+      "notes": "CodeSentinel reviewed",
+      "sha256": "75b18fee3485f21bea2e23e6f377e5111bbeed276c6428bb7da0e04ec0eac42b"
+    },
+    "notes/Spring_2026/DATA780/Week07/docx/generated_media/DATA780_week07_notes/media/image2.png": {
+      "approved_utc": "2026-03-09T05:35:38Z",
+      "category": "image",
+      "notes": "CodeSentinel reviewed",
+      "sha256": "e848c4e8d7cc3f4febe8b4fed22845c92f716a35965fe9308044c9114d0d1aaf"
+    },
     "notes/Spring_2026/DATA780/Week07/generated_media/DATA780_week07_notes/media/image1.png": {
       "approved_utc": "2026-03-08T23:56:41Z",
       "category": "image",
@@ -1529,6 +1541,12 @@
       "category": "image",
       "notes": "CodeSentinel reviewed",
       "sha256": "3cc843f7cc1ee655f963713066f19dc3cce4b7f1ee2b32d8cd39e38f7a3b9fc1"
+    },
+    "notes/Spring_2026/DATA780/Week08/docx/generated_media/DATA780_week08_notes/media/image1.png": {
+      "approved_utc": "2026-03-09T05:35:38Z",
+      "category": "image",
+      "notes": "CodeSentinel reviewed",
+      "sha256": "034fa934693ced583670581875e374ca446d81aadea3ac61f4d1af6959937332"
     }
   },
   "version": 1
