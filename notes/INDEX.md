@@ -2,7 +2,7 @@
 
 Index of `notes/` organized by term/course/week.
 
-Last updated (UTC): 2026-03-10T16:44:13+00:00
+Last updated (UTC): 2026-03-11T20:29:23+00:00
 
 ## QuickReferences
 
@@ -30,6 +30,7 @@ Last updated (UTC): 2026-03-10T16:44:13+00:00
 - [Week06](Spring_2026/DATA740/Week06/)
 - [Week07](Spring_2026/DATA740/Week07/)
 - [Week08](Spring_2026/DATA740/Week08/)
+- [Week10](Spring_2026/DATA740/Week10/)
 
 ### DATA750
 
@@ -42,10 +43,11 @@ Last updated (UTC): 2026-03-10T16:44:13+00:00
 - [Week07](Spring_2026/DATA750/Week07/)
 - [Week08](Spring_2026/DATA750/Week08/)
 - [Week09](Spring_2026/DATA750/Week09/)
+- [Week10](Spring_2026/DATA750/Week10/)
 
 ### DATA780
 
-- [StudyGuides](Spring_2026/DATA780/StudyGuides/)
+- [ExamStudyGuides](Spring_2026/DATA780/ExamStudyGuides/)
 - [Week01](Spring_2026/DATA780/Week01/)
 - [Week02](Spring_2026/DATA780/Week02/)
 - [Week03](Spring_2026/DATA780/Week03/)
