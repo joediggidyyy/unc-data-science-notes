@@ -2,7 +2,7 @@
 
 Index of `notes/` organized by term/course/week.
 
-Last updated (UTC): 2026-03-11T20:29:23+00:00
+Last updated (UTC): 2026-03-11T23:07:03+00:00
 
 ## QuickReferences
 

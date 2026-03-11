@@ -1,3 +1,9 @@
+---
+generated_at_utc: 2026-03-11T23:07:02+00:00
+generated_from: notes/Spring_2026/DATA740/Week10/docx/DATA740_week10_notes.docx
+generator: tools/convert_assets_to_markdown.py
+engine: pandoc
+---
 > Markdown version for convenient browsing. Original files:
 > - PDF: [DATA740_week10_notes.pdf](../DATA740_week10_notes.pdf)
 > - DOCX: [DATA740_week10_notes.docx](DATA740_week10_notes.docx)
@@ -20,7 +26,7 @@
 </thead>
 <tbody>
 <tr>
-<td colspan="3">Readings</td>
+<td colspan="3">Instructor Assigned Readings</td>
 <td style="text-align: right;"></td>
 </tr>
 <tr>
@@ -420,6 +426,139 @@
 <li><p><strong>AI</strong> should <strong>augment</strong> <strong>human</strong> teaching <strong>rather</strong> than <strong>replace</strong></p></li>
 <li><p>careful <strong>attention</strong> must be given to <strong>ethics</strong>, <strong>bias</strong>, and <strong>privacy</strong></p></li>
 </ul></td>
+</tr>
+</tbody>
+</table>
+
+**
+**
+
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr>
+<th>Student Leadership Group Assigned Materials</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p>TEDx Talks. (2024, October 21). <em>How AI can heal healthcare | Edmund Jackson | TEDxNashville</em> [Video]. YouTube. <a href="https://www.youtube.com/watch?v=7ZsyYCZB3Nw">https://www.youtube.com/watch?v=7ZsyYCZB3Nw</a></p>
+<p>Lakhani, P. (2025, December 22). <em>This is how kids should be learning with AI</em> [Video]. TED Talks. <a href="https://www.ted.com/talks/priya_lakhani_this_is_how_kids_should_be_learning_with_ai">https://www.ted.com/talks/priya_lakhani_this_is_how_kids_should_be_learning_with_ai</a></p>
+<p>TED Talks. (2023, May 1). <em>How AI Could Save (Not Destroy) Education | Sal Khan |</em> [Video]. YouTube. <a href="https://www.youtube.com/watch?v=hJP5GqnTrNo">https://www.youtube.com/watch?v=hJP5GqnTrNo</a></p>
+<p>Boles, S., &amp; Boles, S. (2025, September 19). <em>How AI could radically change schools by 2050</em>. Harvard Gazette. <a href="https://news.harvard.edu/gazette/story/2025/09/how-ai-could-radically-change-schools-by-2050/">https://news.harvard.edu/gazette/story/2025/09/how-ai-could-radically-change-schools-by-2050/</a></p>
+<p><em>Knowing the hidden costs of new tech can improve digital strategy</em>. (2026, March 11). Healthcare IT News. <a href="https://www.healthcareitnews.com/news/knowing-hidden-costs-new-tech-can-improve-digital-strategy">https://www.healthcareitnews.com/news/knowing-hidden-costs-new-tech-can-improve-digital-strategy</a></p></td>
+</tr>
+<tr>
+<td>TEDx Talk: How AI can heal healthcare</td>
+</tr>
+<tr>
+<td><ul>
+<li><p>Jackson’s central argument is that healthcare is not failing because people do not care</p></li>
+<li><p>it is failing because modern healthcare is too complex for humans to manage consistently at scale</p></li>
+<li><p>he uses sepsis as a major example</p>
+<ul>
+<li><p>if caught early, it can often be treated cheaply, but delays can be deadly</p></li>
+</ul></li>
+<li><p>he connects this to personal experience, saying sepsis killed his father, which shaped his mission</p></li>
+<li><p>he describes AI as something that can “wrap” healthcare systems by tracking patient status, spotting patterns, and suggesting next actions in time for clinicians to act</p></li>
+<li><p>he argues that AI could reduce harmful delays by reading charts, literature, and patient data in real time</p></li>
+<li><p>the talk also frames AI as a tool for patients and families, not just hospitals</p></li>
+<li><p>in his example of Martha Mills, AI could have helped her family recognize danger sooner and push for urgent care</p></li>
+<li><p>the broader claim is that AI should simplify healthcare complexity and help people make better decisions, not replace human care</p></li>
+</ul></td>
+</tr>
+<tr>
+<td>TED Talk: <em>This is how kids should be learning with AI</em></td>
+</tr>
+<tr>
+<td><ul>
+<li><p>Lakhani argues that the current education model is too one-size-fits-all.</p></li>
+<li><p>she says teachers are overloaded and often forced into heavy data and admin work.</p></li>
+<li><p>her main warning is that students can misuse AI as a shortcut and mistake smooth output for real learning</p></li>
+<li><p>she says genuine learning requires productive struggle</p></li>
+<li><p>she highlights four learning strategies</p>
+<ul>
+<li><p>retrieval</p></li>
+<li><p>spacing</p></li>
+<li><p>generation</p></li>
+<li><p>reflection</p></li>
+</ul></li>
+<li><p>her view is that AI should be designed to support those harder forms of learning, not bypass them</p></li>
+<li><p>she says AI can help identify learning gaps, personalize support, and reduce teacher workload</p></li>
+<li><p>but she insists AI should expand human expertise, not replace it</p></li>
+<li><p>her bottom line</p>
+<ul>
+<li><p>effort is not a flaw in learning</p></li>
+<li><p>effort is part of how learning sticks</p></li>
+</ul></li>
+</ul></td>
+</tr>
+<tr>
+<td>TED Talk: <em>How AI Could Save (Not Destroy) Education</em></td>
+</tr>
+<tr>
+<td><ul>
+<li><p>Khan starts with the fear that students will use AI to cheat and stop learning</p></li>
+<li><p>his answer is that AI can be positive if it is built with guardrails and used well</p></li>
+<li><p>he argues that every student could have access to an AI tutor and every teacher to an AI teaching assistant</p></li>
+<li><p>he connects this to Bloom’s “2 sigma problem,” which showed how powerful one-to-one tutoring can be</p></li>
+<li><p>he presents AI as a way to scale that kind of support much more widely</p></li>
+<li><p>he also describes AI as useful for writing support, reading support, outlining, feedback, and deeper subject learning</p></li>
+<li><p>for teachers, AI could reduce time spent on lesson planning and routine prep work</p></li>
+<li><p>his overall position is optimistic</p>
+<ul>
+<li><p>AI does not have to destroy education</p></li>
+<li><p>it could improve learning and free teachers for more human interaction</p></li>
+</ul></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+
+**
+**
+
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr>
+<th>Harvard Gazette: <em>How AI could radically change schools by 2050</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><ul>
+<li><p>AI may change education so much that today’s “same lesson, same test, same pace for everyone” model could look outdated</p></li>
+<li><p>Howard Gardner argues that students may only need a few foundational years in reading, writing, math, and some coding</p></li>
+<li><p>after that, teachers may act more like coaches who guide students toward interests, strengths, and real-world paths</p></li>
+<li><p>Anthea Roberts says future learners may need to manage teams of AI tools, more like a director, editor, or coach than a traditional student</p></li>
+<li><p>Gardner suggests AI may take over many cognitive tasks humans now prize, including some forms of disciplined thinking, synthesis, and creativity</p></li>
+<li><p>he argues that respect and ethics remain deeply human responsibilities and should not be handed to machines.</p></li>
+<li><p>the panel also warns that AI can either expand thinking or replace it, and educators still need to figure out how to push students toward expansion, not cognitive laziness</p></li>
+</ul></td>
+</tr>
+<tr>
+<td>Healthcare IT News: <em>Knowing the hidden costs of new tech can improve digital strategy</em></td>
+</tr>
+<tr>
+<td><ul>
+<li><p>they should start with “What business or care problem are we trying to solve?”</p></li>
+<li><p>the article argues that ROI is local and context-specific</p></li>
+<li><p>a tool that helps one hospital may not help another</p></li>
+<li><p>AI is not always the best answer</p></li>
+<li><p>in some places, simpler tools like scheduling or follow-up systems may create more value</p></li>
+<li><p>leaders should account for hidden costs, including staff time, technical support, workflow redesign, auditing, and training</p></li>
+<li><p>new tools can also create new burdens, such as alert fatigue and extra data review</p></li>
+<li><p>the article recommends longer pilots, often 6 to 12 months, because short trials may miss the real long-term impact</p></li>
+<li><p>a key theme is that organizations must measure whether the promised value actually appears after deployment, not just assume it will</p></li>
+</ul></td>
+</tr>
+<tr>
+<td></td>
 </tr>
 </tbody>
 </table>
