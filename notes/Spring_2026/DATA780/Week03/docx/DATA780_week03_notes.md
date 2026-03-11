@@ -100,7 +100,7 @@ engine: pandoc
 </ul>
 <p>where:</p>
 <ul>
-<li><p><span class="math inline"><em>x</em>  = 〖<em>x</em><sub>1</sub>, <em>x</em><sub>2</sub>, …, <em>x</em><sub><em>D</em></sub>)</span> is a <strong>vector</strong> of <strong>inputs</strong>.</p></li>
+<li><p><span class="math inline"><em>x</em>  = <em>x</em><sub>1</sub>, <em>x</em><sub>2</sub>, …, <em>x</em><sub><em>D</em></sub>)</span> is a <strong>vector</strong> of <strong>inputs</strong>.</p></li>
 <li><p><span class="math inline"><em>w</em> = (<em>w</em><sub>0</sub>, <em>w</em><sub>1</sub>, …, <em>w</em><sub><em>D</em></sub>)</span> are <strong>parameters</strong> (<strong>weights</strong>).</p></li>
 </ul>
 <ul>
@@ -156,7 +156,7 @@ engine: pandoc
 <li><p>nonlinear <strong>relationships</strong> can be <strong>modeled</strong> <strong>linearly</strong> in <strong>transformed</strong> <strong>space</strong> using <strong>basis</strong> <strong>functions</strong></p>
 <ul>
 <li><p><strong>polynomial:</strong> <span class="math inline"><strong>ϕ</strong><sub><strong>j</strong></sub>(<strong>x</strong>)<strong>=</strong><strong>x</strong><sup><strong>j</strong></sup></span></p></li>
-<li><p><strong>Gaussian:</strong> <span class="math inline">$\mathbf{\varphi}_{\mathbf{j}}\left( \mathbf{x} \right)\mathbf{=}\mathbf{\exp}\left( \mathbf{-}\frac{\left( \mathbf{x\  -}\mathbf{\mu}_{\mathbf{j}}\mathbf{)} \right.〗^{\mathbf{2}}}{{\mathbf{2}\mathbf{s}}_{\mathbf{j}}^{\mathbf{2}}} \right)$</span></p></li>
+<li><p><strong>Gaussian:</strong> <span class="math inline">$\mathbf{\varphi}_{\mathbf{j}}\left( \mathbf{x} \right)\mathbf{=}\mathbf{\exp}\left( \mathbf{-}\frac{\left( \mathbf{x\  -}\mathbf{\mu}_{\mathbf{j}}\mathbf{)} \right.^{\mathbf{2}}}{{\mathbf{2}\mathbf{s}}_{\mathbf{j}}^{\mathbf{2}}} \right)$</span></p></li>
 </ul></li>
 <li><p>the model becomes:<span class="math inline"> <em>y</em>(<em>x</em>) = ∑<sub><em>j</em></sub><em>w</em><sub><em>j</em></sub> <em>ϕ</em><sub><em>j</em></sub>(<em>x</em>)</span></p></li>
 </ul></td>
@@ -165,7 +165,7 @@ engine: pandoc
 <td>Probabilistic Interpretation</td>
 <td colspan="8"><ul>
 <li><p>we <strong>assume</strong> targets are <strong>generated</strong> by <strong>model</strong> plus <strong>Gaussian</strong> <strong>noise</strong> with <strong>zero</strong> <strong>mean</strong> and <strong>variance</strong> <span class="math inline"><strong>σ</strong><sup><strong>2</strong></sup></span></p></li>
-<li><p>likely<strong>:</strong> <span class="math inline"><strong>p</strong><strong>(</strong><strong>t</strong><sub><strong>n</strong></sub><strong>∣</strong><strong>x</strong><sub><strong>n</strong></sub><strong>,</strong> <strong>w</strong><strong>,</strong> <strong>β</strong><strong>)</strong><strong>=</strong>𝒩(<strong>t</strong><sub><strong>n</strong></sub><strong>∣</strong><strong>w</strong><sup><strong>T</strong></sup><strong>ϕ</strong><strong>(</strong><strong>x</strong><sub><strong>n</strong></sub><strong>)</strong><strong>,</strong><strong>β</strong><sup><strong>−</strong><strong>1</strong></sup><strong>)</strong></span></p></li>
+<li><p>likely<strong>:</strong> <span class="math inline"><strong>p</strong><strong>(</strong><strong>t</strong><sub><strong>n</strong></sub><strong>∣</strong><strong>x</strong><sub><strong>n</strong></sub><strong>,</strong> <strong>w</strong><strong>,</strong> <strong>β</strong><strong>)</strong><strong>=</strong>(<strong>t</strong><sub><strong>n</strong></sub><strong>∣</strong><strong>w</strong><sup><strong>T</strong></sup><strong>ϕ</strong><strong>(</strong><strong>x</strong><sub><strong>n</strong></sub><strong>)</strong><strong>,</strong><strong>β</strong><sup><strong>−</strong><strong>1</strong></sup><strong>)</strong></span></p></li>
 <li><p>where<strong>:</strong> <span class="math inline"><strong>β</strong> <strong>=</strong> <strong>1</strong><strong>/</strong><strong>σ</strong><sup><strong>2</strong></sup></span> is the <strong>noise precision</strong></p></li>
 </ul>
 <p><em>(this turns <strong>least</strong> <strong>squares</strong> into <strong>maximum</strong> <strong>likelihood</strong> estimation)</em></p></td>
@@ -233,7 +233,7 @@ engine: pandoc
 <li><p>extend to a nonlinear model</p></li>
 </ol>
 <ul>
-<li><p><span class="math inline">$\mathbf{\ }\binom{\mathbf{arg\ max}}{\mathbf{₍}\mathbf{\theta}\mathbf{₎}}\prod_{\mathbf{ᵢ}\mathbf{₌}\mathbf{₁}}^{\mathbf{ⁿ}}{\mathbf{p\theta(y}\mathbf{ᵢ}\mathbf{\ |\ x}\mathbf{ᵢ}\mathbf{)}}\mathbf{\ }$</span><strong>supervised task</strong>, <strong>IID</strong> data <strong>(</strong>IID: <strong>Independent</strong> and <strong>Identically</strong> <strong>Distributed</strong> <strong>Data</strong>; for <strong>n</strong> data points: <span class="math inline">𝒟 <strong>=</strong> <strong>{</strong><strong>(</strong><strong>x</strong><strong>ᵢ</strong><strong>,</strong> <strong>y</strong><strong>ᵢ</strong><strong>)</strong><strong>}</strong><strong>ᵢ</strong><strong>₌</strong><strong>₁</strong><strong>ⁿ</strong></span><strong>)</strong></p></li>
+<li><p><span class="math inline">$\mathbf{\ }\binom{\mathbf{arg\ max}}{\mathbf{₍}\mathbf{\theta}\mathbf{₎}}\prod_{\mathbf{ᵢ}\mathbf{₌}\mathbf{₁}}^{\mathbf{ⁿ}}{\mathbf{p\theta(y}\mathbf{ᵢ}\mathbf{\ |\ x}\mathbf{ᵢ}\mathbf{)}}\mathbf{\ }$</span><strong>supervised task</strong>, <strong>IID</strong> data <strong>(</strong>IID: <strong>Independent</strong> and <strong>Identically</strong> <strong>Distributed</strong> <strong>Data</strong>; for <strong>n</strong> data points: <span class="math inline"> <strong>=</strong> <strong>{</strong><strong>(</strong><strong>x</strong><strong>ᵢ</strong><strong>,</strong> <strong>y</strong><strong>ᵢ</strong><strong>)</strong><strong>}</strong><strong>ᵢ</strong><strong>₌</strong><strong>₁</strong><strong>ⁿ</strong></span><strong>)</strong></p></li>
 <li><p>if we set up the <strong>maximum</strong> <strong>likelihood</strong> <strong>estimation</strong> task for linear regression will be <strong>equivalent</strong> for linear regression to <strong>minimizing</strong> the <strong>sum</strong> of <strong>squared</strong> <strong>errors</strong></p></li>
 <li><p><span class="math inline">$\binom{\mathbf{arg\ max}}{\mathbf{\theta}}\prod_{\mathbf{ᵢ}\mathbf{₌}\mathbf{₁}}^{\mathbf{ⁿ}}{\mathbf{p\theta(y}\mathbf{ᵢ}\mathbf{\ }\mathbf{\mid}\mathbf{\ x}\mathbf{ᵢ}\mathbf{)}}\mathbf{\ }$</span></p></li>
 </ul>
@@ -249,7 +249,7 @@ engine: pandoc
 <ul>
 <li><p><span class="math inline"><strong>θ</strong><strong>ᵀ</strong></span> is the <strong>vector</strong> of <strong>parameters</strong></p></li>
 <li><p><span class="math inline"><strong>x</strong></span> is the <strong>vector</strong> of <strong>covariances</strong></p></li>
-<li><p>and <span class="math inline"><strong>ε</strong></span> is <strong>real</strong> value <strong>noise</strong> of the model<em><strong>:</strong></em> <span class="math inline"><strong>ε</strong> <strong>∼</strong> 𝒩(<strong>0</strong><strong>,</strong> <strong>σ</strong><strong>²</strong><strong>)</strong></span></p></li>
+<li><p>and <span class="math inline"><strong>ε</strong></span> is <strong>real</strong> value <strong>noise</strong> of the model<em><strong>:</strong></em> <span class="math inline"><strong>ε</strong> <strong>∼</strong> (<strong>0</strong><strong>,</strong> <strong>σ</strong><strong>²</strong><strong>)</strong></span></p></li>
 </ul></li>
 <li><p><strong>linear</strong> combination of <strong>covariates</strong>: <span class="math inline"><strong>∑</strong><strong>ᵢ</strong><sup><strong>=</strong><strong>1</strong></sup><strong>ᵖ</strong> <strong>θ</strong><strong>ᵢ</strong> <strong>x</strong><strong>ᵢ</strong></span></p></li>
 </ul></td>
@@ -259,7 +259,7 @@ engine: pandoc
 <td colspan="8"><ul>
 <li><p><strong>Conditioned on x</strong>, the response variable <strong><em>y</em></strong> follows a <strong>Gaussian</strong> <strong>distribution</strong> with mean <span class="math inline"><strong>θ</strong><strong>ᵀ</strong><strong>x</strong> </span>and variance <span class="math inline"><strong>σ</strong><strong>²</strong></span></p></li>
 <li><p>because we are <strong>adding</strong> a <strong>mean</strong> <strong>zero</strong> <strong>noise</strong>, and we know that <strong>adding</strong> a <strong>constant</strong> to a Gaussian is <strong>equivalent</strong> to <strong>changing</strong> its <strong>mean</strong>, the <strong>Gaussian</strong> goes from <strong>zero</strong> to the added <strong>constant</strong></p></li>
-<li><p>so, <strong>y</strong>, given <strong>x</strong>, will be a <strong>Gaussian</strong> <strong>centered</strong> at the <strong>linear</strong> <strong>prediction</strong> with <strong>variance</strong> given by <strong>sigma</strong> squared, <span class="math inline"><strong>Y</strong> <strong>∼</strong> 𝒩<strong>(</strong><strong>θ</strong><strong>ᵀ</strong><strong>x</strong><strong>,</strong> <strong>σ</strong><strong>²</strong><strong>)</strong></span></p></li>
+<li><p>so, <strong>y</strong>, given <strong>x</strong>, will be a <strong>Gaussian</strong> <strong>centered</strong> at the <strong>linear</strong> <strong>prediction</strong> with <strong>variance</strong> given by <strong>sigma</strong> squared, <span class="math inline"><strong>Y</strong> <strong>∼</strong> <strong>(</strong><strong>θ</strong><strong>ᵀ</strong><strong>x</strong><strong>,</strong> <strong>σ</strong><strong>²</strong><strong>)</strong></span></p></li>
 </ul></td>
 </tr>
 <tr>
@@ -290,7 +290,7 @@ engine: pandoc
 <li><p><strong>likelihood function:</strong></p></li>
 </ul>
 <blockquote>
-<p><span class="math inline">ℒ<strong>(</strong><strong>θ</strong><strong>;</strong> 𝒟<strong>)</strong> <strong>=</strong> <strong>∏</strong><strong>ᵢ</strong><strong>₌</strong><strong>₁</strong><strong>ⁿ</strong> <strong>p</strong><strong>θ</strong><strong>(</strong><strong>y</strong><strong>ᵢ</strong> <strong>∣</strong> <strong>x</strong><strong>ᵢ</strong><strong>)</strong></span> <strong>=</strong></p>
+<p><span class="math inline">ℒ<strong>(</strong><strong>θ</strong><strong>;</strong> <strong>)</strong> <strong>=</strong> <strong>∏</strong><strong>ᵢ</strong><strong>₌</strong><strong>₁</strong><strong>ⁿ</strong> <strong>p</strong><strong>θ</strong><strong>(</strong><strong>y</strong><strong>ᵢ</strong> <strong>∣</strong> <strong>x</strong><strong>ᵢ</strong><strong>)</strong></span> <strong>=</strong></p>
 <p><span class="math inline">$\mathbf{\prod}\mathbf{ᵢ}\mathbf{₌}\mathbf{₁ⁿ}\mathbf{\ }\frac{\mathbf{1}}{\mathbf{\sigma\sqrt{}(2}\mathbf{\pi)}}\mathbf{\  \cdot \ exp(\  -}\frac{\mathbf{(y}\mathbf{ᵢ}\mathbf{\  - \ \theta}\mathbf{ᵀ}\mathbf{x}\mathbf{ᵢ}\mathbf{)²}}{\mathbf{2}\mathbf{\sigma ²}}\mathbf{\ )}$</span> <strong>=</strong></p>
 <p><span class="math display">$$\frac{\mathbf{1}}{\mathbf{\sigma ⁿ\ }\left( \mathbf{2}\mathbf{\pi} \right)_{\frac{\mathbf{n}}{\mathbf{2}}}}\mathbf{\ exp(\ }\frac{\mathbf{1}}{\mathbf{2}\mathbf{\sigma ²}}\mathbf{\sum}\mathbf{ᵢ}\mathbf{₌}\mathbf{₁ⁿ}\mathbf{\ (y}\mathbf{ᵢ}\mathbf{\  - \ \theta}\mathbf{ᵀ}\mathbf{x}\mathbf{ᵢ}\mathbf{)²\ )}$$</span></p>
 </blockquote></td>
@@ -585,7 +585,7 @@ engine: pandoc
 </ul></li>
 </ul>
 <p>for <span class="math inline"><strong>τ</strong></span> from 0 to convergence</p>
-<p><span class="math display"><strong>θ</strong><strong>⁽</strong><strong>ᵗ</strong><strong>⁺</strong><strong>¹</strong><strong>⁾</strong> <strong>=</strong> <strong>θ</strong><strong>⁽</strong><strong>ᵗ</strong><strong>⁾</strong> <strong>−</strong> <strong>ρ</strong><strong>(</strong><strong>τ</strong><strong>)</strong> <strong>∇</strong><strong>ₜ</strong> <strong>l</strong><strong>o</strong><strong>g</strong> ℒ<strong>(</strong><strong>θ</strong><strong>⁽</strong><strong>ᵗ</strong><strong>⁾</strong> <strong>|</strong> 𝒟<strong>)</strong></span></p>
+<p><span class="math display"><strong>θ</strong><strong>⁽</strong><strong>ᵗ</strong><strong>⁺</strong><strong>¹</strong><strong>⁾</strong> <strong>=</strong> <strong>θ</strong><strong>⁽</strong><strong>ᵗ</strong><strong>⁾</strong> <strong>−</strong> <strong>ρ</strong><strong>(</strong><strong>τ</strong><strong>)</strong> <strong>∇</strong><strong>ₜ</strong> <strong>l</strong><strong>o</strong><strong>g</strong> ℒ<strong>(</strong><strong>θ</strong><strong>⁽</strong><strong>ᵗ</strong><strong>⁾</strong> <strong>|</strong> <strong>)</strong></span></p>
 <p><span class="math display">$$\mathbf{\propto}\mathbf{\ }\mathbf{\theta}^{\mathbf{(}}\mathbf{ᵗ}^{\mathbf{)}}\mathbf{- \ \rho}\left( \mathbf{\tau} \right)\mathbf{\nabla ₜ}\mathbf{\ }\sum_{\mathbf{i - 1}}^{\mathbf{n}}\left( \mathbf{y}\mathbf{ᵢ}\mathbf{\  - \ \theta}\mathbf{ᵀ}\mathbf{x}\mathbf{ᵢ} \right)^{\mathbf{2}}\mathbf{\ \ \ \ \ \ \ \ \ \ \ \ }$$</span></p>
 <p><span class="math display"><strong>=</strong> <strong>θ</strong><strong>⁽</strong><strong>ᵗ</strong><strong>⁾</strong> <strong>+</strong> <strong>ρ</strong><strong>(</strong><strong>τ</strong><strong>)</strong> <strong>⋅</strong> <strong>2</strong> <strong>∑</strong><strong>ᵢ</strong><strong>₌</strong><strong>₁</strong><strong>ⁿ</strong> <strong>(</strong><strong>y</strong><strong>ᵢ</strong> <strong>−</strong> <strong>θ</strong><strong>ᵀ</strong><strong>x</strong><strong>ᵢ</strong><strong>)</strong> <strong>x</strong><strong>ᵢ</strong>           <strong>O</strong><strong>(</strong><strong>n</strong><strong>p</strong><strong>)</strong></span></p>
 <ul>

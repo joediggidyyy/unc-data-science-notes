@@ -40,7 +40,7 @@
 <td style="text-align: right;">[optional]</td>
 </tr>
 <tr>
-<td colspan="4"><p>Buolamwini, J., &amp; Gebru, T. (2018). Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classiﬁcation. <em>Proceedings of Machine Learning Research</em>, <em>81</em>, 1–15.</p>
+<td colspan="4"><p>Buolamwini, J., &amp; Gebru, T. (2018). Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classication. <em>Proceedings of Machine Learning Research</em>, <em>81</em>, 1–15.</p>
 <ul>
 <li><p><a href="https://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf">https://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf</a></p></li>
 </ul>

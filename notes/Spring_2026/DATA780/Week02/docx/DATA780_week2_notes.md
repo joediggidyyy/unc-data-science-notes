@@ -290,7 +290,7 @@
 </tr>
 <tr>
 <td><strong>Kronecker delta</strong></td>
-<td><p><strong>𝛿<em><sub>ij</sub> </em></strong>is a mathematical <strong>function</strong> that acts as a discrete "<strong>switch</strong>," returning <strong>1</strong></p>
+<td><p><strong><em><sub>ij</sub> </em></strong>is a mathematical <strong>function</strong> that acts as a discrete "<strong>switch</strong>," returning <strong>1</strong></p>
 <p>if its two indices <em><strong>i</strong></em> and <em><strong>j</strong></em> are the <strong>same</strong>, and <em><strong>0</strong></em> if they are <strong>different</strong></p></td>
 </tr>
 <tr>

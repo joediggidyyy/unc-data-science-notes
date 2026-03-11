@@ -51,7 +51,7 @@
 <li><p><strong>2D</strong> arrays (<strong>tensors</strong>) are <strong>vectors</strong> whose <strong>inner</strong> <strong>product</strong> is the <strong>sum</strong> of the <strong>pairwise</strong> <strong>products</strong> of the elements</p></li>
 <li><p><strong>create</strong> and <strong>array</strong>/<strong>vector</strong></p></li>
 </ul>
-<p><span class="math display"><em>v</em><sup><em>k</em><sub>1</sub>, <em>k</em><sub>2</sub></sup> ∈ <em>R</em><sup><em>N</em><sub>𝟙</sub> × <em>N</em><sub>𝟚</sub></sup></span></p>
+<p><span class="math display"><em>v</em><sup><em>k</em><sub>1</sub>, <em>k</em><sub>2</sub></sup> ∈ <em>R</em><sup><em>N</em><sub></sub> × <em>N</em><sub></sub></sup></span></p>
 <ul>
 <li><p>with <strong>two</strong> <strong>dimensions</strong></p></li>
 </ul>

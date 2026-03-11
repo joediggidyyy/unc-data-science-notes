@@ -101,7 +101,7 @@
 <td>Outer Product</td>
 <td colspan="2"><p><img src="generated_media\DATA750_week1_notes\media\image11.png" style="width:5.15283in;height:1.43409in" /></p>
 <ul>
-<li><p><strong>output</strong> is an 𝑚×𝑛 <strong>matrix</strong></p></li>
+<li><p><strong>output</strong> is an × <strong>matrix</strong></p></li>
 </ul></td>
 </tr>
 <tr>

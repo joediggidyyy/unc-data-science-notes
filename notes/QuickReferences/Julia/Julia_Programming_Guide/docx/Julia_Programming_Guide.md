@@ -167,13 +167,13 @@
 <p><strong>using PlutoUI</strong></p>
 <p><strong>@bind apples Slider(</strong>5:50<strong>)</strong></p>
 <p><strong>apples</strong></p>
-<p><strong>repeat(“🍎”, apples)</strong></p>
+<p><strong>repeat(“”, apples)</strong></p>
 </blockquote>
 <p><strong>output:</strong></p>
 <p><strong>the @bind command creates the slider with a range(5:50)</strong></p>
 <p><img src="generated_media\Julia_Programming_Guide\media\image1.png" style="width:2.43211in;height:0.5524in" /></p>
 <p><strong>adjusting the slider adjust the number of apples displayed</strong></p>
-<p><strong>“🍎🍎🍎🍎🍎🍎🍎🍎”</strong></p></td>
+<p><strong>“”</strong></p></td>
 </tr>
 <tr>
 <td><strong>Plots</strong></td>

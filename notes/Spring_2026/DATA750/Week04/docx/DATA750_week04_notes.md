@@ -227,7 +227,7 @@ b &amp; a
 <li><p><strong>discrete</strong> Fourier transform (<strong>DFT</strong>)</p></li>
 </ul>
 <ul>
-<li><p><strong>Fourier</strong> transform ↔︎ <strong>inverse</strong> transform</p>
+<li><p><strong>Fourier</strong> transform ↔ <strong>inverse</strong> transform</p>
 <ul>
 <li><p><strong>FTs</strong> are <strong>invertible</strong> using <strong>inverse</strong> of FT <strong>matrix</strong> <span class="math inline"><strong>F</strong><sup><strong>−</strong><strong>1</strong></sup></span></p></li>
 </ul></li>
@@ -237,7 +237,7 @@ b &amp; a
 <li><p><span class="math inline">$\mathbf{f}\left( \mathbf{t} \right)\mathbf{= \ }\frac{\mathbf{1}}{\mathbf{2}\mathbf{\pi}}\int_{\mathbf{- \infty}}^{\mathbf{\infty}}{\mathbf{F}\left( \mathbf{\omega} \right)\mathbf{e}^{\mathbf{- i\omega t}}}\mathbf{d\omega}$</span></p></li>
 <li><p><strong>Euler’s</strong> formula: <span class="math inline"><strong>e</strong><sup><strong>i</strong><strong>ω</strong><strong>t</strong></sup><strong>=</strong><strong>cos</strong> (<strong>ω</strong><strong>t</strong>)<strong>+</strong> <strong>i</strong><strong>sin</strong> (<strong>ω</strong><strong>t</strong>)</span></p>
 <ul>
-<li><p>where <strong>𝑒</strong> is the <strong>base</strong> of the <strong>natural</strong> <strong>log</strong>arithm, <strong>𝑖</strong> is the imaginary unit <strong>(</strong><span class="math inline"><strong>i</strong><sup><strong>2</strong></sup> <strong>=</strong> <strong>−</strong><strong>1</strong></span><strong>),</strong> and <strong>𝑥</strong> is the <strong>angle</strong> in <strong>radians</strong></p></li>
+<li><p>where <strong></strong> is the <strong>base</strong> of the <strong>natural</strong> <strong>log</strong>arithm, <strong></strong> is the imaginary unit <strong>(</strong><span class="math inline"><strong>i</strong><sup><strong>2</strong></sup> <strong>=</strong> <strong>−</strong><strong>1</strong></span><strong>),</strong> and <strong></strong> is the <strong>angle</strong> in <strong>radians</strong></p></li>
 <li><p><strong>bridges</strong> complex <strong>analysis</strong> and trigonometry by relating the <strong>exponential</strong> function to <strong>sine</strong> and <strong>cosine</strong></p></li>
 </ul></li>
 </ul></li>

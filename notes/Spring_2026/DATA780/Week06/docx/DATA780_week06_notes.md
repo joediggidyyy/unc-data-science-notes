@@ -253,13 +253,13 @@ features
 <p>ChatGPT 5.2</p>
 <p><span class="math display">$$\mathbf{b\  + \ }\sum_{\mathbf{i = 1}}^{\mathbf{n}}{\mathbf{x}_{\mathbf{i}}\mathbf{\ }\mathbf{w}_{\mathbf{i}}}\mathbf{\ }$$</span></p>
 <p><strong>linear</strong> combination (dot product)</p>
-<p><span class="math display"> ∈ ℝ<sup><em>s</em>(𝓁)</sup></span></p>
-<p><span class="math display"> ∈ ℝ<sup><em>s</em>(𝓁) × <em>s</em>(𝓁 − 1)</sup></span></p>
-<p><span class="math inline"> ∈ ℝ<sup><em>s</em>(𝓁)</sup></span> <span class="math inline"> ∈ ℝ<sup><em>s</em>(𝓁 − 1)</sup></span></p></td>
+<p><span class="math display"> ∈ ℝ<sup><em>s</em>()</sup></span></p>
+<p><span class="math display"> ∈ ℝ<sup><em>s</em>() × <em>s</em>( − 1)</sup></span></p>
+<p><span class="math inline"> ∈ ℝ<sup><em>s</em>()</sup></span> <span class="math inline"> ∈ ℝ<sup><em>s</em>( − 1)</sup></span></p></td>
 </tr>
 <tr>
 <td>Matrix Notation</td>
-<td><p><span class="math display"><strong>L</strong><strong>a</strong><strong>y</strong><strong>e</strong><strong>r</strong> 𝓁−<strong>1</strong> <strong>→</strong> <strong>L</strong><strong>a</strong><strong>y</strong><strong>e</strong><strong>r</strong>𝓁</span></p>
+<td><p><span class="math display"><strong>L</strong><strong>a</strong><strong>y</strong><strong>e</strong><strong>r</strong> −<strong>1</strong> <strong>→</strong> <strong>L</strong><strong>a</strong><strong>y</strong><strong>e</strong><strong>r</strong></span></p>
 <p><span class="math display">$${\overrightarrow{\mathbf{\varphi}}}^{\mathbf{(}\mathcal{l}\mathbf{)}}\mathbf{= \sigma(\ }\mathbf{W}^{\mathcal{l}}\mathbf{\ }{\overrightarrow{\mathbf{\varphi}}}^{\mathbf{(}\mathcal{l -}\mathbf{1}\mathbf{)}}\mathbf{\  +}\overrightarrow{\mathbf{b}^{\mathbf{(}\mathcal{l}\mathbf{)}}}\mathbf{)}$$</span></p>
 <p><strong>expanded form:</strong></p>
 <p><span class="math display">$$\begin{bmatrix}
@@ -362,7 +362,7 @@ $$</span><em><strong>into the loss equation and simplify.</strong></em></p>
 </ul>
 <p><span class="math display">$$\mathbf{L}\mathbf{OSS\  = \ neg}\left( \mathbf{log\ likelihood} \right)\mathbf{E}\mathbf{0,1,L}\left( \mathbf{\theta} \right)\mathbf{-}\prod_{\mathbf{i}}^{}{}_{}\mathbf{p}\left( \mathbf{y}_{\mathbf{i}} \middle| \mathbf{x}_{\mathbf{i}}\mathbf{,}\mathbf{\theta} \right)$$</span></p>
 <p><span class="math display"><strong>l</strong><strong>o</strong><strong>g</strong><strong>L</strong>(<strong>θ</strong>)<strong>=</strong><strong>E</strong><sub><strong>i</strong></sub><strong>l</strong><strong>o</strong><strong>g</strong><strong>P</strong>(<strong>y</strong><sub><strong>i</strong></sub>|<strong>x</strong><sub><strong>i</strong></sub><strong>,</strong><strong>θ</strong>)</span></p>
-<p><span class="math display"><strong>m</strong><strong>i</strong><strong>n</strong> <strong>−</strong> <strong>l</strong><strong>o</strong><strong>s</strong><strong>s</strong> <strong>↔︎</strong><strong>m</strong><strong>i</strong><strong>n</strong><strong>(</strong><strong>n</strong><strong>e</strong><strong>g</strong><strong>(</strong><strong>l</strong><strong>o</strong><strong>g</strong> <strong>−</strong> <strong>l</strong><strong>i</strong><strong>k</strong><strong>e</strong><strong>l</strong><strong>i</strong><strong>h</strong><strong>o</strong><strong>o</strong><strong>d</strong><strong>)</strong> <strong>=</strong> <strong>n</strong><strong>e</strong><strong>g</strong><strong>(</strong><strong>m</strong><strong>a</strong><strong>x</strong><strong>(</strong><strong>l</strong><strong>o</strong><strong>g</strong> <strong>−</strong> <strong>l</strong><strong>i</strong><strong>k</strong><strong>e</strong><strong>l</strong><strong>i</strong><strong>h</strong><strong>o</strong><strong>d</strong><strong>)</strong></span></p>
+<p><span class="math display"><strong>m</strong><strong>i</strong><strong>n</strong> <strong>−</strong> <strong>l</strong><strong>o</strong><strong>s</strong><strong>s</strong> <strong>↔</strong><strong>m</strong><strong>i</strong><strong>n</strong><strong>(</strong><strong>n</strong><strong>e</strong><strong>g</strong><strong>(</strong><strong>l</strong><strong>o</strong><strong>g</strong> <strong>−</strong> <strong>l</strong><strong>i</strong><strong>k</strong><strong>e</strong><strong>l</strong><strong>i</strong><strong>h</strong><strong>o</strong><strong>o</strong><strong>d</strong><strong>)</strong> <strong>=</strong> <strong>n</strong><strong>e</strong><strong>g</strong><strong>(</strong><strong>m</strong><strong>a</strong><strong>x</strong><strong>(</strong><strong>l</strong><strong>o</strong><strong>g</strong> <strong>−</strong> <strong>l</strong><strong>i</strong><strong>k</strong><strong>e</strong><strong>l</strong><strong>i</strong><strong>h</strong><strong>o</strong><strong>d</strong><strong>)</strong></span></p>
 <p>for a single sample with true label y E ???</p>
 <p>and predicted probabliltiy p</p>
 <p>if y=1: we want max(P(y=1|x))=p</p>

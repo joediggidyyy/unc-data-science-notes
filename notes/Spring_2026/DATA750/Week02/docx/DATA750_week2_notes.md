@@ -68,7 +68,7 @@
 <tr>
 <td>Elementary Row Operations (ERO)</td>
 <td colspan="5" style="text-align: right;"><ol type="1">
-<li><p><strong>swap</strong> <strong>rows</strong> <em><strong>(R<sub>i</sub> ↔︎ R<sub>j</sub>)</strong></em></p>
+<li><p><strong>swap</strong> <strong>rows</strong> <em><strong>(R<sub>i</sub> ↔ R<sub>j</sub>)</strong></em></p>
 <ul>
 <li><p><strong>interchange</strong> two <strong>rows</strong></p></li>
 </ul></li>
@@ -334,7 +334,7 @@
 <td colspan="2">General Method</td>
 <td colspan="4" style="text-align: right;"><ul>
 <li><p><strong>calculate</strong> the <strong>product</strong> of the matrix <strong>norm</strong> of <em><strong>A</strong></em> and the matrix <strong>norm</strong> of <em><strong>A<sup>-1</sup></strong></em></p></li>
-<li><p><em><strong>cond(A) = ||A|| ● ||A<sup>-1</sup>||</strong></em> using the <strong>same</strong> matrix <strong>norm</strong></p></li>
+<li><p><em><strong>cond(A) = ||A||  ||A<sup>-1</sup>||</strong></em> using the <strong>same</strong> matrix <strong>norm</strong></p></li>
 </ul></td>
 </tr>
 <tr>

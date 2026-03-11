@@ -307,7 +307,7 @@ engine: pandoc
 <ul>
 <li><p>the <strong>first</strong> <span class="math inline"><strong>r</strong></span> vectors are <span class="math inline"><strong>n</strong><strong>o</strong><strong>n</strong> <strong>−</strong> <strong>z</strong><strong>e</strong><strong>r</strong><strong>o</strong></span>, and what we just showed is that they are <strong>orthogonal</strong></p></li>
 </ul>
-<p><span class="math display">(<strong>A</strong><strong>v</strong><strong>ᵢ</strong>)<strong>⋅</strong>(<strong>A</strong><strong>v</strong><strong>ⱼ</strong>)<strong>=</strong><strong>λ</strong><strong>ⱼ</strong>(<strong>v</strong><strong>ᵢ</strong><strong>⋅</strong><strong>v</strong><strong>ⱼ</strong>) <strong>=</strong> <strong>0</strong><strong>,</strong> <strong>i</strong><strong>≠</strong><strong>j</strong></span></p>
+<p><span class="math display">(<strong>A</strong><strong>v</strong><strong>ᵢ</strong>)<strong>⋅</strong>(<strong>A</strong><strong>v</strong><strong></strong>)<strong>=</strong><strong>λ</strong><strong></strong>(<strong>v</strong><strong>ᵢ</strong><strong>⋅</strong><strong>v</strong><strong></strong>) <strong>=</strong> <strong>0</strong><strong>,</strong> <strong>i</strong><strong>≠</strong><strong>j</strong></span></p>
 <ul>
 <li><p>which means that the <strong>following</strong> <strong>vectors</strong> are <strong>orthonormal</strong></p></li>
 </ul>

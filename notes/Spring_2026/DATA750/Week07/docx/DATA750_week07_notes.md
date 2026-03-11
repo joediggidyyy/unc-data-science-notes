@@ -494,7 +494,7 @@ engine: pandoc
 <ul>
 <li><p>with periodic boundary condition</p></li>
 </ul>
-<p><span class="math display"><strong>v</strong><strong>=</strong><strong>L</strong>(<strong>u</strong>)<strong>,</strong> <strong>L</strong><strong>:</strong>ℝ<sup>𝕟</sup><strong>→</strong>ℝ<sup>𝕟</sup></span></p>
+<p><span class="math display"><strong>v</strong><strong>=</strong><strong>L</strong>(<strong>u</strong>)<strong>,</strong> <strong>L</strong><strong>:</strong>ℝ<sup></sup><strong>→</strong>ℝ<sup></sup></span></p>
 <ul>
 <li><p>the Fourier frequency vector</p></li>
 </ul>
