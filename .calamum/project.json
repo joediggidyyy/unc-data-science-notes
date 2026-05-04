@@ -1,0 +1,32 @@
+{
+  "aliases": [
+    "unc-data-science-notes"
+  ],
+  "application": "unc-data-science-notes",
+  "calamum": {
+    "catalog_root": "catalog",
+    "default_lanes": [
+      "pytest",
+      "sandbox_test",
+      "empirical_test"
+    ],
+    "path_aliases": {},
+    "reports_root": ".calamum/generated/reports",
+    "required_markers": [],
+    "required_paths": [
+      "tests"
+    ],
+    "runs_root": ".calamum/generated/runs",
+    "runtime": {},
+    "trusted_requesters": [],
+    "working_dir": "."
+  },
+  "domain": "general",
+  "name": "Unc Data Science Notes",
+  "project_id": "unc-data-science-notes",
+  "root": ".",
+  "schema_version": "calamum-project-v1",
+  "shape": {
+    "kind": "python"
+  }
+}
