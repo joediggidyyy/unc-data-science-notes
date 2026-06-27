@@ -1661,6 +1661,42 @@
       "category": "image",
       "notes": "joediggidyyy approved",
       "sha256": "207b52785b1ffde9e55101366fde653a6077dd02d0a7f3ee3bacbac99029b899"
+    },
+    "notes/Summer_2026/DATA735/Week02/docx/generated_media/DATA735_week02_notes/media/image1.png": {
+      "approved_utc": "2026-06-27T08:26:07Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "489e91cad5b4205ca1c54d38af1926729243f01cbab2180b4ca125a9fe0d8d49"
+    },
+    "notes/Summer_2026/DATA785/Week01/docx/generated_media/DATA785_week01_notes/media/image1.png": {
+      "approved_utc": "2026-06-27T08:26:07Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "26363bec7c3a4ad9e4d0bd939c0fc60799eb4f6efd12084075397448b28d150d"
+    },
+    "notes/Summer_2026/DATA785/Week01/docx/generated_media/DATA785_week01_notes/media/image2.png": {
+      "approved_utc": "2026-06-27T08:26:07Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "268b00376cd5a4632930ac6e0e206100ba38b1fd8b7854c1668b0f5ace55407a"
+    },
+    "notes/Summer_2026/DATA785/Week01/docx/generated_media/DATA785_week01_notes/media/image3.png": {
+      "approved_utc": "2026-06-27T08:26:07Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "fa7185d4905bc697b22cd3bd0533f167162546f0107ec02c5d8f3bf836589aa3"
+    },
+    "notes/Summer_2026/DATA785/Week01/docx/generated_media/DATA785_week01_notes/media/image4.png": {
+      "approved_utc": "2026-06-27T08:26:07Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "782a8d7ffdb29d8736ae4d62a545076189235c86290738ee60bb809fe39470d1"
+    },
+    "notes/Summer_2026/DATA785/Week01/docx/generated_media/DATA785_week01_notes/media/image5.png": {
+      "approved_utc": "2026-06-27T08:26:07Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "516403083892b43b6e7517ac40a989e655226fa9e731c68fbc8891d8b857831a"
     }
   },
   "version": 1
