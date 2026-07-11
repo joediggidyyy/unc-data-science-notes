@@ -1697,6 +1697,78 @@
       "category": "image",
       "notes": "Reviewed (maintain.py)",
       "sha256": "516403083892b43b6e7517ac40a989e655226fa9e731c68fbc8891d8b857831a"
+    },
+    "notes/Summer_2026/DATA785/Week03/docx/generated_media/DATA785_week03_notes/media/image1.png": {
+      "approved_utc": "2026-07-09T07:14:17Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "a6a244a2a89dc5b53ce85d65657e26ba652b7ff8aa67b2f2e8151435054643e0"
+    },
+    "notes/Summer_2026/DATA785/Week05/docx/generated_media/DATA785_week05_notes/media/image1.png": {
+      "approved_utc": "2026-07-11T18:23:28Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "4dfbca3f3da5cb5afe23f33475907eeae0d27391b83ca9b9af9d86e05eddd021"
+    },
+    "notes/Summer_2026/DATA785/Week05/docx/generated_media/DATA785_week05_notes/media/image2.png": {
+      "approved_utc": "2026-07-11T18:23:28Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "cab3e50e9cae14598e7c5fc49ad7fb57367e77aa84b0805744305e3dd4dfd0f1"
+    },
+    "notes/Summer_2026/DATA785/Week05/docx/generated_media/DATA785_week05_notes/media/image3.png": {
+      "approved_utc": "2026-07-11T18:23:28Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "d88d746694e99c8345acbb8ee0c711d94351fc88e59e0b515720e2fd095a4f0d"
+    },
+    "notes/Summer_2026/DATA785/Week06/docx/generated_media/DATA785_week06_notes/media/image1.png": {
+      "approved_utc": "2026-07-11T18:23:28Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "a7e793edc378a890f805cc8b3a9f40ded8d209eceae947f83636204ad9c2ca77"
+    },
+    "notes/Summer_2026/DATA785/Week06/docx/generated_media/DATA785_week06_notes/media/image2.png": {
+      "approved_utc": "2026-07-11T18:23:28Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "3d43a26693fc732a58c139d5a08243cb9f9d9d5f264be6886a2cd07d7ca30560"
+    },
+    "notes/Summer_2026/DATA785/Week06/docx/generated_media/DATA785_week06_notes/media/image3.png": {
+      "approved_utc": "2026-07-11T18:23:28Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "3a98d90a65127e4fa6c0ab6830adfa3c5713263a18af32a9d0de38cc23b0b333"
+    },
+    "notes/Summer_2026/DATA785/Week06/docx/generated_media/DATA785_week06_notes/media/image4.png": {
+      "approved_utc": "2026-07-11T18:23:28Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "c4caae0754e387291e9a389b16ac9e32211f9e6578bc7c519c2b5ebad1583258"
+    },
+    "notes/Summer_2026/DATA785/Week06/docx/generated_media/DATA785_week06_notes/media/image5.jpeg": {
+      "approved_utc": "2026-07-11T18:23:28Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "fb9df1abb536ff1d8de6812f43ba5d29565ac86e23929ef88a3a8a70cc4db205"
+    },
+    "notes/Summer_2026/DATA785/Week06/docx/generated_media/DATA785_week06_notes/media/image6.png": {
+      "approved_utc": "2026-07-11T18:23:28Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "a4d894790db2c12c219e814c44997f59eb1793500b7b255c3995abd596a2112c"
+    },
+    "notes/Summer_2026/DATA785/Week06/docx/generated_media/DATA785_week06_notes/media/image7.png": {
+      "approved_utc": "2026-07-11T18:23:28Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "812d2b3761eea9bba4ab322504bb1e47a9cb487f3628624910659dc2ed62dc0c"
+    },
+    "notes/Summer_2026/DATA785/Week06/docx/generated_media/DATA785_week06_notes/media/image8.png": {
+      "approved_utc": "2026-07-11T18:23:28Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "909425cf57b0a7ce05d41bb0992ece83913ca8ea07461990af40f24cf3dadd12"
     }
   },
   "version": 1
