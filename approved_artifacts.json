@@ -1769,6 +1769,60 @@
       "category": "image",
       "notes": "Reviewed (maintain.py)",
       "sha256": "909425cf57b0a7ce05d41bb0992ece83913ca8ea07461990af40f24cf3dadd12"
+    },
+    "notes/Summer_2026/DATA785/Week07/docx/generated_media/DATA785_week07_notes/media/image1.png": {
+      "approved_utc": "2026-07-13T05:30:24Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "97d69525907651614c544cb28c392562a95d13008510ec2fe0a17890fddbf43c"
+    },
+    "notes/Summer_2026/DATA785/Week07/docx/generated_media/DATA785_week07_notes/media/image2.png": {
+      "approved_utc": "2026-07-13T05:30:24Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "b927ca01d446d7ee127b90293762edfc474593f77bd3d66fab92f2768a87267e"
+    },
+    "notes/Summer_2026/DATA785/Week07/docx/generated_media/DATA785_week07_notes/media/image3.png": {
+      "approved_utc": "2026-07-13T05:30:24Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "7c6fc3b77acffca789d99ab09f2ea88d72997e28e42c0646cb3559861ed876c7"
+    },
+    "notes/Summer_2026/DATA785/Week07/docx/generated_media/DATA785_week07_notes/media/image4.png": {
+      "approved_utc": "2026-07-13T05:30:24Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "8f398cbe3c96bea724ad018f444644f67d956dd868e4e2d283222519867c71ca"
+    },
+    "notes/Summer_2026/DATA785/Week07/docx/generated_media/DATA785_week07_notes/media/image5.png": {
+      "approved_utc": "2026-07-13T05:30:24Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "fc7d5c4a82bc98694f8e5ccf16d0581e34c17cc60b1c93f8880a92e4c706f79e"
+    },
+    "notes/Summer_2026/DATA785/Week08/docx/generated_media/DATA785_week08_notes/media/image1.png": {
+      "approved_utc": "2026-07-13T05:30:24Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "af43d43cea680bb10b74ef447e02ee2efc11b0179738374c70086b0b73af1de0"
+    },
+    "notes/Summer_2026/DATA785/Week08/docx/generated_media/DATA785_week08_notes/media/image2.png": {
+      "approved_utc": "2026-07-13T05:30:24Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "a9a485db1cf3683974785d4561f896009a6ef6c5952392cfc2519ae4e66cfeb0"
+    },
+    "notes/Summer_2026/DATA785/Week08/docx/generated_media/DATA785_week08_notes/media/image3.png": {
+      "approved_utc": "2026-07-13T05:30:24Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "2f417a16c31cf1bf60d746a4c6ecf27360cfdd5ec79b2395359774338fe688db"
+    },
+    "notes/Summer_2026/DATA785/Week08/docx/generated_media/DATA785_week08_notes/media/image4.png": {
+      "approved_utc": "2026-07-13T05:30:24Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "974a21927dc8ffdb746e14edf7e280d8e9dd7386af4fa2ec458ce30be61a52dc"
     }
   },
   "version": 1
