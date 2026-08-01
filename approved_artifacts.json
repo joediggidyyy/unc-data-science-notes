@@ -1823,6 +1823,12 @@
       "category": "image",
       "notes": "Reviewed (maintain.py)",
       "sha256": "974a21927dc8ffdb746e14edf7e280d8e9dd7386af4fa2ec458ce30be61a52dc"
+    },
+    "notes/Summer_2026/DATA785/Week10/docx/generated_media/DATA785_week10_notes/media/image1.png": {
+      "approved_utc": "2026-08-01T23:32:44Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "ad35ece05095c7d28276966fedcb7965b1548bf203d76d0ce9de3838e98e00fe"
     }
   },
   "version": 1

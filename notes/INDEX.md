@@ -2,7 +2,7 @@
 
 Index of `notes/` organized by term/course/week.
 
-Last updated (UTC): 2026-07-13T05:30:12+00:00
+Last updated (UTC): 2026-08-01T23:32:36+00:00
 
 ## QuickReferences
 
@@ -82,4 +82,6 @@ Last updated (UTC): 2026-07-13T05:30:12+00:00
 - [Week06](Summer_2026/DATA785/Week06/)
 - [Week07](Summer_2026/DATA785/Week07/)
 - [Week08](Summer_2026/DATA785/Week08/)
+- [Week09](Summer_2026/DATA785/Week09/)
+- [Week10](Summer_2026/DATA785/Week10/)
 
