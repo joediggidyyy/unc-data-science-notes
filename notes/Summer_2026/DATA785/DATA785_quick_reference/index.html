@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Topic-organized DATA 785 Deep Learning and Generative AI quick reference study guide.">
+  <title>DATA 785 Quick Reference Study Guide</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to study guide</a>
+<header class="top-banner">
+  <div class="brand"><strong>DATA 785 Quick Reference</strong><span>Deep Learning and Generative AI · organized by topic</span></div>
+  <div class="banner-actions">
+    <button class="icon-button" id="themeToggle" type="button">Dark</button>
+    <button class="icon-button" id="printGuide" type="button">Print</button>
+    <button class="menu-button" id="menuToggle" type="button" aria-expanded="false" aria-controls="menuPanel">
+      <span class="menu-label">Topics &amp; Search</span><span class="chevron" aria-hidden="true">▾</span>
+    </button>
+  </div>
+</header>
+
+<aside class="menu-panel" id="menuPanel" hidden aria-label="Study guide navigation and search">
+  <div class="menu-grid">
+    <section aria-labelledby="searchHeading">
+      <h2 class="toc-heading" id="searchHeading">Search all topics</h2>
+      <div class="search-row">
+        <input id="siteSearch" type="search" autocomplete="off" placeholder="Search: backprop, RAG, beam search…" aria-describedby="searchHelp searchStatus">
+        <button class="icon-button" id="clearSearch" type="button">Clear</button>
+      </div>
+      <p class="search-help" id="searchHelp">Use <kbd>/</kbd> or <kbd>Ctrl</kbd>+<kbd>K</kbd> to focus search. Multiple words use AND matching.</p>
+      <p class="search-status" id="searchStatus" aria-live="polite"></p>
+      <nav class="search-results" id="searchResults" aria-label="Search results"></nav>
+    </section>
+    <section aria-labelledby="tocHeading">
+      <h2 class="toc-heading" id="tocHeading">Topic index</h2>
+      <nav class="toc" aria-label="Table of contents">
+        <a href="#foundations">1. Foundations</a>
+        <a href="#mlp">2. MLPs &amp; nonlinearities</a>
+        <a href="#backprop">3. Backpropagation</a>
+        <a href="#embeddings">4. Word embeddings</a>
+        <a href="#cnn">5. CNNs</a>
+        <a href="#deep-training">6. Deep-network training</a>
+        <a href="#sequence">7. Sequence models</a>
+        <a href="#decoding">8. RNN training &amp; decoding</a>
+        <a href="#transformers">9. Transformers</a>
+        <a href="#generative">10. Generative models</a>
+        <a href="#llm-systems">11. LLM systems</a>
+        <a href="#agents">12. Agents &amp; MCP</a>
+        <a href="#evaluation">13. Evaluation &amp; security</a>
+        <a href="#comparisons">14. Rapid comparisons</a>
+        <a href="#source-map">Source map &amp; gaps</a>
+      </nav>
+    </section>
+  </div>
+</aside>
+
+<main id="main">
+  <section class="hero" aria-labelledby="pageTitle">
+    <p class="eyebrow">Summer 2026 · DATA 785</p>
+    <h1 id="pageTitle">Deep Learning and Generative AI<br>Quick Reference Study Guide</h1>
+    <p class="hero-summary">A topic-first synthesis of the semester notes. Use the fixed banner to open the table of contents or search the full guide. The document is self-contained, works offline, and prints cleanly.</p>
+    <div class="hero-actions">
+      <a class="action-link" href="#topic-map">Browse topics</a>
+      <a class="action-link" href="#comparisons">Rapid comparisons</a>
+      <a class="action-link" href="#source-map">Source map</a>
+    </div>
+  </section>
+
+  <div class="notice"><strong>Scope note.</strong> This guide condenses the repository’s Week 01–12 Markdown notes. It preserves the course framing and flags places where the Markdown source is incomplete or appears malformed rather than silently inventing missing detail.</div>
+
+  <section id="topic-map" aria-labelledby="topicMapHeading">
+    <h2 id="topicMapHeading">Topic map</h2>
+    <div class="topic-map">
+      <a href="#foundations"><strong>Predictive foundations</strong><span>Regression, loss, gradient descent, regularization</span></a>
+      <a href="#mlp"><strong>Neural-network structure</strong><span>MLPs, nonlinearities, representation capacity</span></a>
+      <a href="#backprop"><strong>Learning mechanics</strong><span>Chain rule, backpropagation, gradients</span></a>
+      <a href="#embeddings"><strong>Representation learning</strong><span>BoW, cosine similarity, skip-gram, CBOW</span></a>
+      <a href="#cnn"><strong>Vision models</strong><span>Convolution, pooling, padding, architecture</span></a>
+      <a href="#deep-training"><strong>Training deep networks</strong><span>Normalization, residuals, stability</span></a>
+      <a href="#sequence"><strong>Sequential probability</strong><span>N-grams, Markov assumptions, RNN state</span></a>
+      <a href="#decoding"><strong>Sequence generation</strong><span>Teacher forcing, beam, top-k, top-p, temperature</span></a>
+      <a href="#transformers"><strong>Transformers</strong><span>Attention stack, masking, BERT, GPT, T5, BART</span></a>
+      <a href="#generative"><strong>Generative modeling</strong><span>Normalizing flows and diffusion</span></a>
+      <a href="#llm-systems"><strong>LLM application stack</strong><span>Prompting, RLHF, emergence, RAG</span></a>
+      <a href="#agents"><strong>Agentic systems</strong><span>ReAct, tools, workflows, MCP</span></a>
+    </div>
+  </section>
+
+  <article class="topic" id="foundations" data-keywords="linear logistic regression least squares MSE loss gradient descent SGD mini-batch learning rate regularization overfitting underfitting L1 L2 MLE classification">
+    <header class="topic-header"><div><div class="topic-number">Topic 01</div><h2>Predictive foundations: regression, loss, and optimization</h2></div><div class="source-links"><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week01/docx/DATA785_week01_notes.md" target="_blank" rel="noopener">Week 01 source</a></div></header>
+    <p class="topic-intro">The course begins with linear and logistic models because the same ingredients recur throughout deep learning: parameters, differentiable loss, gradient-based training, validation, and regularization.</p>
+    <div class="grid-2">
+      <section class="card"><h3>Linear regression</h3><p>Predict a real-valued scalar from a feature vector.</p><div class="formula">ŷ = w<sup>T</sup>x + b</div><p><strong>Parameters:</strong> weight vector <em>w</em> and bias <em>b</em>. A batch can be written as <code>Ŷ = Xw + b</code>.</p></section>
+      <section class="card"><h3>Squared-error loss</h3><p>Measure prediction error over training examples.</p><div class="formula">L(w) = ½ Σ<sub>k</sub>(y<sup>(k)</sup> − ŷ<sup>(k)</sup>)²</div><p>The factor ½ simplifies the derivative. Training seeks parameters that reduce this loss.</p></section>
+    </div>
+    <h3>Gradient-based parameter update</h3>
+    <div class="formula">θ ← θ − η ∇<sub>θ</sub>L</div>
+    <ul><li><strong>θ:</strong> all trainable parameters.</li><li><strong>η:</strong> learning rate, a hyperparameter.</li><li><strong>Mini-batch SGD:</strong> estimate the gradient from a subset of examples, then update repeatedly.</li></ul>
+    <h3>Logistic classification</h3>
+    <div class="grid-2"><div><div class="formula">P(y = 1 | x) = σ(w<sup>T</sup>x + b)</div><p>The sigmoid maps a real-valued score to a probability. Classification uses a threshold or compares class probabilities.</p></div><div><div class="formula">L<sub>BCE</sub> = −[y log ŷ + (1−y) log(1−ŷ)]</div><p>Binary cross-entropy appears again in the backpropagation example. Maximum-likelihood training and cross-entropy are two views of the same objective.</p></div></div>
+    <h3>Generalization and regularization</h3>
+    <div class="table-wrap"><table><thead><tr><th>Pattern</th><th>Training behavior</th><th>Validation behavior</th><th>Response</th></tr></thead><tbody><tr><td>Underfitting</td><td>Poor</td><td>Poor</td><td>Increase capacity, improve features, train better.</td></tr><tr><td>Good fit</td><td>Good</td><td>Good</td><td>Retain and verify on held-out test data.</td></tr><tr><td>Overfitting</td><td>Very good</td><td>Poor</td><td>Regularize, add data, simplify, or stop earlier.</td></tr></tbody></table></div>
+    <div class="formula">objective = data objective − λR(W)</div>
+    <p><strong>L2:</strong> penalizes squared weights. <strong>L1:</strong> penalizes absolute weights and encourages sparsity. Choose <em>λ</em> using validation performance, not the training objective.</p>
+  </article>
+
+  <article class="topic" id="mlp" data-keywords="feedforward neural network MLP perceptron nonlinear activation sigmoid tanh ReLU hidden layer universal capacity linearity">
+    <header class="topic-header"><div><div class="topic-number">Topic 02</div><h2>Feedforward networks, MLPs, and nonlinearities</h2></div><div class="source-links"><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week02/docx/DATA785_week02_notes.md" target="_blank" rel="noopener">Week 02 source</a><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week03/docx/DATA785_week03_notes.md" target="_blank" rel="noopener">Week 03 source</a><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week05/docx/DATA785_week05_notes.md" target="_blank" rel="noopener">Week 05 source</a><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week08/docx/DATA785_week08_notes.md" target="_blank" rel="noopener">Week 08 source</a></div></header>
+    <p class="topic-intro">A stack of linear transformations is still linear. Multi-layer perceptrons gain expressive power by inserting nonlinear activation functions between affine layers.</p>
+    <div class="formula">z<sup>(l)</sup> = W<sup>(l)</sup>a<sup>(l−1)</sup> + b<sup>(l)</sup> &nbsp;&nbsp; ; &nbsp;&nbsp; a<sup>(l)</sup> = σ<sup>(l)</sup>(z<sup>(l)</sup>)</div>
+    <div class="table-wrap"><table><thead><tr><th>Activation</th><th>Compact form</th><th>Course use</th><th>Main caution</th></tr></thead><tbody><tr><td>Sigmoid</td><td>σ(z)=1/(1+e<sup>−z</sup>)</td><td>Binary probabilities; Week 03 derivation</td><td>Saturates; small gradients at extremes</td></tr><tr><td>tanh</td><td>tanh(z)</td><td>RNN hidden states</td><td>Can still produce vanishing gradients</td></tr><tr><td>ReLU</td><td>max(0,z)</td><td>CNNs; gradient-stability discussion</td><td>Inactive units can remain at zero</td></tr></tbody></table></div>
+    <div class="callout key"><strong>Recognition rule:</strong> If there is no nonlinearity between layers, collapse the weight matrices into one equivalent linear map.</div>
+    <p class="callout warn"><strong>Source limitation:</strong> Week 02 states the learning objectives and the need for nonlinearities, but its Markdown body is sparse. The activation summary above is restricted to activations explicitly used elsewhere in the course notes.</p>
+  </article>
+
+  <article class="topic" id="backprop" data-keywords="backpropagation chain rule reverse mode autodiff autograd delta gradient vanishing exploding initialization optimization">
+    <header class="topic-header"><div><div class="topic-number">Topic 03</div><h2>Backpropagation and gradient flow</h2></div><div class="source-links"><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week03/docx/DATA785_week03_notes.md" target="_blank" rel="noopener">Week 03 source</a><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week08/docx/DATA785_week08_notes.md" target="_blank" rel="noopener">Week 08 source</a></div></header>
+    <p class="topic-intro">Backpropagation applies the chain rule from the loss backward through the computation graph, reusing intermediate derivatives to obtain gradients for every parameter.</p>
+    <div class="grid-2">
+      <section class="card"><h3>Forward pass</h3><div class="formula">z<sup>(l)</sup> = W<sup>(l)</sup>a<sup>(l−1)</sup> + b<sup>(l)</sup></div><div class="formula">a<sup>(l)</sup> = σ(z<sup>(l)</sup>)</div><p>Cache values needed by the reverse pass.</p></section>
+      <section class="card"><h3>Backward pass</h3><div class="formula">δ<sup>(l)</sup> = ((W<sup>(l+1)</sup>)<sup>T</sup>δ<sup>(l+1)</sup>) ⊙ σ′(z<sup>(l)</sup>)</div><div class="formula">∂L/∂W<sup>(l)</sup> = δ<sup>(l)</sup>(a<sup>(l−1)</sup>)<sup>T</sup></div></section>
+    </div>
+    <h3>Procedure</h3><ol><li>Compute the output-layer error derivative.</li><li>Propagate the error backward from layer <em>L−1</em> to layer 1.</li><li>Form weight and bias gradients from each layer’s error and previous activation.</li><li>Update parameters with the optimizer.</li></ol>
+    <h3>Gradient pathologies</h3><div class="grid-2"><div class="callout risk"><strong>Vanishing:</strong> repeated multiplication by small derivatives or weights drives gradients toward zero; early layers learn slowly.</div><div class="callout risk"><strong>Exploding:</strong> repeated multiplication by large factors makes gradients unstable; loss and parameters can diverge.</div></div>
+    <p><strong>Course remedies:</strong> ReLU-style activations, batch/layer normalization, residual connections, and gradient clipping. Automatic differentiation systems implement the same reverse-mode chain rule over a recorded computation graph.</p>
+  </article>
+
+  <article class="topic" id="embeddings" data-keywords="representation learning text bag of words embeddings word2vec skip gram CBOW negative sampling cosine similarity Euclidean distance context window">
+    <header class="topic-header"><div><div class="topic-number">Topic 04</div><h2>Text representation and word embeddings</h2></div><div class="source-links"><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week04/docx/DATA785_week04_notes.md" target="_blank" rel="noopener">Week 04 source</a></div></header>
+    <p class="topic-intro">Representation learning replaces sparse, surface-level text counts with dense vectors whose geometry captures useful semantic or syntactic relationships.</p>
+    <div class="grid-2"><section class="card"><h3>Euclidean distance</h3><div class="formula">d(a,b)=√Σ<sub>i</sub>(a<sub>i</sub>−b<sub>i</sub>)²</div><p>Measures straight-line distance and is affected by vector magnitude.</p></section><section class="card"><h3>Cosine similarity</h3><div class="formula">sim(a,b)=(a·b)/(‖a‖‖b‖)</div><p>Measures direction: +1 same direction, 0 orthogonal, −1 opposite.</p></section></div>
+    <div class="table-wrap"><table><thead><tr><th>Method</th><th>Prediction task</th><th>Input</th><th>Output</th></tr></thead><tbody><tr><td>Skip-gram</td><td>Predict neighboring words</td><td>Center word</td><td>Context words</td></tr><tr><td>CBOW</td><td>Predict the center word</td><td>Context words</td><td>Center word</td></tr></tbody></table></div>
+    <h3>Negative sampling intuition</h3><ul><li>Build positive pairs from words that occur within a context window.</li><li>Build negative pairs by randomly pairing words unlikely to share the context.</li><li>Train a binary classifier instead of normalizing over the entire vocabulary for every pair.</li></ul>
+    <div class="callout key"><strong>Window-size effect:</strong> shorter windows emphasize syntactic similarity; longer windows emphasize topical relatedness.</div>
+  </article>
+
+  <article class="topic" id="cnn" data-keywords="CNN convolution computer vision filter kernel feature map pooling max average stride padding translation invariance locality receptive field LeNet AlexNet VGG ResNet">
+    <header class="topic-header"><div><div class="topic-number">Topic 05</div><h2>Convolutional neural networks</h2></div><div class="source-links"><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week05/docx/DATA785_week05_notes.md" target="_blank" rel="noopener">Week 05 source</a><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week06/docx/DATA785_week06_notes.md" target="_blank" rel="noopener">Week 06 source</a></div></header>
+    <p class="topic-intro">CNNs exploit locality and translation invariance. A shared filter slides across an image, producing feature maps without the parameter explosion of a fully connected image model.</p>
+    <div class="flow" aria-label="CNN pipeline"><span>Image</span><b>→</b><span>Convolution</span><b>→</b><span>Activation</span><b>→</b><span>Pooling / downsampling</span><b>→</b><span>Deeper features</span><b>→</b><span>Prediction</span></div>
+    <div class="grid-3"><div class="card"><h3>Convolution</h3><p>A sliding dot product between local image patches and learned filters. Weight sharing dramatically reduces parameters.</p></div><div class="card"><h3>Pooling</h3><p>Max or average over local regions. No learned parameters in the basic form; reduces spatial size and increases invariance.</p></div><div class="card"><h3>Padding and stride</h3><p>Padding controls edge preservation. Stride controls how far the filter moves and therefore the output resolution.</p></div></div>
+    <h3>Output geometry</h3><div class="formula">output side = floor((input side + 2P − F)/S) + 1</div><p><em>P</em> = padding, <em>F</em> = filter size, <em>S</em> = stride. Apply the same structure independently to width and height.</p>
+    <h3>Parameter count</h3><div class="formula">filters × F × F × input channels &nbsp; + &nbsp; filters biases</div>
+    <div class="table-wrap"><table><thead><tr><th>Architecture</th><th>Course takeaway</th></tr></thead><tbody><tr><td>LeNet</td><td>Early handwritten-digit CNN.</td></tr><tr><td>AlexNet</td><td>Landmark deep-CNN success; ReLU, L2, dropout.</td></tr><tr><td>VGG</td><td>Deep homogeneous stacks of 3×3 convolutions.</td></tr><tr><td>ResNet</td><td>Residual/skip connections enable very deep networks.</td></tr></tbody></table></div>
+    <p class="callout warn"><strong>Rendering note:</strong> the Week 05 Markdown shows an inconsistent denominator in the height formula. This guide uses the symmetric stride formula for both spatial dimensions; verify the lecture PDF when reproducing the exact slide.</p>
+  </article>
+
+  <article class="topic" id="deep-training" data-keywords="batch normalization layer normalization residual connection skip connection ResNet gamma beta epsilon running mean variance identity shattering gradients deep network">
+    <header class="topic-header"><div><div class="topic-number">Topic 06</div><h2>Training deep networks: normalization and residual paths</h2></div><div class="source-links"><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week06/docx/DATA785_week06_notes.md" target="_blank" rel="noopener">Week 06 source</a></div></header>
+    <h3>Batch normalization</h3>
+    <div class="formula">μ̂<sub>B</sub> = (1/|B|)Σx &nbsp;&nbsp; ; &nbsp;&nbsp; σ̂²<sub>B</sub> = (1/|B|)Σ(x−μ̂<sub>B</sub>)² + ε</div>
+    <div class="formula">BN(x) = γ ⊙ (x−μ̂<sub>B</sub>)/σ̂<sub>B</sub> + β</div>
+    <ul><li>Normalizes using batch statistics, then learns a rescale <em>γ</em> and shift <em>β</em>.</li><li>Can smooth the optimization landscape and permit larger learning rates.</li><li>Training uses batch statistics; inference uses accumulated estimates.</li><li>Very small batches give noisy estimates; very large batches reduce the regularizing noise.</li></ul>
+    <h3>Layer normalization</h3><p>Normalizes each example independently across its feature dimensions. It does not depend on batch size, and the forward computation is the same at training and test time.</p>
+    <h3>Residual connection</h3><div class="formula">y = F(x) + x</div><p>The identity path guarantees that a deeper block can preserve a simpler mapping. Residuals improve gradient flow, reduce gradient shattering, and make repeated deep blocks practical. A 1×1 convolution can align dimensions when the shortcut and block output differ.</p>
+    <div class="callout key"><strong>Memory hook:</strong> normalization stabilizes activations; residual connections stabilize information and gradient paths.</div>
+  </article>
+
+  <article class="topic" id="sequence" data-keywords="sequence modeling language model probability chain rule Markov bigram trigram n-gram RNN recurrent hidden state autoregressive conditional probability">
+    <header class="topic-header"><div><div class="topic-number">Topic 07</div><h2>Sequence modeling: probability, n-grams, and RNNs</h2></div><div class="source-links"><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week07/docx/DATA785_week07_notes.md" target="_blank" rel="noopener">Week 07 source</a></div></header>
+    <h3>Autoregressive factorization</h3><div class="formula">P(x<sub>1</sub>,…,x<sub>n</sub>) = ∏<sub>i=1…n</sub>P(x<sub>i</sub> | x<sub>1</sub>,…,x<sub>i−1</sub>)</div><p>Each next item is conditioned on the preceding sequence. This is the probabilistic basis of language modeling.</p>
+    <div class="table-wrap"><table><thead><tr><th>Model</th><th>Context</th><th>Strength</th><th>Limitation</th></tr></thead><tbody><tr><td>Bigram</td><td>Previous token</td><td>Simple and cheap</td><td>Very limited context</td></tr><tr><td>Trigram / n-gram</td><td>Previous n−1 tokens</td><td>More fluent local structure</td><td>Sparse counts; fixed context</td></tr><tr><td>RNN</td><td>Recursive hidden state</td><td>Variable-length context and shared parameters</td><td>Sequential training; gradient problems</td></tr></tbody></table></div>
+    <h3>RNN recurrence</h3><div class="formula">h<sub>t</sub> = σ(W<sub>h</sub>h<sub>t−1</sub> + W<sub>x</sub>x<sub>t</sub> + b)</div><div class="formula">ŷ<sub>t</sub> = λ(W<sub>o</sub>h<sub>t</sub>)</div><p>The hidden state recursively combines the current input with prior state. For generation, sample the next token from the output distribution and feed it into the next step.</p>
+    <div class="callout warn"><strong>Markov trade-off:</strong> limiting history controls complexity but prevents true long-range dependence. RNN state is intended to compress longer history into a fixed-size vector.</div>
+  </article>
+
+  <article class="topic" id="decoding" data-keywords="teacher forcing cross entropy backpropagation through time BPTT gradient clipping greedy decoding beam search beam width top-k top-p nucleus temperature sampling quality diversity">
+    <header class="topic-header"><div><div class="topic-number">Topic 08</div><h2>RNN training and sequence decoding</h2></div><div class="source-links"><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week08/docx/DATA785_week08_notes.md" target="_blank" rel="noopener">Week 08 source</a></div></header>
+    <h3>Training</h3><ul><li><strong>Teacher forcing:</strong> during training, feed the true previous token rather than the model’s sampled prediction.</li><li><strong>Cross-entropy:</strong> at each step, penalize low probability assigned to the true next token.</li><li><strong>Backpropagation through time:</strong> unroll the recurrence and differentiate through repeated uses of the same weight matrix.</li><li><strong>Gradient clipping:</strong> cap large gradients to control explosion.</li></ul>
+    <div class="formula">L<sub>t</sub> = −log ŷ<sub>t</sub>[w<sub>t+1</sub>]</div>
+    <h3>Decoding strategies</h3>
+    <div class="table-wrap"><table><thead><tr><th>Method</th><th>Decision rule</th><th>Best fit / effect</th><th>Main limitation</th></tr></thead><tbody><tr><td>Greedy</td><td>Choose argmax each step</td><td>Fast and deterministic</td><td>Locally optimal; generic and repetitive</td></tr><tr><td>Beam search</td><td>Keep K best partial sequences</td><td>Constrained tasks such as translation</td><td>Cost grows with K; still favors safe text</td></tr><tr><td>Top-k</td><td>Sample from the k most likely tokens</td><td>Controlled diversity</td><td>Fixed k ignores distribution shape</td></tr><tr><td>Top-p</td><td>Sample from the smallest set with cumulative mass ≥ p</td><td>Adaptive candidate set</td><td>Behavior depends strongly on p</td></tr><tr><td>Temperature</td><td>softmax(logits/τ)</td><td>Reshapes sharpness without truncation</td><td>Low τ is conservative; high τ is risky</td></tr></tbody></table></div>
+    <p class="callout warn"><strong>Source limitation:</strong> Week 08 names GRUs and LSTMs in its objectives, but detailed gate equations are not present in the Markdown file. They are therefore not reconstructed here.</p>
+  </article>
+
+  <article class="topic" id="transformers" data-keywords="transformer self-attention query key value Q K V multi-head positional encoding causal mask encoder decoder BERT GPT T5 BART masked language modeling NSP fine-tuning parallelization">
+    <header class="topic-header"><div><div class="topic-number">Topic 09</div><h2>Transformers, pretraining, and fine-tuning</h2></div><div class="source-links"><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week09/docx/DATA785_week09_notes.md" target="_blank" rel="noopener">Week 09 source</a><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week11/docx/DATA785_week11_notes.md" target="_blank" rel="noopener">Week 11 source</a></div></header>
+    <p class="topic-intro">Transformers replace recurrent state propagation with attention over token representations. Training can process positions in parallel; causal masking preserves autoregressive generation.</p>
+    <div class="formula">Attention(Q,K,V) = softmax(QK<sup>T</sup>/√d<sub>k</sub>)V</div>
+    <p class="search-help">Standard compact notation included to connect the notes’ Q/K/V dimensions and causal-mask matrix. The exact formula is not rendered as text in the Week 09 Markdown body.</p>
+    <div class="grid-2"><div class="card"><h3>Core dimensions</h3><ul><li><em>L</em>: layers</li><li><em>H</em>: attention heads</li><li><em>d<sub>qk</sub></em>: query/key dimension</li><li><em>d<sub>v</sub></em>: value dimension</li><li><em>d<sub>model</sub></em> = H·d<sub>v</sub></li><li><em>d<sub>ff</sub></em> ≈ 4d<sub>model</sub></li></ul></div><div class="card"><h3>Causal masking</h3><p>Set attention scores for future positions to −∞ before softmax. A token can attend only to itself and earlier tokens.</p></div></div>
+    <div class="table-wrap"><table><thead><tr><th>Architecture</th><th>Training / behavior</th><th>Typical tasks</th></tr></thead><tbody><tr><td>Encoder-only (BERT)</td><td>Bidirectional self-attention; masked language modeling; notes also list next-sentence prediction</td><td>Classification and token labeling</td></tr><tr><td>Decoder-only (GPT)</td><td>Causal next-token prediction</td><td>Generation and completion</td></tr><tr><td>Encoder-decoder (T5, BART)</td><td>Encode source, autoregressively decode target</td><td>Translation, summarization, text-to-text tasks</td></tr></tbody></table></div>
+    <h3>Fine-tuning checklist</h3><ol><li>Choose sequence-level or token-level output.</li><li>Replace pretraining heads with a task-specific output layer.</li><li>Train on labeled downstream data while updating the pretrained weights.</li><li>Use a smaller learning rate than pretraining to reduce catastrophic forgetting.</li><li>Evaluate both task quality and retained general capability.</li></ol>
+    <div class="callout key"><strong>Why transformers train well:</strong> parallelized sequence processing, layer normalization, residual connections, and short gradient paths compared with recurrent unrolling.</div>
+  </article>
+
+  <article class="topic" id="generative" data-keywords="generative modeling density likelihood anomaly detection normalizing flow invertible Jacobian determinant coupling layer diffusion noise denoising ELBO epsilon prediction MSE sampling">
+    <header class="topic-header"><div><div class="topic-number">Topic 10</div><h2>Generative modeling: normalizing flows and diffusion</h2></div><div class="source-links"><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week10/docx/DATA785_week10_notes.md" target="_blank" rel="noopener">Week 10 source</a></div></header>
+    <p class="topic-intro">Generative models learn a data distribution so they can create novel samples and, in some families, evaluate sample likelihood. The notes contrast exact-likelihood normalizing flows with iterative denoising diffusion models.</p>
+    <div class="grid-2"><section class="card"><h3>Normalizing flows</h3><ul><li>Transform a simple latent variable <em>z</em> through invertible layers into data <em>x</em>.</li><li>Each layer needs an efficient inverse and tractable Jacobian determinant.</li><li>Common pieces: invertible element-wise transforms, permutations, and coupling layers.</li><li>Pros: maximum-likelihood training; sampling and likelihood evaluation.</li><li>Constraint: architecture must preserve invertibility and tractable determinants.</li></ul></section><section class="card"><h3>Diffusion models</h3><ul><li>Forward process gradually adds Gaussian noise.</li><li>A neural network learns to reverse the process.</li><li>Training samples a time step and noise, creates a noisy input, predicts the noise, and minimizes MSE.</li><li>Generation begins with noise and iteratively denoises.</li><li>The notes connect the objective to an evidence lower bound (ELBO).</li></ul></section></div>
+    <h3>Diffusion training loop</h3><div class="flow"><span>sample x₀</span><b>→</b><span>sample t and ε</span><b>→</b><span>construct x<sub>t</sub></span><b>→</b><span>predict ε̂<sub>θ</sub>(x<sub>t</sub>,t)</span><b>→</b><span>MSE(ε̂,ε)</span></div>
+    <details><summary>Compact flow identity</summary><div><div class="formula">z ∼ p<sub>Z</sub> → f<sub>1</sub> → … → f<sub>n</sub> → x ∼ p<sub>X</sub></div><p>The data density is obtained by transforming the base density and accounting for volume change through the Jacobian determinant.</p></div></details>
+    <p class="callout warn"><strong>Equation-quality note:</strong> the forward-diffusion transition in the Markdown appears typographically malformed. This guide keeps the supported conceptual process and training loop; consult the original PDF before memorizing the exact transition equation.</p>
+  </article>
+
+  <article class="topic" id="llm-systems" data-keywords="large language model base model token autoregressive pretraining supervised fine tuning SFT RLHF reward model PPO KL prompt engineering emergent abilities RAG retrieval augmented generation DPR MIPS parametric memory nonparametric memory grounding">
+    <header class="topic-header"><div><div class="topic-number">Topic 11</div><h2>LLM systems: prompting, alignment, emergence, and RAG</h2></div><div class="source-links"><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week11/docx/DATA785_week11_notes.md" target="_blank" rel="noopener">Week 11 source</a></div></header>
+    <div class="flow"><span>Pretraining</span><b>→</b><span>SFT</span><b>→</b><span>Preference data</span><b>→</b><span>Reward model / RLHF</span><b>→</b><span>Prompt + RAG + tools</span><b>→</b><span>Evaluation</span></div>
+    <h3>What each intervention changes</h3>
+    <div class="table-wrap"><table><thead><tr><th>Method</th><th>Time</th><th>Weights?</th><th>Primary purpose</th></tr></thead><tbody><tr><td>Pretraining</td><td>Training</td><td>Yes</td><td>Broad next-token capability</td></tr><tr><td>SFT</td><td>Post-training</td><td>Yes</td><td>Stable instruction-response behavior</td></tr><tr><td>RLHF / preference optimization</td><td>Post-training</td><td>Yes</td><td>Optimize behavior preferred by raters</td></tr><tr><td>Prompt engineering</td><td>Inference</td><td>No</td><td>Specify task and elicit existing capability</td></tr><tr><td>RAG / tools</td><td>Inference</td><td>Usually no</td><td>Supply external knowledge or exact capabilities</td></tr></tbody></table></div>
+    <h3>Prompt engineering checklist</h3><ul><li>Define measurable success before rewriting the prompt.</li><li>State task, context, constraints, priorities, and completion criteria.</li><li>Use consistent examples and explicit output structure.</li><li>Separate trusted instructions from untrusted source text.</li><li>Require abstention when evidence is insufficient.</li><li>Test normal cases, edge cases, and adversarial cases.</li></ul>
+    <h3>RLHF pipeline</h3><ol><li>Begin with a pretrained, commonly SFT model.</li><li>Collect human comparisons among candidate responses.</li><li>Train a reward model to predict preference.</li><li>Optimize the policy, classically with PPO.</li><li>Use a KL penalty to limit drift from the reference model.</li></ol>
+    <div class="callout risk"><strong>Alignment ≠ factuality.</strong> A reward model predicts rater preference; it is not a truth oracle. Polished behavior can make unsupported claims more convincing.</div>
+    <h3>Emergent abilities</h3><p>In the assigned paper, an ability is emergent when smaller models remain near chance and larger models rise substantially above chance. Thresholds are experiment-specific and can shift with metrics, data, architecture, and training procedure.</p>
+    <h3>RAG architecture</h3><div class="flow"><span>Query</span><b>→</b><span>Dense retriever</span><b>→</b><span>MIPS top-k passages</span><b>→</b><span>Generator + evidence</span><b>→</b><span>Answer + provenance</span></div>
+    <div class="table-wrap"><table><thead><tr><th>Memory</th><th>Location</th><th>Advantage</th><th>Failure mode</th></tr></thead><tbody><tr><td>Parametric</td><td>Model weights</td><td>Fast pattern completion</td><td>Hard to update, inspect, or attribute</td></tr><tr><td>Non-parametric</td><td>External index</td><td>Editable, searchable, sourceable</td><td>Retrieval miss, poisoning, chunking, latency</td></tr></tbody></table></div>
+    <p><strong>RAG-Sequence:</strong> one latent document distribution supports the sequence. <strong>RAG-Token:</strong> document support can vary by generated token.</p>
+  </article>
+
+  <article class="topic" id="agents" data-keywords="AI agent workflow autonomy ReAct chain of thought CoT thought action observation prompt chaining routing parallelization orchestrator workers evaluator optimizer function calling planning reflection tools MCP model context protocol host client server resources prompts elicitation JSON-RPC">
+    <header class="topic-header"><div><div class="topic-number">Topic 12</div><h2>Agents, tool use, workflow patterns, and MCP</h2></div><div class="source-links"><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week12/docx/DATA785_week12_notes.md" target="_blank" rel="noopener">Week 12 source</a></div></header>
+    <p class="topic-intro">An agentic system combines a model with an environment, tools, state, a control loop, evaluation, and explicit authority boundaries. Autonomy is justified only when fixed workflows cannot predict the necessary steps.</p>
+    <div class="flow"><span>Task / goal</span><b>→</b><span>Plan</span><b>→</b><span>Action</span><b>→</b><span>Observation</span><b>→</b><span>Evaluate / reflect</span><b>↺</b><span>Finish or replan</span></div>
+    <h3>Workflow versus agent</h3><div class="table-wrap"><table><thead><tr><th>Dimension</th><th>Workflow</th><th>Agent</th></tr></thead><tbody><tr><td>Control path</td><td>Predefined in code</td><td>Dynamically selected by model</td></tr><tr><td>Best fit</td><td>Stable, specified process</td><td>Open-ended task with unpredictable steps</td></tr><tr><td>Predictability</td><td>Higher</td><td>Lower</td></tr><tr><td>Main risk</td><td>Brittle branches</td><td>Compounding errors, loops, unsafe actions</td></tr></tbody></table></div>
+    <h3>CoT versus ReAct</h3><ul><li><strong>CoT:</strong> internal reasoning trajectory; no environmental feedback.</li><li><strong>Act-only:</strong> tools and observations; weak explicit planning.</li><li><strong>ReAct:</strong> interleaves thought, action, and observation—“reason to act” and “act to reason.”</li></ul>
+    <h3>Production patterns</h3><div class="table-wrap"><table><thead><tr><th>Pattern</th><th>Use when</th><th>Main caution</th></tr></thead><tbody><tr><td>Prompt chaining</td><td>Fixed sequence of clean subtasks</td><td>Early errors propagate</td></tr><tr><td>Routing</td><td>Inputs belong to distinct categories</td><td>Wrong route poisons the result</td></tr><tr><td>Parallelization</td><td>Independent work or voting</td><td>Cost and aggregation</td></tr><tr><td>Orchestrator-workers</td><td>Subtasks cannot be predicted in advance</td><td>Delegation and synthesis failures</td></tr><tr><td>Evaluator-optimizer</td><td>Quality criteria support iterative revision</td><td>Loops and over-optimization</td></tr><tr><td>Autonomous agent</td><td>Open-ended work with verifiable progress</td><td>Unbounded cost and permission risk</td></tr></tbody></table></div>
+    <h3>Function-calling contract</h3><ol><li>Declare a minimal, well-described tool inventory.</li><li>The model proposes a structured call.</li><li>Application code validates schema, permissions, and policy.</li><li>The application executes the tool.</li><li>The result returns as an observation.</li><li>The system checks completion or replans.</li></ol>
+    <h3>MCP</h3><p>Model Context Protocol standardizes how AI hosts connect to servers exposing context and capabilities. It does not provide correct planning, authorization, evaluation, or trust by itself.</p>
+    <div class="table-wrap"><table><thead><tr><th>Role / capability</th><th>Meaning</th></tr></thead><tbody><tr><td>Host</td><td>AI application managing model, policies, UX, and connections</td></tr><tr><td>Client</td><td>Host-side connector for one MCP server</td></tr><tr><td>Server</td><td>Service exposing resources, prompts, or tools</td></tr><tr><td>Resources</td><td>Readable context</td></tr><tr><td>Prompts</td><td>Templated messages or workflows</td></tr><tr><td>Tools</td><td>Callable functions</td></tr><tr><td>Elicitation</td><td>Server request for additional user input through the host</td></tr></tbody></table></div>
+    <div class="callout key"><strong>Agent-computer interface:</strong> tool names, descriptions, schemas, examples, errors, and completion conditions are part of the prompt. Design them as carefully as a human interface.</div>
+  </article>
+
+  <article class="topic" id="evaluation" data-keywords="evaluation metrics security robustness grounding calibration retrieval recall precision MRR nDCG latency cost prompt injection jailbreak poisoning reward hacking least privilege human review stopping condition reliability">
+    <header class="topic-header"><div><div class="topic-number">Topic 13</div><h2>Evaluation, reliability, and security controls</h2></div><div class="source-links"><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week11/docx/DATA785_week11_notes.md" target="_blank" rel="noopener">Week 11 source</a><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week12/docx/DATA785_week12_notes.md" target="_blank" rel="noopener">Week 12 source</a></div></header>
+    <p class="topic-intro">System quality must be measured component by component. A good demonstration does not establish dependable task success, grounding, safety, or cost.</p>
+    <div class="table-wrap"><table><thead><tr><th>Dimension</th><th>Question</th><th>Measures</th></tr></thead><tbody><tr><td>Task success</td><td>Did the system complete the job?</td><td>Accuracy, exact match, rubric, human review</td></tr><tr><td>Groundedness</td><td>Are claims supported?</td><td>Citation precision/recall, entailment audit</td></tr><tr><td>Retrieval</td><td>Was needed evidence found?</td><td>Recall@k, MRR, nDCG, gold overlap</td></tr><tr><td>Instruction following</td><td>Were scope and format respected?</td><td>Schema and constraint checks</td></tr><tr><td>Calibration</td><td>Does confidence track correctness?</td><td>Brier score, ECE, abstention quality</td></tr><tr><td>Safety / robustness</td><td>Can hostile input bypass controls?</td><td>Red-team and policy-violation rate</td></tr><tr><td>Efficiency</td><td>Is deployment practical?</td><td>Latency, tokens, tool calls, throughput, review load</td></tr></tbody></table></div>
+    <h3>Threats</h3><div class="grid-3"><div class="card"><strong>Instruction attacks</strong><p>Prompt injection and jailbreaks attempt to override trusted goals.</p></div><div class="card"><strong>Data attacks</strong><p>Training or retrieval poisoning introduces false evidence or backdoors.</p></div><div class="card"><strong>Action risk</strong><p>Tool misuse turns a model error into an external consequence.</p></div></div>
+    <h3>Layered controls</h3><ul><li>Separate trusted instructions from untrusted data.</li><li>Use least-privilege tools, allowlists, argument validation, rate limits, and confirmation.</li><li>Retain provenance and verify evidence supports each claim.</li><li>Use deterministic validators around structured outputs and transactions.</li><li>Budget tokens, time, calls, retries, and money; detect loops.</li><li>Require human approval for high-impact or irreversible actions.</li><li>Log actions, observations, evidence, and decisions for audit.</li></ul>
+    <div class="formula">P(all 10 independent steps succeed) = 0.95<sup>10</sup> ≈ 59.9%</div><p>Even strong per-step reliability compounds poorly over long horizons. Reduce steps, validate intermediate state, checkpoint progress, and design bounded recovery.</p>
+  </article>
+
+  <article class="topic" id="comparisons" data-keywords="exam review compare contrast cheat sheet rapid comparison model selection intervention summary">
+    <header class="topic-header"><div><div class="topic-number">Topic 14</div><h2>Rapid comparisons and model-selection cues</h2></div><div class="source-links"><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week01/docx/DATA785_week01_notes.md" target="_blank" rel="noopener">Week 01 source</a><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week04/docx/DATA785_week04_notes.md" target="_blank" rel="noopener">Week 04 source</a><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week05/docx/DATA785_week05_notes.md" target="_blank" rel="noopener">Week 05 source</a><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week07/docx/DATA785_week07_notes.md" target="_blank" rel="noopener">Week 07 source</a><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week08/docx/DATA785_week08_notes.md" target="_blank" rel="noopener">Week 08 source</a><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week09/docx/DATA785_week09_notes.md" target="_blank" rel="noopener">Week 09 source</a><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week10/docx/DATA785_week10_notes.md" target="_blank" rel="noopener">Week 10 source</a><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week11/docx/DATA785_week11_notes.md" target="_blank" rel="noopener">Week 11 source</a><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week12/docx/DATA785_week12_notes.md" target="_blank" rel="noopener">Week 12 source</a></div></header>
+    <h3>Choose the architecture</h3><div class="table-wrap"><table><thead><tr><th>Problem signal</th><th>Likely concept</th><th>Why</th></tr></thead><tbody><tr><td>Real-valued target with linear relationship</td><td>Linear regression</td><td>Direct affine prediction</td></tr><tr><td>Complex fixed-size features</td><td>MLP</td><td>Learn nonlinear feature interactions</td></tr><tr><td>Local spatial structure</td><td>CNN</td><td>Local filters and weight sharing</td></tr><tr><td>Sequential state and streaming input</td><td>RNN</td><td>Recursive hidden state</td></tr><tr><td>Long-context parallel sequence processing</td><td>Transformer</td><td>Attention and parallel training</td></tr><tr><td>Exact likelihood with invertible map</td><td>Normalizing flow</td><td>Tractable inverse and Jacobian</td></tr><tr><td>High-quality iterative generation</td><td>Diffusion</td><td>Learned denoising from noise</td></tr><tr><td>Current/private factual knowledge</td><td>RAG</td><td>External editable memory</td></tr><tr><td>Unpredictable multi-step environment interaction</td><td>Agent / ReAct</td><td>Feedback-driven action loop</td></tr></tbody></table></div>
+    <h3>Diagnose before intervening</h3><div class="table-wrap"><table><thead><tr><th>Failure</th><th>First intervention</th></tr></thead><tbody><tr><td>Wrong tone, format, or scope</td><td>Prompt and examples</td></tr><tr><td>Missing or stale facts</td><td>RAG or trusted tool</td></tr><tr><td>Persistent behavior across prompts</td><td>SFT / preference optimization</td></tr><tr><td>Missing reasoning or modality capability</td><td>Decompose, add tools, or choose a stronger model</td></tr><tr><td>Unsafe consequence</td><td>Permission restrictions and human approval</td></tr><tr><td>Unknown cause</td><td>Build an evaluation set and ablate components</td></tr></tbody></table></div>
+    <details><summary>One-sentence memory hooks</summary><div><ul><li><strong>Backprop:</strong> reuse the chain rule backward through the graph.</li><li><strong>Embedding:</strong> meaning becomes geometry.</li><li><strong>CNN:</strong> local shared filters create spatial feature maps.</li><li><strong>Residual:</strong> learn the change, preserve the identity path.</li><li><strong>RNN:</strong> compress history into recursive state.</li><li><strong>Transformer:</strong> compare every allowed token position through attention.</li><li><strong>Flow:</strong> invertible transformations preserve exact density accounting.</li><li><strong>Diffusion:</strong> learn to remove the noise you deliberately added.</li><li><strong>RAG:</strong> retrieve evidence before generating.</li><li><strong>Agent:</strong> act, observe, verify, and replan under bounded authority.</li></ul></div></details>
+  </article>
+
+  <section class="topic source-map" id="source-map" data-keywords="sources repository weeks notes markdown limitations gaps provenance">
+    <header class="topic-header"><div><div class="topic-number">Provenance</div><h2>Source map and known Markdown gaps</h2></div></header>
+    <p>This guide is organized by topic, but every section links back to the original weekly Markdown source. The source directory is <a href="https://github.com/joediggidyyy/unc-data-science-notes/tree/main/notes/Summer_2026/DATA785" target="_blank" rel="noopener"><code>notes/Summer_2026/DATA785</code></a>.</p>
+    <div class="table-wrap"><table><thead><tr><th>Week</th><th>Primary subject</th><th>Source</th></tr></thead><tbody>
+      <tr><td>01</td><td>Linear and logistic regression; loss; optimization; regularization</td><td><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week01/docx/DATA785_week01_notes.md">Markdown</a></td></tr>
+      <tr><td>02</td><td>Feedforward neural networks and nonlinearities</td><td><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week02/docx/DATA785_week02_notes.md">Markdown</a></td></tr>
+      <tr><td>03</td><td>Backpropagation and gradient flow</td><td><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week03/docx/DATA785_week03_notes.md">Markdown</a></td></tr>
+      <tr><td>04</td><td>Word embeddings</td><td><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week04/docx/DATA785_week04_notes.md">Markdown</a></td></tr>
+      <tr><td>05</td><td>Convolutional neural networks</td><td><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week05/docx/DATA785_week05_notes.md">Markdown</a></td></tr>
+      <tr><td>06</td><td>Batch/layer normalization and residual connections</td><td><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week06/docx/DATA785_week06_notes.md">Markdown</a></td></tr>
+      <tr><td>07</td><td>Sequence modeling and RNNs</td><td><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week07/docx/DATA785_week07_notes.md">Markdown</a></td></tr>
+      <tr><td>08</td><td>Advanced RNN training and decoding</td><td><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week08/docx/DATA785_week08_notes.md">Markdown</a></td></tr>
+      <tr><td>09</td><td>Transformers, BERT, GPT, T5, and BART</td><td><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week09/docx/DATA785_week09_notes.md">Markdown</a></td></tr>
+      <tr><td>10</td><td>Normalizing flows and diffusion models</td><td><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week10/docx/DATA785_week10_notes.md">Markdown</a></td></tr>
+      <tr><td>11</td><td>LLM prompting, RLHF, emergence, RAG, evaluation</td><td><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week11/docx/DATA785_week11_notes.md">Markdown</a></td></tr>
+      <tr><td>12</td><td>AI agents, ReAct, tools, workflows, MCP</td><td><a href="https://github.com/joediggidyyy/unc-data-science-notes/blob/main/notes/Summer_2026/DATA785/Week12/docx/DATA785_week12_notes.md">Markdown</a></td></tr>
+    </tbody></table></div>
+    <h3>Known gaps retained transparently</h3><ul><li>Week 02’s Markdown is sparse relative to its stated objectives.</li><li>Week 08 names GRUs and LSTMs but does not contain detailed gate equations.</li><li>The Week 09 Markdown discusses Q/K/V dimensions and causal masking but does not render the standard attention equation as text.</li><li>The Week 10 forward-diffusion equation appears malformed in Markdown; consult the original PDF for exact notation.</li></ul>
+  </section>
+
+  <footer><p>Generated from the DATA 785 Summer 2026 repository notes on 2026-08-01. This study guide reorganizes the material by topic and is not a replacement for the original slides, PDFs, or instructor guidance.</p></footer>
+</main>
+
+</body>
+</html>
