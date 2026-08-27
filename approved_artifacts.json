@@ -1,5 +1,101 @@
 {
   "approved": {
+    "notes/Fall_2026/DATA715/Week01/docx/generated_media/DATA715_week01_notes/media/image1.png": {
+      "approved_utc": "2026-08-27T21:43:47Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "55b0b7b045da24c76c7a9442c4acbc21936c05931509b9c24490811cd9fb5924"
+    },
+    "notes/Fall_2026/DATA715/Week01/docx/generated_media/DATA715_week01_notes/media/image2.png": {
+      "approved_utc": "2026-08-27T21:43:47Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "97cf8993ab7a15b49ab6950d4b888453e57e7e5640d83f924aba5b0d63160c49"
+    },
+    "notes/Fall_2026/DATA715/Week01/docx/generated_media/DATA715_week01_notes/media/image3.png": {
+      "approved_utc": "2026-08-27T21:43:47Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "d24cd085353b42f4a309c7e21a94d5547bc5febef5a99d65be1890afbf6222be"
+    },
+    "notes/Fall_2026/DATA715/Week01/docx/generated_media/DATA715_week01_notes/media/image4.png": {
+      "approved_utc": "2026-08-27T21:43:47Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "61186593d959f30f1e2dba130bd0464c0f44b452a20d0d36a26e56b4738717fe"
+    },
+    "notes/Fall_2026/DATA715/Week01/docx/generated_media/DATA715_week01_notes/media/image5.png": {
+      "approved_utc": "2026-08-27T21:43:47Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "b10fe95a01c95503b9572b68a69c0b714114866bafb4826c1b30ffc396add2d4"
+    },
+    "notes/Fall_2026/DATA715/Week01/docx/generated_media/DATA715_week01_notes/media/image6.png": {
+      "approved_utc": "2026-08-27T21:43:47Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "4726e73c59acf63af445d12f298d4134893dae2e830c1593f97c25afb4a4df74"
+    },
+    "notes/Fall_2026/DATA715/Week01/docx/generated_media/DATA715_week01_notes/media/image7.png": {
+      "approved_utc": "2026-08-27T21:43:47Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "efd1ab03102ffb0c0ab8604faf4005aba84d5deff3a77fb1e8048849634982f8"
+    },
+    "notes/Fall_2026/DATA715/Week01/docx/generated_media/DATA715_week01_notes/media/image8.png": {
+      "approved_utc": "2026-08-27T21:43:47Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "55b2e2458185cb4af8d9d25332a4ab977e38621c35dac752129483a93471814c"
+    },
+    "notes/Fall_2026/DATA715/Week01/docx/generated_media/DATA715_week01_notes/media/image9.png": {
+      "approved_utc": "2026-08-27T21:43:47Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "746441b430a23153c8cab53c3e35d4d0730dc4ae39859183f1f3118e06c695ca"
+    },
+    "notes/Fall_2026/DATA790/Week01/generated_media/DATA790_week01_notes/media/image1.png": {
+      "approved_utc": "2026-08-27T21:43:47Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "895a67f2431ab97bb4d7b62c60a113baaba7bda9872ba2239308826041da2ff2"
+    },
+    "notes/Fall_2026/DATA790/Week01/generated_media/DATA790_week01_notes/media/image2.png": {
+      "approved_utc": "2026-08-27T21:43:47Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "5de3efeb25920566b92439e1f28233fa43330f064259dd75ffb894cd1306f265"
+    },
+    "notes/Fall_2026/DATA790/Week01/generated_media/DATA790_week01_notes/media/image3.png": {
+      "approved_utc": "2026-08-27T21:43:47Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "0ff68f9790eeeb3bc9a655900559d72711e1d17ee70bda0f5dbe888a1838d4fc"
+    },
+    "notes/Fall_2026/DATA790/Week01/generated_media/DATA790_week01_notes/media/image4.png": {
+      "approved_utc": "2026-08-27T21:43:47Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "6b30f1ffd9b412a84ad3c4107f73d6e7e362254b8d281261d5ad94f8636e2bcf"
+    },
+    "notes/Fall_2026/DATA790/Week01/generated_media/DATA790_week01_notes/media/image5.png": {
+      "approved_utc": "2026-08-27T21:43:47Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "4e746f7fa1c0caac9e424385013ccd092193858aed7577932cddd91a56243b95"
+    },
+    "notes/Fall_2026/DATA790/Week01/generated_media/DATA790_week01_notes/media/image6.png": {
+      "approved_utc": "2026-08-27T21:43:47Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "c79322ef2ae568bfa4b491417cd3709ee00551c64bd6faf614af4cf996c67ec1"
+    },
+    "notes/Fall_2026/DATA790/Week01/generated_media/DATA790_week01_notes/media/image7.png": {
+      "approved_utc": "2026-08-27T21:43:47Z",
+      "category": "image",
+      "notes": "Reviewed (maintain.py)",
+      "sha256": "4f9c84762e78ca4019af3f13d69e79abd7ba2b370a3470d7b0ce7ae4c03c9925"
+    },
     "notes/QuickReferences/Julia/Julia_Programming_Guide/docx/generated_media/Julia_Programming_Guide/media/image1.png": {
       "approved_utc": "2026-02-16T11:54:38Z",
       "category": "image",

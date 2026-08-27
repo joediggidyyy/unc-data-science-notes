@@ -2,7 +2,21 @@
 
 Index of `notes/` organized by term/course/week.
 
-Last updated (UTC): 2026-08-02T01:46:36+00:00
+Last updated (UTC): 2026-08-27T21:43:37+00:00
+
+## Fall_2026
+
+### DATA715
+
+- [Week01](Fall_2026/DATA715/Week01/)
+
+### DATA789
+
+- [Week01](Fall_2026/DATA789/Week01/)
+
+### DATA790
+
+- [Week01](Fall_2026/DATA790/Week01/)
 
 ## QuickReferences
 
