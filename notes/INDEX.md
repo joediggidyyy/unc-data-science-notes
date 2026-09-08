@@ -2,7 +2,7 @@
 
 Index of `notes/` organized by term/course/week.
 
-Last updated (UTC): 2026-09-06T23:47:21+00:00
+Last updated (UTC): 2026-09-08T02:45:58+00:00
 
 ## Fall_2026
 
@@ -16,6 +16,7 @@ Last updated (UTC): 2026-09-06T23:47:21+00:00
 
 - [Week01](Fall_2026/DATA789/Week01/)
 - [Week02](Fall_2026/DATA789/Week02/)
+- [Week03](Fall_2026/DATA789/Week03/)
 
 ### DATA790
 
