@@ -20,6 +20,19 @@ These standards aim to make the notes easier to read for people with dyslexia an
 - End with a short “Quick check” or summary.
 - Use consistent section ordering across weeks.
 
+## Difficulty labels (reference guides)
+
+Longer reference guides mark each section by reader level so beginners are not
+blocked by advanced material.
+
+- Use three levels: **Beginner**, **Intermediate**, **Advanced**.
+- Put a bold label on its own line right under each section heading, for
+  example: **Level:** Intermediate.
+- Order sections Beginner first, then Intermediate, then Advanced. Do not
+  interleave levels within a track.
+- Use a text label, not colour, so it is readable for everyone.
+- Add a one-line legend near the top of the guide explaining the three levels.
+
 ## Lists
 
 - Use bullets for properties, steps, and checklists.

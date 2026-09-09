@@ -1,0 +1,23 @@
+# Configuration for the example project's test run.
+# The pytest guide (section 10) walks through this file.
+
+[tool.pytest.ini_options]
+minversion = "9.0"
+
+# Where pytest looks for tests when you run it with no path.
+testpaths = ["."]
+
+# Flags applied on every run:
+#   -ra  show a short summary of everything except passes
+#   -q   quieter output
+addopts = "-ra -q"
+
+# Custom markers must be registered or pytest warns about them.
+markers = [
+    "slow: a slower test; deselect with -m 'not slow'",
+]
+
+# Turn unexpected warnings into visible ones without failing the run.
+filterwarnings = [
+    "default",
+]

@@ -13,6 +13,9 @@ Thanks for helping improve these notes.
 
 - Check the relevant `notes/<term>/<course>/<week>/` index.
 - Follow `ACCESSIBILITY.md` and `STYLE_GUIDE.md`.
+- For a `notes/QuickReferences/` guide, also follow the "Reference guides"
+  section of `STYLE_GUIDE.md` and the difficulty-label rules in
+  `ACCESSIBILITY.md`.
 - Keep changes focused and easy to review.
 
 ## Images and other flagged files

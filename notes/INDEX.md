@@ -2,7 +2,7 @@
 
 Index of `notes/` organized by term/course/week.
 
-Last updated (UTC): 2026-09-08T02:45:58+00:00
+Last updated (UTC): 2026-09-09T04:44:58+00:00
 
 ## Fall_2026
 
@@ -36,6 +36,10 @@ Last updated (UTC): 2026-09-08T02:45:58+00:00
 ### Markdown
 
 - [PlutoJL_Markdown_Guide](QuickReferences/Markdown/PlutoJL_Markdown_Guide/)
+
+### Python
+
+- [Pytest_Guide](QuickReferences/Python/Pytest_Guide/README.md)
 
 ## Spring_2026
 

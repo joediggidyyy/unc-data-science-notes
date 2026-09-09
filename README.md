@@ -29,6 +29,20 @@ Week folders are intentionally kept simple:
 We do **not** generate PDF-to-Markdown "stub" pages. GitHub renders PDFs well enough, and keeping
 Week roots free of extra `.md` files makes the tree easier to scan.
 
+### Quick references
+
+Standalone tool and language guides live under:
+
+`notes/QuickReferences/<Topic>/<Guide_Name>/`
+
+See [`notes/QuickReferences/README.md`](notes/QuickReferences/README.md) for the
+list. A guide is one of two shapes:
+
+- **Word-authored:** a PDF at the folder root, with a generated Markdown copy
+  and the `.docx` under a `docx/` subfolder.
+- **Markdown-native:** the guide is `README.md` at the folder root, with no
+  `docx/` subfolder. Used when the content is code-heavy or web-bound.
+
 ## Public-sharing expectations
 
 - These notes are original and written in my own words.

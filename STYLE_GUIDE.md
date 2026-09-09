@@ -39,3 +39,22 @@ Recommended top-of-page structure:
 
 - If you rely on a source, add a short “References” section at the bottom or use captioned links.
 - Prefer links rather than copying large excerpts.
+
+## Reference guides (QuickReferences)
+
+Guides under `notes/QuickReferences/` may be **Markdown-native**: the guide is
+`README.md` at the guide folder root, so `notes/INDEX.md` links straight to it.
+
+These guides follow the rules above, with a few additions:
+
+- **One H1** — the guide title. Major sections are H2, sub-sections H3.
+- **Front matter** — a short YAML block at the top with `title`, `slug`,
+  `summary`, `audience`, `tags`, and a version and review date where relevant.
+- **Difficulty labels** — see `ACCESSIBILITY.md`.
+- **Code blocks** — a code-heavy reference guide (for example, a pytest or SQL
+  guide) may use more code than a week's notes. Keep each block short and to one
+  idea, put the explanation in bullets *above* the block, and show expected
+  output in its own short block. The "keep code short" rule still applies per
+  block.
+- **Links** — relative within the guide folder; no absolute or site-root paths,
+  so the guide can be copied elsewhere unchanged.
